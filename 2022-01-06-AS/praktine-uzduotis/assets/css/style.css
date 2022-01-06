@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(255, 208, 199);
+}
+h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  margin-bottom: 100px;
+}
+/* NORMALUS, STATINIS FONAS */
+/* div {
+  text-align: center;
+  margin: 5% 30% 10% 30%;
+  padding: 2% 3% 2% 3%;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-style: double;
+  border-color: white;
+  background-color: rgb(255, 228, 223);
+} */
+/* ČIA RAINBOW ANIMACIJA */
+/* div {
+  text-align: center;
+  margin: 5% 30% 10% 30%;
+  padding: 2% 3% 2% 3%;
+  border-radius: 30px;
+  background-color: #ff0000;
+  animation: bgColor 5s infinite linear;
+}
+@keyframes bgColor {
+  12.5% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #ffa500;
+  }
+  37.5% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #7fff00;
+  }
+  62.5% {
+    background-color: #00ffff;
+  }
+  75% {
+    background-color: #0000ff;
+  }
+  87.5% {
+    background-color: #9932cc;
+  }
+  100% {
+    background-color: #ff1493;
+  }
+} */
+div {
+    text-align: center;
+    margin: 5% 30% 10% 30%;
+    padding: 2% 3% 2% 3%;
+    border-radius: 30px;
+    background-color: #ff0000;
+    animation: bgColor 5s infinite linear;
+  }
+  @keyframes bgColor {
+    0% {
+      background-color: rgb(255, 228, 223);
+    }
+    50% {
+      background-color: rgb(255, 208, 199);
+    }
+    100% {
+      background-color: rgb(255, 228, 223);
+    }
+  }
+.space {
+  margin-bottom: 10px;
+}
+button {
+  width: 30%;
+}
+.input-field {
+  width: 50%;
+  text-align: center;
+}
