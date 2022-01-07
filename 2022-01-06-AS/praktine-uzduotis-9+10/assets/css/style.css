@@ -1,0 +1,46 @@
+.body-color {
+  background-color: rgb(219, 255, 235);
+}
+.div-format {
+  margin: 100px 15% 0 15%;
+}
+.h1-align {
+  text-align: center;
+  font-size: 500%;
+}
+.h1-color {
+  color: rgba(133, 0, 0, 0.322);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.h2-color {
+  color: rgba(93, 97, 37, 0.37);
+  font-family: fantasy;
+}
+.h3-color {
+  color: rgb(0, 53, 97);
+  font-family: sans-serif;
+}
+.h4-color {
+  color: rgb(0, 85, 74);
+  font-family: serif;
+}
+.h5-color {
+  color: rgb(3, 95, 0);
+  font-family: monospace;
+}
+.h6-color {
+  color: rgb(88, 75, 0);
+  font-family: "Times New Roman", Times, serif;
+}
+.img-align-left {
+  width: 150px;
+  height: 200x;
+  float: left;
+  padding: 10px;
+}
+.img-align-right {
+  width: 150px;
+  height: 200x;
+  float: right;
+  padding: 10px;
+}

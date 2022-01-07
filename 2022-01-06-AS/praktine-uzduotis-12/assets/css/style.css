@@ -1,0 +1,25 @@
+.body-color {
+  background-color: rgb(255, 255, 234);
+}
+.div-block {
+  width: 25%;
+  float: left;
+  text-align: left;
+}
+.h1-format {
+  color: rgb(46, 0, 0);
+  padding: 2% 0;
+  text-align: center;
+}
+.p-format {
+  padding: 10px;
+}
+.text-align1 {
+  text-align: justify;
+}
+.text-align2 {
+  text-align: center;
+}
+.text-align3 {
+  text-align: right;
+}

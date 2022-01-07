@@ -1,0 +1,49 @@
+.br-space {
+  margin-bottom: 5px;
+}
+.body-color {
+  background-color: rgb(246, 234, 255);
+}
+.button-format {
+  width: 150px;
+  background-color: thistle;
+}
+.button-format:hover {
+  background-color: rgb(255, 185, 255);
+  cursor: pointer;
+}
+.button-format:active {
+  background-color: rgb(255, 185, 255);
+  transform: translateY(4px);
+}
+.div-format1 {
+  width: 80%;
+  background-color: white;
+  margin: 5% auto 0 auto;
+  padding-bottom: 5%;
+}
+.div-format2 {
+  padding: 20px 2% 0 2%;
+  box-align: left;
+}
+.div-format3 {
+  width: 80%;
+  height: auto;
+  float: right;
+}
+.h1-format {
+  color: rgb(46, 0, 0);
+  padding: 2% 0;
+  text-align: center;
+}
+.img-format {
+  float: left;
+  padding: 0 20px 0 30px;
+  width: 20%;
+}
+.input-color {
+  border-color: rgb(255, 178, 255);
+}
+.p-format {
+  padding: 0 2%;
+}
