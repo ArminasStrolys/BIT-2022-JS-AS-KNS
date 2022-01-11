@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article h2 {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+article p {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ======================================== */
+/* --------------NAVIGACIJA---------------- */
+/* ======================================== */
+.nav ul {
+  background-color: rgb(245, 225, 255);
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+.nav ul li {
+  background-color: rgb(255, 203, 238);
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.nav ul li:hover {
+  cursor: pointer;
+  background-color: rgb(120, 41, 211);
+  border: 1px solid rgb(0, 0, 0);
+  transition-duration: 1s;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* ======================================== */
+section article {
+  height: 100vw;
+}
+/* ======================================== */
+/* --------------SEKCIJOS------------------ */
+/* ======================================== */
+/* -----------------1-sekcija------------------- */
+.article-v1 {
+  background-color: rgb(204, 149, 255);
+}
+.article-v1 img {
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-v1 ul {
+  text-align: right;
+  padding-right: 100px;
+}
+.article-v1 ul li::marker {
+  content: "\2713";
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.article-v1 ul li:before {
+  content: "";
+  padding-right: 10px;
+}
+/* -----------------2-sekcija------------------- */
+.article-v2 {
+  background-color: rgb(219, 182, 253);
+}
+.article-v2 img {
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-v2 ol{
+    padding-left: 0;
+    
+}
+.test1{
+    float: left;
+    width: 49%;
+    text-align: right;
+}
+.test2{
+    float: left;
+    width: 8%;
+    text-align: right;
+}
+/* -----------------3-sekcija------------------- */
+.article-v3 {
+  background-color: rgb(224, 192, 253);
+}
+.article-v3 img {
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-v3 ul {
+  text-align: center;
+  padding-left: 0;
+}
+.article-v3 ul li:before {
+  content: "🔥";
+  background: rgb(255, 217, 0);
+  border-radius: 10px;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+/* -----------------4=8-sekcijos------------------------- */
+.article-v4 {
+  background-color: rgb(235, 213, 255);
+}
+.article-v4 form{
+    padding-left: 50px;
+}
+.article-v4 form br{
+    margin-bottom: 10px;
+}
+.article-v4 img {
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-v4 label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+  }
+.no-width {
+    width: 0;
+  }
+  .article-v4 select option{
+    display: inline-block;
+    width: 35px;
+    text-align: right;
+  }
+  .article-v4 form button{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-left: 154px;
+    width: 152px;
+    color: rgb(104, 0, 0);
+    text-align: center;
+    border: 2px dashed blue;
+    background-color: rgb(255, 255, 145);
+    border-radius: 20px;
+  }
+  .article-v4 form button:hover{
+    cursor: pointer;
+    border: 2px solid rgb(148, 255, 171);
+    background-color: rgb(255, 135, 56);
+    transition-duration: 0.5s;
+    color: whitesmoke;
+    border-radius: 20px;
+  }
+  .article-v4 form button{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-left: 154px;
+    width: 152px;
+    color: rgb(104, 0, 0);
+    text-align: center;
+    border: 2px dashed blue;
+    background-color: rgb(255, 255, 145);
+    border-radius: 20px;
+  }
+.article-v5 {
+  background-color: rgb(163, 143, 255);
+}
+.article-v5 p{
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 40%;
+    padding: 40px;
+    text-align: left;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.article-v5 img {
+    margin: 20px;
+    padding: 20px;
+    float: left;
+    width: 40%;
+    border: 5px dashed green;
+}
+.article-v6 {
+  background-color: rgb(179, 162, 255);
+}
+.article-v6 img {
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-v7 {
+  background-color: rgb(196, 183, 255);
+}
+.article-v7 img {
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-v8 {
+  background-color: rgb(211, 202, 255);
+}
+.article-v8 img {
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer article {
+  background-color: rgb(211, 202, 255);
+  text-align: center;
+  padding-bottom: 10px;
+}
+/* ======================================== */
