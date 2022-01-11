@@ -1,0 +1,28 @@
+body{
+    background-color: cadetblue;
+    margin: 0;
+}
+.nav{
+    background-color: chocolate;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    /* padding-bottom: 10px; */
+}
+.nav li{
+    display: inline-block;
+    text-decoration: none;
+    border-right: 1px solid rgb(92, 24, 0) ;
+    /* padding-right: 50px; */
+}
+.nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+}
+.clearfix::before, .clearfix::after{
+    content:"";
+    display: table;
+    clear: both; 
+}
