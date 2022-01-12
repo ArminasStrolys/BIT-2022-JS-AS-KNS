@@ -124,7 +124,7 @@ section article {
   margin-left: -20px;
   margin-right: 10px;
 }
-/* -----------------4=8-sekcijos------------------------- */
+/* -----------------4-sekcija-forma------------------------- */
 .article-v4 {
   background-color: rgb(235, 213, 255);
 }
@@ -172,6 +172,18 @@ section article {
     width: 35px;
     text-align: right;
   }
+  .article-v4 form{
+    width: 350px;
+    border: 3px dotted lightpink;
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: 100px;
+  }
+  .article-v4 textarea{
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: -20px;
+  }
   .article-v4 form button{
     display: inline-block;
     width: 150px;
@@ -193,32 +205,11 @@ section article {
     color: whitesmoke;
     border-radius: 20px;
   }
-  .article-v4 form button{
-    display: inline-block;
-    width: 150px;
-    text-align: right;
-    margin-left: 154px;
-    width: 152px;
-    color: rgb(104, 0, 0);
-    text-align: center;
-    border: 2px dashed blue;
-    background-color: rgb(255, 255, 145);
-    border-radius: 20px;
-  }
-  .article-v4 form{
-    width: 350px;
-    border: 3px dotted lightpink;
-    padding: 20px;
-    border-radius: 30px;
-    margin-left: 100px;
-  }
-  .article-v4 textarea{
-    display: inline-block;
-    margin-left: 70px;
-    margin-top: -20px;
-  }
+  /* -----------------5-sekcija-------------------------- */
 .article-v5 {
   background-color: rgb(163, 143, 255);
+  background-image: url("../img/img11.png");
+  background-repeat: no-repeat;
 }
 .article-v5 p{
     font-family: 'Roboto', sans-serif;
