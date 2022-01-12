@@ -94,16 +94,19 @@
       <article id="article-v4" class="article-v4">
         <h2>TEST 4</h2>
         <form>
-            <label for="">Vardas:</label>
+            <label for=""><strong>Vardas:</strong></label>
             <input type="text" placeholder="Vardaz" required>
             <br>
-            <label for="">El. paštas:</label>
+            <label for=""><strong>El. paštas:</strong></label>
             <input type="email" placeholder="Paštaz" required>
             <br>
-            <label for="" required>Priežastis:</label>
-                <label class="no-width"> <input type="radio" name="priezastis" />Pristatymo laikas</label>
-                <label class="no-width"> <input type="radio" name="priezastis" />Kokybės užtikrinimas</label>
-                <label class="no-width"> <input type="radio" name="priezastis" />Kokybės užtikrinimas</label>
+            <label class="spec-label" for="" required><strong>Priežastis:</strong></label>
+            <br>
+                <label id="no-width1"> <input type="radio" name="priezastis" />Pristatymo laikas</label>
+                <label id="no-width2"> <input type="radio" name="priezastis" />Kokybės užtikrinimas</label>
+                <label id="no-width3"> <input type="radio" name="priezastis" />Kokybės užtikrinimas</label>
+                <br>
+                <textarea cols="30" rows="10" placeholder="Komentaras"></textarea>
                 <br>
                 <button type="submit">Užsiregistruoti</button>
         </form>

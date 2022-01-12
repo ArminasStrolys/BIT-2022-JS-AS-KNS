@@ -33,7 +33,7 @@ article p {
 .nav ul li {
   background-color: rgb(255, 203, 238);
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 0;
   border: 1px solid #ffffff;
   border-radius: 5px;
 }
@@ -46,6 +46,8 @@ article p {
 .nav ul li a {
   text-decoration: none;
   color: black;
+  padding: 10px 60px ;
+  margin: 0;
 }
 /* ======================================== */
 section article {
@@ -143,8 +145,27 @@ section article {
     width: 150px;
     text-align: right;
   }
-.no-width {
-    width: 0;
+#no-width1 {
+    display: block;
+    width: 165px;
+    text-align: left;
+    height: 20px;
+    margin-left: 150px;
+    margin-top: -30px;
+  }
+#no-width2 {
+    display: block;
+    width: 165px;
+    text-align: left;
+    height: 20px;
+    margin-left: 150px;
+  }
+#no-width3 {
+    display: block;
+    width: 165px;
+    text-align: left;
+    height: 20px;
+    margin-left: 150px;
   }
   .article-v4 select option{
     display: inline-block;
@@ -162,6 +183,7 @@ section article {
     border: 2px dashed blue;
     background-color: rgb(255, 255, 145);
     border-radius: 20px;
+    font-weight: bold;
   }
   .article-v4 form button:hover{
     cursor: pointer;
@@ -182,6 +204,18 @@ section article {
     border: 2px dashed blue;
     background-color: rgb(255, 255, 145);
     border-radius: 20px;
+  }
+  .article-v4 form{
+    width: 350px;
+    border: 3px dotted lightpink;
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: 100px;
+  }
+  .article-v4 textarea{
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: -20px;
   }
 .article-v5 {
   background-color: rgb(163, 143, 255);
