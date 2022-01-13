@@ -1,6 +1,40 @@
-
-/* FLOAT WIDTH NEPABĖGA IŠ PROCENTŲ */
+body{
+    background-color: rgb(56, 56, 56);
+}
+h1{
+    text-align: center;
+    color: white;
+}
+/* FLOAT WIDTH NEPABĖGA IŠ PROCENTŲ
 .div-1{
     padding: 0 20px;
+    box-sizing: border-box;
+} */
+.container-main{
+    width: 1500px;
+    height: 650px;
+    margin: auto auto;
+    border: 5px dashed yellow;
+}
+.border-1{
+    border-bottom: 3px dashed yellow;
+    width: 60%;
+    margin: 25px auto;
+}
+.container-1, .container-2, .container-3{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 33.3333333333333%;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    font-size: larger;
+}
+.container-main p{
+    border: 2px solid yellow;
+    padding: 20px;
     box-sizing: border-box;
 }
