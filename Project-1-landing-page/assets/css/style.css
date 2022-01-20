@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", sans-serif;
+  font-family: sans-serif;
   margin-top: 0;
   margin-bottom: 10px;
   line-height: 1.1;
@@ -146,7 +146,9 @@ body {
   margin-bottom: 15px;
 }
 
-#intro .intro-text h3, #about-3 .container h3 {
+#intro .intro-text h3,
+#about-3 .container h3,
+#about-facts .container h3 {
   color: #fff;
   font-size: 34px;
   line-height: 34px;
@@ -179,7 +181,8 @@ body {
   margin-bottom: 10px;
 }
 
-#about .section-heading h2 {
+#about .section-heading h2,
+#our-history h2 {
   color: #222;
   font-size: 40px;
   font-weight: 400;
@@ -222,7 +225,7 @@ body {
   display: block;
   color: #222;
   font-size: 22px;
-  font-family: "Oswald", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
@@ -290,18 +293,22 @@ body {
   letter-spacing: normal;
   line-height: 30px;
 }
-#about-2 .container i {
+#about-2 i {
   color: #ffc400;
   font-size: 23px;
   margin-right: 20px;
 }
-
+#about-2 .icons i {
+  color: #000000;
+}
 #about-2 .container .about-2-text .long-underscore {
   border-bottom: 1px solid rgb(185, 185, 185);
 }
 .animated-container {
   background-color: bisque;
   background-image: url("/assets/img/skills.jpg");
+  /* ČIA DĖL LIVE SERVER RODYMO ŠIOS EILUTĖS*/
+  background-image: url("../img/skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -315,27 +322,32 @@ body {
   margin: 0 auto;
   width: 100px;
 }
-.animated-container h2, #about-3 .container h2 {
+.animated-container h2,
+#about-3 .container h2,
+#about-facts .container h2 {
   padding-top: 100px;
   color: white;
   text-align: center;
   font-size: 50px;
-  font-family: "Oswald", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 .inline-titles {
   padding-top: 200px;
   text-align: center;
+  display: inline;
+  margin: 0 auto;
+  float: left;
+  width: 25%;
 }
 .animated-container h4 {
   color: white;
   font-size: 30px;
-  font-family: "Oswald", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   display: inline;
-  padding: 0 8%;
+  padding: 0 50px;
 }
 .left,
 .right {
@@ -346,7 +358,7 @@ body {
 #about-2 .container .center {
   text-align: center;
 }
-#about-2{
+#about-2 {
   padding-bottom: 50px;
 }
 .center {
@@ -360,30 +372,33 @@ body {
   color: #222;
   font-size: 20px;
   font-weight: 400;
-  font-family: "Oswald", sans-serif;
+  font-family: sans-serif;
 }
 #about-3 {
-  background-color: bisque;
   background-image: url("/assets/img/features.jpg");
+  /* ČIA DĖL LIVE SERVER RODYMO ŠIOS EILUTĖS*/
+  background-image: url("../img/features.jpg");
   background-attachment: fixed;
   background-repeat: repeat;
   background-position: center;
   height: 900px;
   width: 100%;
+  margin-bottom: 60px;
 }
-#about-3 .container h3{
+#about-3 .container h3 {
   padding-top: 100px;
+  font-weight: normal;
 }
-#about-3 .container h2{
+#about-3 .container h2 {
   padding-top: 10px;
 }
-#about-3 .container h4{
+#about-3 .container h4 {
   color: white;
   font-size: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
 }
-#about-3 .container p{
+#about-3 .container p {
   color: rgb(197, 197, 197);
   line-height: 1.7;
   font-size: 16px;
@@ -393,11 +408,129 @@ body {
   font-size: 65px;
   margin-right: 20px;
   float: left;
-  height: 150px;
+  height: 140px;
   width: 70px;
+  text-align: center;
+  padding-top: 10px;
 }
-#about-3 .short-underscore {
+/* ************************************************* */
+/* OUR HISTORY SECTION */
+/* ************************************************* */
+#our-history .container {
+  padding-top: 100px;
+  height: 1900px;
+}
+#our-history {
+  height: 2000px;
+}
+.short-underscore {
   border-bottom: 2px solid rgb(255, 208, 0);
   margin: 0 auto;
   width: 200px;
+}
+#about-3 .short-underscore {
+  margin-bottom: 50px;
+}
+#our-history .span-box {
+  font-size: 20px;
+  border: 2px solid none;
+  padding: 7px 15px;
+  background-color: rgb(0, 116, 72);
+  font-weight: bolder;
+  color: white;
+}
+#our-history .vertical {
+  padding: 30px 0;
+}
+/* WTF TAS FLEX */
+#our-history .container .gray-box-float {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+#our-history .container .gray-box .mini-box-left:hover {
+  background-color: thistle;
+}
+#our-history .container .gray-box.box-right {
+  margin-left: auto;
+  order: 2;
+}
+/* BET IŠGELBĖJO JIS MANE */
+#our-history .container .gray-box {
+  background-color: rgb(240, 240, 240);
+  padding: 0px 30px;
+  width: 40%;
+}
+.line-down {
+  width: 1700px;
+  height: 1px;
+  border-bottom: 2px solid rgb(240, 240, 240);
+  position: relative;
+  transform: rotate(90deg);
+  margin-left: auto;
+  margin-right: auto;
+  left: -279px;
+  right: 0;
+  top: 820px;
+  text-align: center;
+  z-index: -1;
+}
+.mini-box-left,
+.mini-box-right {
+  position: relative;
+  transform: rotate(45deg);
+  height: 30px;
+  width: 30px;
+  background-color: rgb(240, 240, 240);
+  left: 410px;
+  top: 60px;
+  z-index: -2;
+}
+.mini-box-right {
+  left: -45px;
+}
+.circle {
+  position: relative;
+  transform: rotate(45deg);
+  height: 30px;
+  width: 30px;
+  border: 3px solid rgb(240, 240, 240);
+  background-color: white;
+  border-radius: 100%;
+  left: 556px;
+  top: 166px;
+  z-index: -1;
+}
+/* ************************************************* */
+/* ABOUT FACTS SECTION */
+/* ************************************************* */
+#about-facts {
+  height: 500px;
+  background-image: url("/assets/img/statistic-banner.jpg");
+  /* ČIA DĖL LIVE SERVER RODYMO ŠIOS EILUTĖS*/
+  background-image: url("../img/statistic-banner.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 60px;
+  background-position: 40% 70px;
+}
+#about-facts .container h3 {
+  font-weight: lighter;
+  padding-top: 70px;
+  font-size: 30px;
+}
+#about-facts .container h2 {
+  padding: 10px 0;
+}
+#about-facts .container .inline-titles {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+#about-facts .container .inline-titles .num {
+font-size: 80px;
+padding-bottom: 20px;
 }
