@@ -174,7 +174,7 @@ body {
   text-align: center;
 }
 
-#about .section-heading h3 {
+#about .section-heading h3, #portfolio h3 {
   color: #222;
   font-size: 24px;
   font-weight: 300;
@@ -184,7 +184,7 @@ body {
 }
 
 #about .section-heading h2,
-#our-history h2 {
+#our-history h2, #portfolio .center h2 {
   color: #222;
   font-size: 40px;
   font-weight: 400;
@@ -326,7 +326,7 @@ body {
 }
 .animated-container h2,
 #about-3 .container h2,
-#about-facts .container h2 {
+#about-facts .container h2, #portfolio h2 {
   padding-top: 100px;
   color: white;
   text-align: center;
@@ -551,4 +551,81 @@ body {
 #about-facts .container .inline-titles .num {
 font-size: 80px;
 padding-bottom: 20px;
+}
+/* ----------------------PORTFOLIO----------------------------- */
+#portfolio{
+  height: 1600px;
+}
+#portfolio .center h2{
+  padding-top: 10px;
+}
+#portfolio .center button:focus{
+  background-color: #FFC401;
+}
+#portfolio .center button{
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 15px 15px;
+  border-style: none;
+  margin: 40px 2.5px;
+  transition: ease-in-out 0.3s;
+}
+#portfolio .center button:hover{
+  background-color: #FFC401;
+  color: white;
+}
+#portfolio .flex-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  cursor: crosshair;
+  overflow: hidden;
+}
+#portfolio .flex-gallery img{
+  transition: transform .3s;
+  width: 25%;
+}
+#portfolio .flex-gallery img:hover{
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+/* ----------------------CONTACT-US----------------------------- */
+#contact-us{
+  background-image: none;
+  height: 100vh;
+  padding: 80px 0 100px;
+  background-position: center top;
+}
+#contact-us .contact-row{
+display: flex;
+margin-left: -15px;
+margin-right: -15px;
+}
+#contact-us .contact-form .fieldset{
+  width: 100%;
+  border: none;
+  padding: 0 15px;
+  margin: 0 0 20px;
+}
+/* #contact-us .contact-form .fieldset{
+
+} */
+#contact-us .button-row{
+  justify-content: center;
+
+}
+#contact-us .contact-form .fieldset .textarea{
+  width: 100%;
+  height: 200px;
+  background: rgba(250, 250, 250, 0);
+  border: 1px solid #383738;
+  font-size: 15px;
+  padding: 16px 12px;
 }
