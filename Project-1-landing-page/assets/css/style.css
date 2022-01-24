@@ -34,6 +34,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
 }
 
 .clearfix::before,
@@ -83,6 +84,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 #header .logo {
@@ -307,7 +309,7 @@ body {
 .animated-container {
   background-color: bisque;
   background-image: url("/assets/img/skills.jpg");
-  /* ČIA DĖL LIVE SERVER RODYMO ŠIOS EILUTĖS*/
+  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
   background-image: url("../img/skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -379,7 +381,7 @@ body {
 /* ************************************************* */
 #about-3 {
   background-image: url("/assets/img/features.jpg");
-  /* ČIA DĖL LIVE SERVER RODYMO ŠIOS EILUTĖS*/
+  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
   background-image: url("../img/features.jpg");
   background-attachment: fixed;
   background-repeat: repeat;
@@ -445,7 +447,6 @@ body {
 #our-history .vertical {
   padding: 30px 0;
 }
-/* WTF TAS FLEX */
 #our-history .container .gray-box-float {
   height: 300px;
   display: flex;
@@ -458,39 +459,53 @@ body {
   margin-left: auto;
   order: 2;
 }
-/* BET IŠGELBĖJO JIS MANE */
 #our-history .container .gray-box {
   background-color: rgb(240, 240, 240);
-  padding: 0px 30px;
+  padding: 25px 30px;
   width: 40%;
-}
-.line-down {
-  width: 1700px;
-  height: 1px;
-  border-bottom: 2px solid rgb(240, 240, 240);
   position: relative;
-  transform: rotate(90deg);
-  margin-left: auto;
-  margin-right: auto;
-  left: -279px;
+}
+
+#our-history .container .gray-box:hover {
+  background-color: rgb(114, 114, 114);
+  color: #FFF;
+}
+
+#our-history .container .gray-box:hover .mini-box-left::before,
+#our-history .container .gray-box:hover .mini-box-right::after {
+  background-color: rgb(114, 114, 114);
+}
+
+.line-down {
+  width: 2px;
+  height: 1670px;
+  background-color: rgb(240, 240, 240);
+  margin-left: -1px;
+  position: absolute;
+  left: 50%;
   right: 0;
-  top: 820px;
-  text-align: center;
+  top: 125px;
   z-index: -1;
 }
 .mini-box-left,
 .mini-box-right {
-  position: relative;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: -2;
+}
+.mini-box-left::before,
+.mini-box-right::after {
+  content: "";
   transform: rotate(45deg);
   height: 30px;
   width: 30px;
+  display: block;
   background-color: rgb(240, 240, 240);
-  left: 410px;
-  top: 60px;
-  z-index: -2;
 }
 .mini-box-right {
-  left: -45px;
+  left: -15px;
 }
 .circle {
   position: relative;
@@ -510,7 +525,7 @@ body {
 #about-facts {
   height: 500px;
   background-image: url("/assets/img/statistic-banner.jpg");
-  /* ČIA DĖL LIVE SERVER RODYMO ŠIOS EILUTĖS*/
+  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
   background-image: url("../img/statistic-banner.jpg");
   background-attachment: fixed;
   background-repeat: repeat;
