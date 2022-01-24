@@ -174,7 +174,8 @@ body {
   text-align: center;
 }
 
-#about .section-heading h3, #portfolio h3 {
+#about .section-heading h3,
+#portfolio h3 {
   color: #222;
   font-size: 24px;
   font-weight: 300;
@@ -184,7 +185,8 @@ body {
 }
 
 #about .section-heading h2,
-#our-history h2, #portfolio .center h2 {
+#our-history h2,
+#portfolio .center h2 {
   color: #222;
   font-size: 40px;
   font-weight: 400;
@@ -326,7 +328,8 @@ body {
 }
 .animated-container h2,
 #about-3 .container h2,
-#about-facts .container h2, #portfolio h2 {
+#about-facts .container h2,
+#portfolio h2 {
   padding-top: 100px;
   color: white;
   text-align: center;
@@ -468,7 +471,7 @@ body {
 
 #our-history .container .gray-box:hover {
   background-color: rgb(114, 114, 114);
-  color: #FFF;
+  color: #fff;
 }
 
 #our-history .container .gray-box:hover .mini-box-left::before,
@@ -549,20 +552,20 @@ body {
   padding-top: 50px;
 }
 #about-facts .container .inline-titles .num {
-font-size: 80px;
-padding-bottom: 20px;
+  font-size: 80px;
+  padding-bottom: 20px;
 }
 /* ----------------------PORTFOLIO----------------------------- */
-#portfolio{
+#portfolio {
   height: 1600px;
 }
-#portfolio .center h2{
+#portfolio .center h2 {
   padding-top: 10px;
 }
-#portfolio .center button:focus{
-  background-color: #FFC401;
+#portfolio .center button:focus {
+  background-color: #ffc401;
 }
-#portfolio .center button{
+#portfolio .center button {
   font-size: 15px;
   text-transform: uppercase;
   padding: 15px 15px;
@@ -570,45 +573,118 @@ padding-bottom: 20px;
   margin: 40px 2.5px;
   transition: ease-in-out 0.3s;
 }
-#portfolio .center button:hover{
-  background-color: #FFC401;
+#portfolio .center button:hover {
+  background-color: #ffc401;
   color: white;
 }
-#portfolio .flex-gallery{
+#portfolio .flex-gallery {
+  cursor: crosshair;
+  overflow: hidden;
+  width: 100%;
+}
+#portfolio ul {
+  margin: 0;
+  padding: 0;
+}
+#portfolio li {
+  list-style-type: none;
+}
+.gallery-1,
+.gallery-2,
+.gallery-3,
+.gallery-4,
+.gallery-5,
+.gallery-6,
+.gallery-7,
+.gallery-8 {
+  width: 25%;
+  float: left;
+  position: relative;
+  z-index: 5;
+  /* TRANSITION LAGAS */
+  transition: 0.9s;
+}
+#portfolio .flex-gallery img:hover {
+  transform: scale(1.2);
+  z-index: 0;
+}
+/* #portfolio .flex-gallery {
   display: flex;
   flex-wrap: wrap;
   cursor: crosshair;
   overflow: hidden;
 }
-#portfolio .flex-gallery img{
-  transition: transform .3s;
+#portfolio .flex-gallery img {
+  transition: transform 0.3s;
   width: 25%;
+  position: relative;
+  z-index: 1;
+} */
+#portfolio .container {
+  padding-top: 85px;
+  padding-bottom: 65px;
 }
-#portfolio .flex-gallery img:hover{
-  transform: scale(1.1);
-  z-index: -1;
+#portfolio .flex-team {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: nowrap;
 }
-
-
-
-
+#portfolio h5{
+  color: #333333;
+  font-size: 14px;
+  line-height: 15.4px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 20px 0px 10px;
+  padding: 0px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+#portfolio h6{
+  color: #ffc400;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 15.4px;
+  margin: 0px 0px 10px;
+  padding: 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#portfolio p{
+  color: rgb(117, 117, 117);
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  margin: 0px 0px 10px;
+  padding: 5px 10px;
+  font-weight: 300;
+}
+/* #portfolio .flex-team div {
+  background-color: thistle;
+} */
+#portfolio .flex-team div img {
+  height: 260px;
+}
 
 
 
 
 /* ----------------------CONTACT-US----------------------------- */
-#contact-us{
+#contact-us {
   background-image: none;
   height: 100vh;
-  padding: 80px 0 100px;
+  padding: 800px 0 100px;
   background-position: center top;
 }
-#contact-us .contact-row{
-display: flex;
-margin-left: -15px;
-margin-right: -15px;
+#contact-us .contact-row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
 }
-#contact-us .contact-form .fieldset{
+#contact-us .contact-form .fieldset {
   width: 100%;
   border: none;
   padding: 0 15px;
@@ -617,11 +693,10 @@ margin-right: -15px;
 /* #contact-us .contact-form .fieldset{
 
 } */
-#contact-us .button-row{
+#contact-us .button-row {
   justify-content: center;
-
 }
-#contact-us .contact-form .fieldset .textarea{
+#contact-us .contact-form .fieldset .textarea {
   width: 100%;
   height: 200px;
   background: rgba(250, 250, 250, 0);
