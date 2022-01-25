@@ -603,10 +603,15 @@ body {
   z-index: 5;
   /* TRANSITION LAGAS */
   transition: 0.9s;
+  
 }
 #portfolio .flex-gallery img:hover {
   transform: scale(1.2);
   z-index: 0;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  filter: brightness(0.65) grayscale(40%);
+ 
 }
 /* #portfolio .flex-gallery {
   display: flex;
