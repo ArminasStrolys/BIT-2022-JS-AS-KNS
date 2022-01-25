@@ -176,7 +176,9 @@ body {
 
 #about .section-heading h3,
 #portfolio h3,
-#pricing h3 {
+#pricing h3,
+#best-clients h3,
+#customers-feedback h3 {
   color: #222;
   font-size: 24px;
   font-weight: 300;
@@ -188,7 +190,8 @@ body {
 #about .section-heading h2,
 #our-history h2,
 #portfolio .center h2,
-#pricing h2 {
+#pricing h2,
+#best-clients h2 {
   color: #222;
   font-size: 40px;
   font-weight: 400;
@@ -824,6 +827,122 @@ body {
 #pricing .flex-plans .advanced li {
   border-bottom: 1px solid rgba(100, 100, 100, 0.3);
 }
+/* -------------------------------------------------------- */
+/* -----------------BEST CLIENTS--------------------------- */
+/* -------------------------------------------------------- */
+#best-clients {
+  height: 515px;
+  padding-top: 80px;
+}
+.short-underscore {
+  margin-bottom: 70px;
+}
+#best-clients .container div:nth-of-type(2) {
+  display: flex;
+  width: 100%;
+}
+#best-clients .container div:nth-of-type(2) img {
+  width: calc(100% / 6);
+}
+.arrow-buttons a {
+  text-decoration: none;
+}
+.arrow-buttons a button {
+  color: white;
+  background-color: #ffc401;
+  padding: 5px 10px;
+  margin: 30px 2px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+.arrow-buttons a button:hover {
+  background-color: #b68b00;
+}
+/* -------------------------------------------------------- */
+/* -----------------CUSTOMERS FEEDBACK--------------------------- */
+/* -------------------------------------------------------- */
+#customers-feedback {
+  height: 475px;
+  background-color: #f5f5f5;
+}
+#customers-feedback span {
+  color: #ffc401;
+  font-weight: 700;
+}
+#customers-feedback h3 {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 28px;
+}
+#customers-feedback .flex-container {
+  display: flex;
+}
+#customers-feedback .flex-container p {
+  font-size: 14px;
+  color: #777777;
+  padding: 7px 15px;
+  line-height: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+#customers-feedback .flex-container .relative {
+  position: relative;
+}
+#customers-feedback .flex-container .pointer {
+  position: absolute;
+  bottom: 80px;
+  left: 170px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-top: 30px solid #ffffff;
+}
+#customers-feedback .flex-container div div:nth-of-type(1) {
+  background-color: white;
+  margin: 0 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(236, 236, 236);
+}
+#customers-feedback .flex-container > div {
+  width: 100%;
+}
+#customers-feedback .flex-container img {
+  margin-top: 36px;
+  width: 15%;
+  border-radius: 100%;
+  justify-content: center;
+}
+#customers-feedback .relative div:nth-of-type(3) {
+  display: inline-block;
+  text-align: left;
+  padding-left: 15px;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+}
+#customers-feedback .relative h4 {
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+#customers-feedback .relative span {
+  color: rgb(153, 153, 153);
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------- */
 /* -------------------------------------------------------- */
 #pricing .flex-plans ul {
   list-style-type: none;
