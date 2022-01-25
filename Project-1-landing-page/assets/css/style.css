@@ -175,7 +175,8 @@ body {
 }
 
 #about .section-heading h3,
-#portfolio h3 {
+#portfolio h3,
+#pricing h3 {
   color: #222;
   font-size: 24px;
   font-weight: 300;
@@ -186,7 +187,8 @@ body {
 
 #about .section-heading h2,
 #our-history h2,
-#portfolio .center h2 {
+#portfolio .center h2,
+#pricing h2 {
   color: #222;
   font-size: 40px;
   font-weight: 400;
@@ -528,10 +530,10 @@ body {
 #about-facts {
   height: 500px;
   background-image: url("/assets/img/statistic-banner.jpg");
-  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
+  /* CIA DEL LIVE SERVER RODYMO SIOS EILUTES*/
   background-image: url("../img/statistic-banner.jpg");
   background-attachment: fixed;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   margin-bottom: 60px;
@@ -580,7 +582,6 @@ body {
 #portfolio .flex-gallery {
   cursor: crosshair;
   overflow: hidden;
-  width: 100%;
 }
 #portfolio ul {
   margin: 0;
@@ -600,18 +601,17 @@ body {
   width: 25%;
   float: left;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   /* TRANSITION LAGAS */
-  transition: 0.9s;
-  
+  /* transition: 0.9s; */
 }
+
 #portfolio .flex-gallery img:hover {
   transform: scale(1.2);
   z-index: 0;
   opacity: 0.5;
   transition: opacity 0.2s;
   filter: brightness(0.65) grayscale(40%);
- 
 }
 /* #portfolio .flex-gallery {
   display: flex;
@@ -634,7 +634,29 @@ body {
   display: flex;
   flex-wrap: nowrap;
 }
-#portfolio h5{
+#portfolio i {
+  font-size: 20px;
+  color: #666666;
+  padding: 0 8px;
+  transition: all 0.4s ease-in-out;
+}
+.test-hover {
+  padding-top: 8px;
+}
+#portfolio .test-hover a:nth-of-type(1) i:hover {
+  color: #0084ff;
+}
+#portfolio .test-hover a:nth-of-type(2) i:hover {
+  color: #53ceff;
+}
+#portfolio .test-hover a:nth-of-type(3) i:hover {
+  color: #ca4444;
+}
+#portfolio .test-hover a:nth-of-type(4) i:hover {
+  color: #00ccff;
+}
+
+#portfolio h5 {
   color: #333333;
   font-size: 14px;
   line-height: 15.4px;
@@ -646,7 +668,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
 }
-#portfolio h6{
+#portfolio h6 {
   color: #ffc400;
   font-family: sans-serif;
   font-size: 14px;
@@ -656,7 +678,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
-#portfolio p{
+#portfolio p {
   color: rgb(117, 117, 117);
   font-size: 16px;
   line-height: 24px;
@@ -674,15 +696,21 @@ body {
   height: 260px;
 }
 
-
-
-
 /* ----------------------CONTACT-US----------------------------- */
 #contact-us {
   background-image: none;
   height: 100vh;
   padding: 800px 0 100px;
   background-position: center top;
+}
+#contact-us {
+  background-image: url("../img/contacts.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 60px;
 }
 #contact-us .contact-row {
   display: flex;
@@ -695,9 +723,11 @@ body {
   padding: 0 15px;
   margin: 0 0 20px;
 }
+
 /* #contact-us .contact-form .fieldset{
 
 } */
+
 #contact-us .button-row {
   justify-content: center;
 }
@@ -708,4 +738,84 @@ body {
   border: 1px solid #383738;
   font-size: 15px;
   padding: 16px 12px;
+}
+/* ------------------------PRICING---------------------- */
+#pricing {
+  height: 940px;
+  background-color: #F5F5F5;
+}
+#pricing .container {
+  padding-top: 80px;
+}
+#pricing .flex-plans h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 33px 0;
+}
+#pricing .short-underscore {
+  margin-bottom: 70px;
+}
+#pricing .flex-plans {
+  display: flex;
+  overflow: hidden;
+}
+#pricing .flex-plans div {
+  width: 100%;
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+#pricing .flex-plans span {
+  font-size: 70px;
+  font-weight: 700;
+  display: block;
+  background-color: #f5f5f5;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+  color: #000000;
+}
+#pricing .flex-plans sup {
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  top: -10px;
+}
+#pricing .flex-plans div {
+  background-color: #ffffff;
+  width: 100%;
+}
+/* -------------------ADVANCED FOCUS TAB------------------ */
+#pricing .flex-plans .advanced {
+  background-color: #FFC401;
+}
+#pricing .flex-plans .advanced span{
+  color: white;
+  background-color: #D9A701;
+  border-top: 1px solid #D9A701;;
+  border-bottom: 1px solid #D9A701;;
+}
+#pricing .flex-plans .advanced a{
+  background-color: #333333;
+  color: white;
+}
+#pricing .flex-plans .advanced li {
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+/* -------------------------------------------------------- */
+#pricing .flex-plans ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#pricing .flex-plans a {
+  margin: 30px 0;
+}
+#pricing .flex-plans li {
+  border-bottom: 1px solid lightgray;
+  width: 75%;
+  margin: 0 auto;
+  padding: 11px 0;
+  text-transform: uppercase;
+  font-size: 16px;
 }
