@@ -393,7 +393,7 @@ body {
   background-position: center;
   height: 900px;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 #about-3 .container h3 {
   padding-top: 100px;
@@ -427,19 +427,30 @@ body {
 /* OUR HISTORY SECTION */
 /* ************************************************* */
 #our-history .container {
-  padding-top: 100px;
-  height: 1900px;
+  padding-top: 50px;
+  height: 1220px;
 }
 #our-history {
-  height: 2000px;
+  height: 1340px;
+}
+#our-history p {
+  color: #424242;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+#our-history h4 {
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
 }
 .short-underscore {
   border-bottom: 2px solid rgb(255, 208, 0);
   margin: 0 auto;
   width: 200px;
-}
-#about-3 .short-underscore {
-  margin-bottom: 50px;
 }
 #our-history .span-box {
   font-size: 20px;
@@ -452,39 +463,45 @@ body {
 #our-history .vertical {
   padding: 30px 0;
 }
+#our-history .container .gray-box {
+  background-color: rgb(240, 240, 240);
+  padding: 25px 30px;
+  height: 188px;
+  width: 475px;
+  position: relative;
+}
 #our-history .container .gray-box-float {
-  height: 300px;
+  height: 188px;
   display: flex;
   align-items: center;
-}
-#our-history .container .gray-box .mini-box-left:hover {
-  background-color: thistle;
+  position: relative;
 }
 #our-history .container .gray-box.box-right {
   margin-left: auto;
   order: 2;
-}
-#our-history .container .gray-box {
-  background-color: rgb(240, 240, 240);
-  padding: 25px 30px;
-  width: 40%;
   position: relative;
 }
-
-#our-history .container .gray-box:hover {
-  background-color: rgb(114, 114, 114);
+#our-history .container .gray-box-float:hover .gray-box,
+#our-history .container .gray-box-float:hover .mini-box-left::before,
+#our-history .container .gray-box-float:hover .mini-box-right::after {
+  background-color: rgb(39, 39, 39);
   color: #fff;
 }
-
-#our-history .container .gray-box:hover .mini-box-left::before,
-#our-history .container .gray-box:hover .mini-box-right::after {
+#our-history .container .gray-box:hover {
   background-color: rgb(114, 114, 114);
 }
-
+#our-history .container .gray-box-float:hover .circle {
+  border: 3px solid #007448;
+  background-color: #007448;
+}
+#our-history .container .gray-box-float:hover h4,
+#our-history .container .gray-box-float:hover p {
+  color: white;
+}
 .line-down {
   width: 2px;
-  height: 1670px;
-  background-color: rgb(240, 240, 240);
+  height: 1070px;
+  background-color: rgb(221, 221, 221);
   margin-left: -1px;
   position: absolute;
   left: 50%;
@@ -513,22 +530,21 @@ body {
   left: -15px;
 }
 .circle {
-  position: relative;
-  transform: rotate(45deg);
+  position: absolute;
   height: 30px;
   width: 30px;
-  border: 3px solid rgb(240, 240, 240);
+  border: 2px solid rgb(221, 221, 221);
   background-color: white;
   border-radius: 100%;
-  left: 556px;
-  top: 166px;
-  z-index: -1;
+  top: 79px;
+  left: calc(50% - (30px / 2));
+  z-index: 0;
 }
 /* ************************************************* */
 /* ABOUT FACTS SECTION */
 /* ************************************************* */
 #about-facts {
-  height: 500px;
+  height: 465px;
   background-image: url("/assets/img/statistic-banner.jpg");
   /* CIA DEL LIVE SERVER RODYMO SIOS EILUTES*/
   background-image: url("../img/statistic-banner.jpg");
@@ -536,16 +552,17 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   background-position: 40% 70px;
 }
 #about-facts .container h3 {
   font-weight: lighter;
-  padding-top: 70px;
+  padding-top: 80px;
+  margin-bottom: 0;
   font-size: 30px;
 }
 #about-facts .container h2 {
-  padding: 10px 0;
+  padding: 0 0;
 }
 #about-facts .container .inline-titles {
   color: white;
@@ -555,7 +572,7 @@ body {
 }
 #about-facts .container .inline-titles .num {
   font-size: 80px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 /* ----------------------PORTFOLIO----------------------------- */
 #portfolio {
@@ -742,7 +759,7 @@ body {
 /* ------------------------PRICING---------------------- */
 #pricing {
   height: 940px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 #pricing .container {
   padding-top: 80px;
@@ -788,16 +805,20 @@ body {
 }
 /* -------------------ADVANCED FOCUS TAB------------------ */
 #pricing .flex-plans .advanced {
-  background-color: #FFC401;
+  background-color: #ffc401;
 }
-#pricing .flex-plans .advanced span{
+#pricing .flex-plans .advanced span {
   color: white;
-  background-color: #D9A701;
-  border-top: 1px solid #D9A701;;
-  border-bottom: 1px solid #D9A701;;
+  background-color: #d9a701;
+  border-top: 1px solid #d9a701;
+  border-bottom: 1px solid #d9a701;
 }
-#pricing .flex-plans .advanced a{
+#pricing .flex-plans .advanced a {
   background-color: #333333;
+  color: white;
+}
+#pricing .flex-plans .advanced a:hover {
+  background-color: #464646;
   color: white;
 }
 #pricing .flex-plans .advanced li {
