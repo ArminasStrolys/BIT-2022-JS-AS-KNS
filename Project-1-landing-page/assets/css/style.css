@@ -179,7 +179,8 @@ body {
 #pricing h3,
 #best-clients h3,
 #customers-feedback h3,
-#blog h3 {
+#blog h3,
+#find-us h3 {
   color: #222;
   font-size: 24px;
   font-weight: 300;
@@ -193,7 +194,8 @@ body {
 #portfolio .center h2,
 #pricing h2,
 #best-clients h2,
-#blog h2 {
+#blog h2,
+#find-us h2 {
   color: #222;
   font-size: 40px;
   font-weight: 400;
@@ -336,7 +338,8 @@ body {
 .animated-container h2,
 #about-3 .container h2,
 #about-facts .container h2,
-#portfolio h2 {
+#portfolio h2,
+#purchase-now h2, #contact-us h2 {
   padding-top: 100px;
   color: white;
   text-align: center;
@@ -720,50 +723,6 @@ body {
 #portfolio .flex-team div img {
   height: 260px;
 }
-
-/* ----------------------CONTACT-US----------------------------- */
-#contact-us {
-  background-image: none;
-  height: 100vh;
-  padding: 800px 0 100px;
-  background-position: center top;
-}
-#contact-us {
-  background-image: url("../img/contacts.jpg");
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-position: center;
-  height: 500px;
-  width: 100%;
-  margin-bottom: 60px;
-}
-#contact-us .contact-row {
-  display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-#contact-us .contact-form .fieldset {
-  width: 100%;
-  border: none;
-  padding: 0 15px;
-  margin: 0 0 20px;
-}
-
-/* #contact-us .contact-form .fieldset{
-
-} */
-
-#contact-us .button-row {
-  justify-content: center;
-}
-#contact-us .contact-form .fieldset .textarea {
-  width: 100%;
-  height: 200px;
-  background: rgba(250, 250, 250, 0);
-  border: 1px solid #383738;
-  font-size: 15px;
-  padding: 16px 12px;
-}
 /* ------------------------PRICING---------------------- */
 #pricing {
   height: 940px;
@@ -811,6 +770,22 @@ body {
   background-color: #ffffff;
   width: 100%;
 }
+#pricing .flex-plans ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#pricing .flex-plans a {
+  margin: 30px 0;
+}
+#pricing .flex-plans li {
+  border-bottom: 1px solid lightgray;
+  width: 75%;
+  margin: 0 auto;
+  padding: 11px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 /* -------------------ADVANCED FOCUS TAB------------------ */
 #pricing .flex-plans .advanced {
   background-color: #ffc401;
@@ -988,7 +963,7 @@ body {
   text-transform: uppercase;
   line-height: 24px;
 }
-#blog .blog-flex-block div > div  {
+#blog .blog-flex-block div > div {
   color: rgb(102, 102, 102);
 }
 #blog .flex-container p {
@@ -998,34 +973,150 @@ body {
   line-height: 24px;
 }
 #blog .flex-container .blog-flex-block div {
-padding-top: 15px;
+  padding-top: 15px;
 }
 #blog .blog-flex-block div > div a {
-text-decoration: none;
-color: #ffc401;
+  text-decoration: none;
+  color: #ffc401;
 }
 #blog .blog-flex-block .button {
   margin-left: 0;
-padding: 10px 14px;
-font-size: 12px;
+  padding: 10px 14px;
+  font-size: 12px;
 }
-#blog .blog-flex-block .button i{
-font-size: 10px;
+#blog .blog-flex-block .button i {
+  font-size: 10px;
 }
-/* -------------------------------------------- */
-/* -------------------------------------------------------- */
-#pricing .flex-plans ul {
-  list-style-type: none;
-  padding-left: 0;
+/* -------------------PURCHASE NOW------------------------- */
+#purchase-now {
+  height: 305px;
+  background-image: url("/assets/img/statistic-banner.jpg");
+  /* CIA DEL LIVE SERVER RODYMO SIOS EILUTES*/
+  background-image: url("../img/promo-line.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
 }
-#pricing .flex-plans a {
-  margin: 30px 0;
+#purchase-now h2 {
+  font-size: 36px;
+  padding-top: 80px;
 }
-#pricing .flex-plans li {
-  border-bottom: 1px solid lightgray;
-  width: 75%;
-  margin: 0 auto;
-  padding: 11px 0;
+#purchase-now p {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+#purchase-now a {
+  margin: 0 10px;
+}
+/* -----------------------FIND US--------------------------------- */
+#find-us {
+  padding-top: 80px;
+  height: 955px;
+}
+#find-us .flex-container {
+  display: flex;
+  margin-top: 80px;
+}
+#find-us .flex-container div {
+  width: 100%;
+  align-items: flex-start;
+}
+#find-us .flex-container div i {
+  padding-bottom: 20px;
+  font-size: 50px;
+  color: #ffc401;
+}
+#find-us h4 {
+  color: #222222;
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 19.8px;
   text-transform: uppercase;
+  font-weight: 800;
+}
+#find-us p {
+  color: rgb(156, 156, 156);
   font-size: 16px;
+  font-family: sans-serif;
+  line-height: 24px;
+  font-weight: 300;
+}
+#find-us a {
+  text-decoration: none;
+  color: #ffc401;
+  font-weight: 600;
+}
+#find-us iframe {
+  position: relative;
+  top: 60px;
+}
+/* -------------------------CONTACT US------------------------------- */
+
+/* ----------------------CONTACT-US----------------------------- */
+#contact-us {
+  height: 750px;
+}
+#contact-us:focus {
+  height: 750px;
+  outline: none;
+}
+#contact-us {
+  background-image: url("../img/contacts.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  height: 750px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+#contact-us h3{
+  color: white;
+  padding-top: 85px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+#contact-us h2{
+  color: white;
+  padding-top: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+#contact-us .contact-row {
+  display: flex;
+  margin-top: -5px;
+}
+#contact-us .contact-form fieldset {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(85, 85, 85);
+  padding: 0 15px;
+  margin: 0 0 20px;
+  background-color: rgba(44, 44, 44, 0.322);
+}
+#contact-us .contact-form fieldset input{
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+margin-top: 7.5px;
+background-color: rgba(192, 42, 42, 0);
+border: none;
+  color: white;
+}
+#contact-us .button-row {
+  justify-content: center;
+}
+#contact-us .contact-form fieldset .textarea {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(44, 44, 44, 0.322);
+  border: 1px solid #383738;
+  font-size: 15px;
+  padding: 16px 12px;
+  border: none;
 }
