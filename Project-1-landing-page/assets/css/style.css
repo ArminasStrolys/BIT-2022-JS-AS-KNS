@@ -178,7 +178,8 @@ body {
 #portfolio h3,
 #pricing h3,
 #best-clients h3,
-#customers-feedback h3 {
+#customers-feedback h3,
+#blog h3 {
   color: #222;
   font-size: 24px;
   font-weight: 300;
@@ -191,7 +192,8 @@ body {
 #our-history h2,
 #portfolio .center h2,
 #pricing h2,
-#best-clients h2 {
+#best-clients h2,
+#blog h2 {
   color: #222;
   font-size: 40px;
   font-weight: 400;
@@ -547,6 +549,7 @@ body {
 /* ABOUT FACTS SECTION */
 /* ************************************************* */
 #about-facts {
+  margin-top: 70px;
   height: 465px;
   background-image: url("/assets/img/statistic-banner.jpg");
   /* CIA DEL LIVE SERVER RODYMO SIOS EILUTES*/
@@ -580,6 +583,9 @@ body {
 /* ----------------------PORTFOLIO----------------------------- */
 #portfolio {
   height: 1600px;
+}
+#portfolio .short-underscore {
+  margin-bottom: 0;
 }
 #portfolio .center h2 {
   padding-top: 10px;
@@ -623,9 +629,8 @@ body {
   position: relative;
   z-index: 1;
   /* TRANSITION LAGAS */
-  /* transition: 0.9s; */
+  /* transition: all 0.9s ease-in-out; */
 }
-
 #portfolio .flex-gallery img:hover {
   transform: scale(1.2);
   z-index: 0;
@@ -942,6 +947,71 @@ body {
   font-weight: 400;
 }
 /* -------------------------------------------------------- */
+#blog {
+  height: 855px;
+  padding-top: 80px;
+}
+#blog .short-underscore {
+  margin-bottom: 80px;
+}
+#blog .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#blog .flex-container .blog-flex-block {
+  width: 100%;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+  position: relative;
+  /* height: 555px; */
+}
+#blog .flex-container .blog-flex-block div {
+  position: relative;
+}
+#blog .flex-container .gallery-3 {
+  opacity: 0;
+}
+#blog .blog-flex-block div {
+  text-align: left;
+}
+#blog .flex-container img {
+  height: 270px;
+  width: 360px;
+}
+#blog .flex-container h4 {
+  position: relative;
+  top: 15px;
+  color: #333333;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+#blog .blog-flex-block div > div  {
+  color: rgb(102, 102, 102);
+}
+#blog .flex-container p {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#blog .flex-container .blog-flex-block div {
+padding-top: 15px;
+}
+#blog .blog-flex-block div > div a {
+text-decoration: none;
+color: #ffc401;
+}
+#blog .blog-flex-block .button {
+  margin-left: 0;
+padding: 10px 14px;
+font-size: 12px;
+}
+#blog .blog-flex-block .button i{
+font-size: 10px;
+}
 /* -------------------------------------------- */
 /* -------------------------------------------------------- */
 #pricing .flex-plans ul {
