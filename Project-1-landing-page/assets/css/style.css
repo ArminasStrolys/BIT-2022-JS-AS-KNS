@@ -84,7 +84,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
 }
 
 #header .logo {
@@ -582,7 +582,7 @@ body {
 }
 #about-facts .container .inline-titles .num {
   font-size: 80px;
-  padding-bottom: 10px;
+
 }
 /* ----------------------PORTFOLIO----------------------------- */
 #portfolio {
@@ -690,8 +690,8 @@ body {
 /* ----------------------------------------------------- */
 
 #portfolio .container {
-  padding-top: 85px;
-  padding-bottom: 65px;
+  padding-top: 70px;
+  padding-bottom: 95px;
 }
 #portfolio .flex-team {
   padding-top: 60px;
@@ -701,22 +701,25 @@ body {
 #portfolio i {
   font-size: 20px;
   color: #666666;
-  padding: 0 8px;
   transition: all 0.4s ease-in-out;
 }
-.test-hover {
-  padding-top: 8px;
+#portfolio .flex-team a {
+  margin: 0 7px;
+  transition: all 0.4s ease-in-out;
 }
-#portfolio .test-hover a:nth-of-type(1) i:hover {
+.soc-hover {
+  padding: 10px 0;
+}
+#portfolio .soc-hover a:nth-of-type(1) i:hover {
   color: #0084ff;
 }
-#portfolio .test-hover a:nth-of-type(2) i:hover {
+#portfolio .soc-hover a:nth-of-type(2) i:hover {
   color: #53ceff;
 }
-#portfolio .test-hover a:nth-of-type(3) i:hover {
+#portfolio .soc-hover a:nth-of-type(3) i:hover {
   color: #ca4444;
 }
-#portfolio .test-hover a:nth-of-type(4) i:hover {
+#portfolio .soc-hover a:nth-of-type(4) i:hover {
   color: #00ccff;
 }
 
