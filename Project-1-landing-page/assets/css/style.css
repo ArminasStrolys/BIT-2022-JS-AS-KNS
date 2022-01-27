@@ -609,51 +609,86 @@ body {
   background-color: #ffc401;
   color: white;
 }
+/* ----------------------------------------------------- */
+#portfolio .gallery {
+  position: relative;
+}
 #portfolio .flex-gallery {
   cursor: crosshair;
-  overflow: hidden;
-}
-#portfolio ul {
-  margin: 0;
-  padding: 0;
-}
-#portfolio li {
-  list-style-type: none;
-}
-.gallery-1,
-.gallery-2,
-.gallery-3,
-.gallery-4,
-.gallery-5,
-.gallery-6,
-.gallery-7,
-.gallery-8 {
-  width: 25%;
-  float: left;
-  position: relative;
-  z-index: 1;
-  /* TRANSITION LAGAS */
-  /* transition: all 0.9s ease-in-out; */
-}
-#portfolio .flex-gallery img:hover {
-  transform: scale(1.2);
-  z-index: 0;
-  opacity: 0.5;
-  transition: opacity 0.2s;
-  filter: brightness(0.65) grayscale(40%);
-}
-/* #portfolio .flex-gallery {
   display: flex;
   flex-wrap: wrap;
-  cursor: crosshair;
-  overflow: hidden;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
 }
-#portfolio .flex-gallery img {
-  transition: transform 0.3s;
+#portfolio .flex-gallery li {
+  list-style-type: none;
   width: 25%;
   position: relative;
-  z-index: 1;
-} */
+  z-index: 6;
+  overflow: hidden;
+}
+#portfolio .flex-gallery li .hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.4s;
+  overflow: hidden;
+}
+#portfolio li .hover:hover {
+  background-color: rgba(255, 208, 1, 0.6);
+}
+#portfolio li div:hover img {
+  transform: scale(1.2);
+}
+#portfolio li a:hover {
+  cursor: crosshair;
+}
+#portfolio .flex-gallery li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* SITAS PANAIKINA BALTA LINIJA TARP IMAGES EILIU */
+  z-index: 4;
+  transition: all ease-in-out 0.4s;
+}
+#portfolio .flex-gallery li img:hover {
+  transform: scale(1.2);
+}
+#portfolio .flex-gallery li h2 {
+  color: rgba(0, 0, 0, 0);
+  font-size: 20px;
+  font-weight: 800;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 150px 0 0 0;
+  transition: all ease-in-out 0.3s;
+}
+#portfolio .flex-gallery li h2:hover {
+  color: rgb(255, 255, 255);
+  padding: 100px 0 0 0;
+}
+#portfolio .flex-gallery li p {
+  color: rgba(250, 250, 250, 0);
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  padding: 190px 0 0 0;
+  transition: all ease-in-out 0.3s;
+}
+#portfolio .flex-gallery li p:hover {
+  color: rgb(255, 255, 255);
+  padding: 130px 0 0 0;
+}
+/* ----------------------------------------------------- */
+
 #portfolio .container {
   padding-top: 85px;
   padding-bottom: 65px;
@@ -1138,7 +1173,7 @@ body {
 }
 #subscribe form input {
   width: 400px;
-  padding: 13.5px 0 13.5px 10px;
+  padding: 15px 0 13.5px 10px;
   margin: 0 -25px 0 25px;
   border-style: none;
   border-radius: 5px 0 0 5px;
@@ -1157,12 +1192,10 @@ body {
   font-weight: 900;
 }
 #subscribe .socials {
-  padding-top: 15px;
   position: relative;
-  bottom: -35px;
-  /* overflow: hidden; */
+  bottom: -15px;
 }
-#subscribe .socials a{
+#subscribe .socials a {
   font-size: 20px;
   color: #999999;
   margin: 0 10px;
@@ -1170,19 +1203,19 @@ body {
   border-radius: 100%;
   transition: all ease-in-out 0.3s;
 }
-#subscribe .socials a:hover:nth-of-type(1){
+#subscribe .socials a:hover:nth-of-type(1) {
   background-color: #0084ff;
   color: white;
 }
-#subscribe .socials a:hover:nth-of-type(2){
+#subscribe .socials a:hover:nth-of-type(2) {
   background-color: #53ceff;
   color: white;
 }
-#subscribe .socials a:hover:nth-of-type(3){
+#subscribe .socials a:hover:nth-of-type(3) {
   background-color: #ca4444;
   color: white;
 }
-#subscribe .socials a:hover:nth-of-type(4){
+#subscribe .socials a:hover:nth-of-type(4) {
   background-color: #00ccff;
   color: white;
 }
