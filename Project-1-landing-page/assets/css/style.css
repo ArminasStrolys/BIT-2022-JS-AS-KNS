@@ -320,7 +320,7 @@ body {
 .animated-container {
   background-color: bisque;
   background-image: url("/assets/img/skills.jpg");
-  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
+  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
   background-image: url("../img/skills.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -395,7 +395,7 @@ body {
 /* ************************************************* */
 #about-3 {
   background-image: url("/assets/img/features.jpg");
-  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
+  /* ÄŒIA DÄ–L LIVE SERVER RODYMO Å IOS EILUTÄ–S*/
   background-image: url("../img/features.jpg");
   background-attachment: fixed;
   background-repeat: repeat;
@@ -554,7 +554,7 @@ body {
 /* ************************************************* */
 #about-facts {
   margin-top: 70px;
-  height: 465px;
+  height: 475px;
   background-image: url("/assets/img/statistic-banner.jpg");
   /* CIA DEL LIVE SERVER RODYMO SIOS EILUTES*/
   background-image: url("../img/statistic-banner.jpg");
@@ -569,7 +569,7 @@ body {
   font-weight: lighter;
   padding-top: 80px;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 24px;
 }
 #about-facts .container h2 {
   padding: 0 0;
@@ -578,11 +578,10 @@ body {
   color: white;
   font-size: 30px;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 0;
 }
 #about-facts .container .inline-titles .num {
   font-size: 80px;
-
 }
 /* ----------------------PORTFOLIO----------------------------- */
 #portfolio {
@@ -592,7 +591,7 @@ body {
   margin-bottom: 0;
 }
 #portfolio .center h2 {
-  padding-top: 10px;
+  padding-top: 0;
 }
 #portfolio .center button:focus {
   background-color: #ffc401;
@@ -600,7 +599,7 @@ body {
 #portfolio .center button {
   font-size: 15px;
   text-transform: uppercase;
-  padding: 15px 15px;
+  padding: 10px 15px;
   border-style: none;
   margin: 40px 2.5px;
   transition: ease-in-out 0.3s;
@@ -688,9 +687,8 @@ body {
   padding: 130px 0 0 0;
 }
 /* ----------------------------------------------------- */
-
 #portfolio .container {
-  padding-top: 70px;
+  padding-top: 75px;
   padding-bottom: 95px;
 }
 #portfolio .flex-team {
@@ -722,7 +720,6 @@ body {
 #portfolio .soc-hover a:nth-of-type(4) i:hover {
   color: #00ccff;
 }
-
 #portfolio h5 {
   color: #333333;
   font-size: 14px;
@@ -756,9 +753,6 @@ body {
   padding: 5px 10px;
   font-weight: 300;
 }
-/* #portfolio .flex-team div {
-  background-color: thistle;
-} */
 #portfolio .flex-team div img {
   height: 260px;
 }
@@ -870,7 +864,7 @@ body {
   color: white;
   background-color: #ffc401;
   padding: 5px 10px;
-  margin: 30px 2px;
+  margin: 35px 2px;
   border: none;
   border-radius: 5px;
   font-size: 15px;
