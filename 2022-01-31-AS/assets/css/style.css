@@ -1,35 +1,35 @@
-body{
-    background-color: beige;
+body {
+  background-color: beige;
 }
-span{
-    margin-left: 20px;
+span {
+  margin-left: 20px;
 }
-.h1js{
-    color: cadetblue;
+.h1js {
+  color: cadetblue;
 }
-p{
-    color: coral;
-    background-color: rgb(57, 76, 110);
-    width: 300px;
-    text-align: center;
+p {
+  color: coral;
+  background-color: rgb(57, 76, 110);
+  width: 300px;
+  text-align: center;
 }
-.užduotys-1 span{
-    display: block;
-    width: 200px;
-    text-align: center;
-    color: darkgoldenrod;
-    margin-left: 0px;
-    background-color: rgb(255, 255, 255);
+.užduotys-1 span {
+  display: block;
+  width: 200px;
+  text-align: center;
+  color: darkgoldenrod;
+  margin-left: 0px;
+  background-color: rgb(255, 255, 255);
 }
-.užduotys-2 p{
-    text-align: left;
+.užduotys-2 p {
+  text-align: left;
 }
-.užduotys-2 span{
-    color: darkgoldenrod;
-    margin-left: 0px;
-    background-color: rgb(255, 255, 255);
-    padding: 0 6px;
+.užduotys-2 span {
+  color: darkgoldenrod;
+  margin-left: 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 6px;
 }
-button:hover{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }

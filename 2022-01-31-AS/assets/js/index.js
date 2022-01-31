@@ -77,26 +77,24 @@ var z1 = randomSkaicius(0, 25);
 var z2 = randomSkaicius(0, 25);
 var z3 = randomSkaicius(0, 25);
 var zx;
-var testMin;
-var testMax;
+var min;
+var max;
 var vid = (z1 + z2 + z3) / 3;
 vid = Math.round(vid * 100) / 100;
 
-testMin = Math.min(z1, z2, z3);
-testMax = Math.max(z1, z2, z3);
-zx = (testMax * testMax) / testMin;
-// zx = (testMax - testMin) / 2;
+min = Math.min(z1, z2, z3);
+max = Math.max(z1, z2, z3);
 
+zx = z1 + z2 + z3 - min - max;
 
-console.log('z1 = ' + z1);
-console.log('z2 = ' + z2);
-console.log('z3 = ' + z3);
-console.log('Min = ' + testMin);
-console.log('Max = ' + testMax);
-console.log('AVG = ' + zx);
-console.log('vid testing = ' + vid);
+console.log("z1 = " + z1);
+console.log("z2 = " + z2);
+console.log("z3 = " + z3);
+console.log("Min = " + min);
+console.log("Max = " + max);
+console.log("Avg = " + zx);
 
 document.getElementById("z1").innerHTML = z1;
 document.getElementById("z2").innerHTML = z2;
 document.getElementById("z3").innerHTML = z3;
-document.getElementById("z4").innerHTML = vid;
+document.getElementById("z4").innerHTML = zx;
