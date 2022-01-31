@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Let's start JS!</title>
+</head>
+
+<body>
+    <h1>JS kabučių tipai</h1>
+    <ol>
+        <li><span></span> ' - (viengubos) Jeigu string'e reikia panaudoti dvigubas kabutes.</li>
+        <li><span></span> " - (dvigubos) Taip pat kaip ir su viengubomis kabutėmis.</li>
+        <li><span></span> ` - (paverstos) Kai norime tekste panaudoti kintamuosius.</li>
+    </ol>
+    <h1 id="h1-m">JS kintamieji (vanilla js)</h1>
+    <ol>
+        <li><span></span>var - (variable) kintamųjų pavadinimai yra case sensitive -
+            (<code>var x = 'Pirmasis kintamasis';</code>)</li>
+        <li><span></span>string - paprastas tekstas - ( <code>alert('Tai yra tekstas - string');</code>)</li>
+        <li><span></span>pakeičiame reikšmę kintamajam - (<code>x = 'Antrasis kintamasis';</code>)</li>
+        <li><span>Sveikasis kaičius(integer) - (<code>var y = 15;</code>) ir string -
+                (<code>var y = '15';</code>)</span></li>
+        <li><span>Pirmoji funkcija -
+                <code><br>var x = 10;<br>
+            var result = x + 12;<br>
+            alert('10 + 12 = ' + result);<br>
+            console.log(result);</code></span></li>
+    </ol>
+    <h2>Užduotys</h2>
+    <ol>
+        <li>Sukurkite tris kintamuosius, kurie saugotų tris reikšmes: Vardas, Pavardė, Gimimo metai ir naudojantis jais
+            konsolėje atvaizduokite eilutę:
+            “Aš esu Vardenis Pavardenis gimęs xxx”.</li>
+        <li>Įsidėkite skripte šią funkciją funkciją:
+            <br>
+            <code>
+        function randomSkaicius(min, max) { <br>
+          return Math.floor(Math.random() * (max - min + 1) + min) <br>
+        } <br>
+    </code>
+            Tai atsitiktinių skaičių generatorius. Jos panaudojimas būtų toks: randomSkaicius(0, 10)
+            0 ir 10 reikšmės nusako nuo kokio iki kokio skaičiaus turėtų būti norimas rezultatas.
+
+        </li>
+        <li>Sukurkite du kintamuosius ir naudodamiesi antrame punkte pateikta funkcija priskirkite jiems atsitiktines
+            reikšmes nuo 0 iki 4. Su šiais dviem skaičiais atlikite keturias matematines operacijas:
+            Sudėtis, atimtis, daugyba, dalyba.</li>
+        <li>Pasinaudodami trečiame punkte pateikta funkcija, sukurkite tris kintamuosius ir priskirkite jiems tris
+            reikšmes nuo 0 iki 25. Pasitelke Math.min() ir Math.max() metodus suraskite vidurinį skaičių.</li>
+    </ol>
+    <h2>1.</h2>
+    <button class="info" onclick="enterInfo()">Enter your info</button>
+    <br>
+
+    <section class="užduotys-1">
+        <p>Vardas:</p><span id="id-name">-</span>
+        <p>Pavardė:</p><span id="id-surname">-</span>
+        <p>Gimimo metai:</p><span id="id-birth">-</span>
+    </section>
+
+    <h2>2-3.</h2>
+
+    <section class="užduotys-2">
+        <p>Random skaičiai<br>(x = <span id="x2"></span>);<br>(y = <span id="y2"></span>); <br>REFRESH ME</p>
+        <p>Matematinės formulės:</p>
+        <div>
+            <p>Daugyba: x * y = <span id="a"></span></p>
+            <p>Dalyba: x / y = <span id="b"></span></p>
+            <p>Sudėtis: x + y = <span id="c"></span></p>
+            <p>Atimtis: x - y = <span id="d"></span></p>
+            <p>Viskas: (x * y) / (x + y - x) = <span id="e"></span></p>
+        </div>
+    </section>
+
+    <h2>4.</h2>
+
+    <!-- <script src="./assets/js/index.js"></script> -->
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+
+</html>
