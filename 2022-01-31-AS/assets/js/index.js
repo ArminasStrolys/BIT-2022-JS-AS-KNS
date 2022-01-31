@@ -54,9 +54,11 @@ c2 = (20 / y2) * x2;
 
 a = x2 * y2;
 b = x2 / y2;
+b = Math.round(b * 100) / 100;
 c = x2 + y2;
 d = x2 - y2;
 e = (x2 * y2) / (x2 + y2 + x2);
+e = Math.round(e * 100) / 100;
 
 console.log(x2);
 console.log(y2);
@@ -75,10 +77,26 @@ var z1 = randomSkaicius(0, 25);
 var z2 = randomSkaicius(0, 25);
 var z3 = randomSkaicius(0, 25);
 var zx;
+var testMin;
+var testMax;
+var vid = (z1 + z2 + z3) / 3;
+vid = Math.round(vid * 100) / 100;
 
-zx = z1 + z2 + z3 /
+testMin = Math.min(z1, z2, z3);
+testMax = Math.max(z1, z2, z3);
+zx = (testMax * testMax) / testMin;
+// zx = (testMax - testMin) / 2;
+
 
 console.log('z1 = ' + z1);
 console.log('z2 = ' + z2);
 console.log('z3 = ' + z3);
-console.log('zx = ' + zx);
+console.log('Min = ' + testMin);
+console.log('Max = ' + testMax);
+console.log('AVG = ' + zx);
+console.log('vid testing = ' + vid);
+
+document.getElementById("z1").innerHTML = z1;
+document.getElementById("z2").innerHTML = z2;
+document.getElementById("z3").innerHTML = z3;
+document.getElementById("z4").innerHTML = vid;

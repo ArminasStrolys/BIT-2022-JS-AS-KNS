@@ -21,13 +21,14 @@ p{
     margin-left: 0px;
     background-color: rgb(255, 255, 255);
 }
-.užduotys-2 div p{
+.užduotys-2 p{
     text-align: left;
 }
 .užduotys-2 span{
     color: darkgoldenrod;
     margin-left: 0px;
     background-color: rgb(255, 255, 255);
+    padding: 0 6px;
 }
 button:hover{
     cursor: pointer;
