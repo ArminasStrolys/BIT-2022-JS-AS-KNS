@@ -85,4 +85,3 @@ d(".bendrai").innerHTML = zvakiuPardavimai(zvakes, eur);
 d(".nuolaida").innerHTML = rounded2;
 
 console.log(zvakes);
-
