@@ -57,3 +57,32 @@ d(".test-c2").innerHTML = a2;
 color2();
 d(".test-c3").innerHTML = a3;
 color3();
+
+
+
+let eur = 1;
+let zvakes = randomSkaicius(5, 3000);
+let zvakiuSkaicius = (d(".zvakes").innerHTML = zvakes);
+
+function zvakiuPardavimai(zvakes, eur) {
+  if (zvakes * eur >= 1000 && zvakes * eur < 2000) {
+    return (zvakes - (zvakes * eur * 0.03))
+  } else if (zvakes * eur >= 2000) {
+    return (zvakes - (zvakes * eur * 0.04))
+  } else {
+    return zvakes * eur
+  }
+}
+
+let vntKaina = 1 - (zvakes / zvakiuPardavimai(zvakes, eur) - 1)
+let rounded1 = vntKaina.toFixed(2)
+let nuolaida = zvakes - zvakiuPardavimai(zvakes, eur)
+let rounded2 = nuolaida.toFixed(2)
+// console.log(zvakiuPardavimai);
+
+d(".eur").innerHTML = rounded1;
+d(".bendrai").innerHTML = zvakiuPardavimai(zvakes, eur);
+d(".nuolaida").innerHTML = rounded2;
+
+console.log(zvakes);
+
