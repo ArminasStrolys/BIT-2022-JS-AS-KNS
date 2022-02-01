@@ -79,8 +79,6 @@ var z3 = randomSkaicius(0, 25);
 var zx;
 var min;
 var max;
-var vid = (z1 + z2 + z3) / 3;
-vid = Math.round(vid * 100) / 100;
 
 min = Math.min(z1, z2, z3);
 max = Math.max(z1, z2, z3);
