@@ -14,8 +14,10 @@ function randomSkaicius(x, y) {
 function randomSkaiciusRound(x, y) {
   return (Math.round(Math.random() * (x - y + 1) + y) * 100) / 10000;
 }
-
+function cals(){
 document.getElementById("test-id").innerHTML = randomSkaicius(100, 1);
+}
+// ------------------------------------------------------------------
 
 let a1 = randomSkaiciusRound(10000, 1);
 let a2 = randomSkaiciusRound(10000, 1);
@@ -58,7 +60,7 @@ color2();
 d(".test-c3").innerHTML = a3;
 color3();
 
-
+// ------------------------------------------------------------------
 
 let eur = 1;
 let zvakes = randomSkaicius(5, 3000);
