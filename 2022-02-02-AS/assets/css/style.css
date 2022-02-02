@@ -22,3 +22,6 @@ li{
   color: white;
   padding: 2px;
 }
+#log{
+  border-bottom: 3px dashed black;
+}

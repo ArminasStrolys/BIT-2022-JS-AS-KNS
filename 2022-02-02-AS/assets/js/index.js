@@ -47,6 +47,7 @@ function uzd1() {
     c2++;
   }
 
+
   p0("span")[4].innerHTML = y0;
   p0("span")[5].innerHTML = z1;
   p0("span")[6].innerHTML = c2;
@@ -82,9 +83,9 @@ function uzd3() {
 
   l = p0("span")[8].innerHTML = randomizer(1, 101);
   console.log(l);
-  o = p0("span")[9].innerHTML = randomizer(1, 9);
+  o = p0("span")[9].innerHTML = randomizer(1, 101);
   console.log(o);
-  p = p0("span")[10].innerHTML = randomizer(1, 8);
+  p = p0("span")[10].innerHTML = randomizer(1, 101);
   console.log(p);
   console.log("---------------------");
 
@@ -105,27 +106,26 @@ function uzd3() {
   aritmetika(o)
   aritmetika(p)
 
-  if (j == 0) {
-    console.log('Visi skaičiai atmesti kaip netinkami');
+  if (j == 3) {
+    p0("span")[12].innerHTML = ('Visos reikšmės teisingos');
+  } 
+  else if (j == 0) {
+    p0("span")[12].innerHTML = ('Absoliutus NULIS');
 } else {
-    let vidurkis = suma/j;
-    console.log(`Aritmetinis vidurkis atmetus netinkamas vertes yra ${vidurkis}`);
+    let sum2 = suma/j;
+    p0("span")[12].innerHTML = (sum2.toFixed(0));
 }
 
-  p0("span")[12].innerHTML = Math.round(sum2);
-
-  console.log(sum + " suma");
+  console.log(suma + " suma");
   console.log(j + " j");
-  console.log(sum2 + " suma 2++");
+  console.log(suma2 + " suma2+");
 }
 
 // -------------------------TRECIA UZDUOTIS---------------------------
 
-
 const input = document.querySelector('input');
 const log = document.getElementById('log');
 
-input.onkeypress = logKey;
-function logKey(e) {
-  log.textContent += ` ${e.code}`;
-}
+input.addEventListener('keydown', (e) => {
+  log.textContent += ` ${e.key}`;
+})
