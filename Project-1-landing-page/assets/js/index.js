@@ -1,4 +1,4 @@
-let position = window.scrollY;
+let position;
 
 window.addEventListener("scroll", function () {
     position = window.scrollY;
