@@ -13,38 +13,38 @@ function uzd1() {
 
   x = p0("span")[0].innerHTML = randomizer(0, 3);
   if (x == 0) {
-    y0 += 1;
+    y0++;
   } else if (x == 1) {
-    z1 += 1;
+    z1++;
   } else {
-    c2 += 1;
+    c2++;
   }
 
   x = p0("span")[1].innerHTML = randomizer(0, 3);
   if (x == 0) {
-    y0 += 1;
+    y0++;
   } else if (x == 1) {
-    z1 += 1;
+    z1++;
   } else {
-    c2 += 1;
+    c2++;
   }
 
   x = p0("span")[2].innerHTML = randomizer(0, 3);
   if (x == 0) {
-    y0 += 1;
+    y0++;
   } else if (x == 1) {
-    z1 += 1;
+    z1++;
   } else {
-    c2 += 1;
+    c2++;
   }
 
   x = p0("span")[3].innerHTML = randomizer(0, 3);
   if (x == 0) {
-    y0 += 1;
+    y0++;
   } else if (x == 1) {
-    z1 += 1;
+    z1++;
   } else {
-    c2 += 1;
+    c2++;
   }
 
   p0("span")[4].innerHTML = y0;
@@ -65,42 +65,67 @@ function uzd2() {
   console.log((p0(`.h${m}`).innerHTML = "Hello"));
 }
 
+// let skaicius = randomSkaicius(1,6);
+// document.getElementById('kazkoksID').innerHTML = `<h${skaicius}>${skaicius}</h${skaicius}>`;
+
 // -------------------------TRECIA UZDUOTIS---------------------------
 
 function uzd3() {
   let l;
   let o;
   let p;
-  let sum1;
-  let sum2;
-  let n = 0
+  let sum; //3 skaičių suma
+  let sum1; //aritmetinis vidurkis
+  let sum2; //aritmetika++
+  let j = 3;
+  let suma = 0;
 
   l = p0("span")[8].innerHTML = randomizer(1, 101);
   console.log(l);
-  o = p0("span")[9].innerHTML = randomizer(1, 101);
+  o = p0("span")[9].innerHTML = randomizer(1, 9);
   console.log(o);
-  p = p0("span")[10].innerHTML = randomizer(1, 101);
+  p = p0("span")[10].innerHTML = randomizer(1, 8);
   console.log(p);
   console.log("---------------------");
 
-  sum1 = (l + o + p) / 3;
+  sum = l + o + p;
+  sum1 = sum / 3;
   p0("span")[11].innerHTML = Math.round(sum1);
-  console.log(sum1);
-  if (l <= 10 || l >= 90) {
-    delete l
-    n =+ 1
-  } else if (o <= 10 || o >= 90) {
-    delete o
-    n =+ 1
-  } else if (p <= 10 || p >= 90) {
-    delete p
-    n =+ 1
-  }
-  sum2 = (l + o + p) / (3 - n);
-  if (sum1 == sum2) {
-    p0("span")[12].innerHTML = 'Išmestų reikšmių nebuvo';
-  } else {
-  p0("span")[12].innerHTML = Math.round(sum2);
-  console.log(sum2);
+  console.log(sum1 + " vidurkis");
+
+  function aritmetika(x) {
+    if (x < 10 || x > 90){
+        j--;
+    } else {
+        suma += x;
+    }
 }
+
+  aritmetika(l)
+  aritmetika(o)
+  aritmetika(p)
+
+  if (j == 0) {
+    console.log('Visi skaičiai atmesti kaip netinkami');
+} else {
+    let vidurkis = suma/j;
+    console.log(`Aritmetinis vidurkis atmetus netinkamas vertes yra ${vidurkis}`);
+}
+
+  p0("span")[12].innerHTML = Math.round(sum2);
+
+  console.log(sum + " suma");
+  console.log(j + " j");
+  console.log(sum2 + " suma 2++");
+}
+
+// -------------------------TRECIA UZDUOTIS---------------------------
+
+
+const input = document.querySelector('input');
+const log = document.getElementById('log');
+
+input.onkeypress = logKey;
+function logKey(e) {
+  log.textContent += ` ${e.code}`;
 }
