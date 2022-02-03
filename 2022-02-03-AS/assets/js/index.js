@@ -28,3 +28,30 @@ while (i <= 300) {
 console.log(i)
 }
 // -----------------------------------ANTRA UŽDUOTIS-----------------------------------
+
+let kiekis = 1
+let numeris
+let container = ''
+let virs150 = 0
+let virs275 = 0
+let color
+
+while (kiekis < 300) {
+  numeris = rndNum(0, 300)
+  container += numeris  + ' '
+if (kiekis % 25 == 0){
+  container += numeris  + '<br>'
+}
+if (numeris >= 150){
+  virs150+=1
+}
+if (numeris >= 275){
+  container += `<span style="color:red;"> ${numeris} </span>`
+}
+  $('span')[1].innerHTML = container
+  $('p')[0].innerHTML = virs150
+  kiekis++
+  // console.log(`Kiekis = ${kiekis} ir numeris būtų = ${numeris}`)
+}
+// -----------------------------------TREČIA UŽDUOTIS-----------------------------------
+
