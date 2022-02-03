@@ -129,3 +129,21 @@ const log = document.getElementById('log');
 input.addEventListener('keydown', (e) => {
   log.textContent += ` ${e.key}`;
 })
+
+
+// CIKLAI
+let kiekis = 0
+while(kiekis < 5) {
+  kiekis++
+  console.log(`While kiekis yra ${kiekis}`)
+}
+
+const raides = 'ABCDEFGHIJKLMNOPRSTVOQXYZ'
+
+for (let i = 0; i < 5; i++) {
+  console.log(`For kiekis yra ${i}`)
+}
+
+for (let i = 0; i < raides.length; i++) {
+  console.log('For kiekis yra ' + raides.charAt(i))
+}
