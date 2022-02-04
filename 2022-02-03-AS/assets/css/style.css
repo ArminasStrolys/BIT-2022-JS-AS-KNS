@@ -14,3 +14,13 @@ body {
 .second-div span{
 color: indigo;
 }
+.second-div{
+  margin-left: 50px;
+  border: 1px solid plum;
+  width: 600px;
+  }
+/* .second-div p{
+  margin-left: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100px;
+  } */

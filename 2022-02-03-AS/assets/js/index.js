@@ -25,11 +25,11 @@ while (i <= 300) {
   }
   i++
   $('span')[0].innerHTML = x
-console.log(i)
+// console.log(i)
 }
 // -----------------------------------ANTRA UŽDUOTIS-----------------------------------
 
-let kiekis = 1
+let kiekis = 0
 let numeris
 let container = ''
 let virs150 = 0
@@ -49,9 +49,22 @@ if (numeris >= 275){
   container += `<span style="color:red;"> ${numeris} </span>`
 }
   $('span')[1].innerHTML = container
-  $('p')[0].innerHTML = virs150
+  $('p')[0].innerHTML = 'Skaičių, kurie viršija 150 yra = ' + virs150
   kiekis++
   // console.log(`Kiekis = ${kiekis} ir numeris būtų = ${numeris}`)
 }
 // -----------------------------------TREČIA UŽDUOTIS-----------------------------------
 
+
+let numero = 0
+let box = ''
+
+while (numero < 3000) {
+  numero++
+if (numero % 77 == 0){
+  box += numero + ' '
+}
+$('p')[2].innerHTML = box
+
+  console.log(box)
+}
