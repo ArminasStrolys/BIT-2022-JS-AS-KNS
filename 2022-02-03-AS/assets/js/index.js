@@ -55,16 +55,19 @@ if (numeris >= 275){
 }
 // -----------------------------------TREČIA UŽDUOTIS-----------------------------------
 
-
 let numero = 0
 let box = ''
 
 while (numero < 3000) {
   numero++
 if (numero % 77 == 0){
-  box += numero + ' '
+  box += numero + ', '
 }
-$('p')[2].innerHTML = box
+$('p')[2].innerHTML = box.substring(0, box.length - 2)
 
-  console.log(box)
+  // console.log(box)
+  // console.log(box.length)
 }
+
+// -----------------------------------KETVIRTA UŽDUOTIS-----------------------------------
+
