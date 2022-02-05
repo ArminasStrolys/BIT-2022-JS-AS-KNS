@@ -82,12 +82,10 @@ game = () => {
     let benas = rndNum(10, 20);
     let jovita = rndNum(5, 25);
 
-
     // if (benas || jovita == 12) {
     //   rez1 -= benas
     //   rez2 -= jovita
     // }
-
 
     if (rez1 > 221) {
       $("i")[2].innerHTML = "Benas su rezultatu " + rez1;
@@ -113,8 +111,6 @@ game = () => {
       break;
     }
 
-
-
     $("i")[0].innerHTML += `<br>${matchNo} partija. Surinktas taškų skaičius ${benas}. Bendras rezultatas = ${rez1} taškai `;
     $("i")[1].innerHTML += `<br>${matchNo} partija. Surinktas taškų skaičius ${jovita}. Bendras rezultatas = ${rez2} taškai `;
     $("i")[4].innerHTML = negaliojanti;
@@ -128,8 +124,28 @@ game = () => {
   }
 };
 
-// let t = 0
-// while(t < 10) {
-//   t++
-//   console.log(`Kiekis yra ${t}`)
-// }
+
+// -----------------------------------PENKTA UŽDUOTIS-----------------------------------
+
+let nr = 0
+let blockTop
+let blockLeft
+let counter = 0
+
+while(nr < 300) {
+  nr++
+  blockTop = rndNum(0, 550)
+  blockLeft = rndNum(0, 550)
+if (blockLeft > 495 || blockTop > 495){
+  // nebent dar iskaiciuoti 1px border, tai turetu buti 494
+  document.getElementById('main-div').innerHTML += `<div style="top: ${blockTop}px; left: ${blockLeft}px; background-color: green;"></div>`
+  counter++
+} else {
+  document.getElementById('main-div').innerHTML += `<div style="top: ${blockTop}px; left: ${blockLeft}px;"></div>`
+}
+$('i')[5].innerHTML = `Tiek elementų buvo už ribų = ${counter}`
+  console.log("================");
+  console.log(`Ciklas = ${nr}`)
+  console.log(`Block TOP ${blockTop}`)
+  console.log(`Block LEFT ${blockLeft}`)
+}

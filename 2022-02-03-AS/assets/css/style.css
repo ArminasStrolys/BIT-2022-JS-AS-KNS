@@ -27,3 +27,20 @@ color: indigo;
   button{
     margin: 50px 30px;
   }
+  #main-div{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 227, 227);
+    position: relative;
+    left: 300px;
+  }
+  #main-div div{
+    height: 5px;
+    width: 5px;
+    border: 1px solid rgb(4, 0, 255);
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
