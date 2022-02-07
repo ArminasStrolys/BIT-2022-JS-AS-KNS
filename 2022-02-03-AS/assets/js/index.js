@@ -70,6 +70,12 @@ while (numero < 3000) {
 }
 
 // -----------------------------------KETVIRTA UŽDUOTIS-----------------------------------
+// Benas ir Jovita žaidžia šaškėmis. Benas surenka taškų kiekį nuo 10 iki 20, Jovita surenka taškų kiekį nuo 5
+// iki 25. Jeigu, bet kuriam žaidėjui iškrenta skaičius 12, partiją laikome negaliojančia. Vienoje eilutėje
+// išveskite laimėjusio žaidėjo vardą su taškų kiekiu ir “Partiją laimėjo: laimėtojo vardas”. Taškų kiekį
+// generuokite funkcija randomSkaicius(). Žaidimą laimi tas, kas greičiau surenka 222 taškus. Partijas kartoti
+// tol, kol kažkuris žaidėjas pirmas surenka 222 arba daugiau taškų.
+
 
 let rez1 = 0;
 let rez2 = 0;
@@ -81,11 +87,6 @@ game = () => {
     matchNo++;
     let benas = rndNum(10, 20);
     let jovita = rndNum(5, 25);
-
-    // if (benas || jovita == 12) {
-    //   rez1 -= benas
-    //   rez2 -= jovita
-    // }
 
     if (rez1 > 221) {
       $("i")[2].innerHTML = "Benas su rezultatu " + rez1;
@@ -115,15 +116,14 @@ game = () => {
     $("i")[1].innerHTML += `<br>${matchNo} partija. Surinktas taškų skaičius ${jovita}. Bendras rezultatas = ${rez2} taškai `;
     $("i")[4].innerHTML = negaliojanti;
 
-    console.log("================");
-    console.log("ben = " + benas);
-    console.log("jov = " + jovita);
-    console.log("rez 1 (ben) = " + rez1);
-    console.log("rez 2 (jov) = " + rez2);
-    console.log("t = " + matchNo);
+    // console.log("================");
+    // console.log("ben = " + benas);
+    // console.log("jov = " + jovita);
+    // console.log("rez 1 (ben) = " + rez1);
+    // console.log("rez 2 (jov) = " + rez2);
+    // console.log("t = " + matchNo);
   }
 };
-
 
 // -----------------------------------PENKTA UŽDUOTIS-----------------------------------
 
