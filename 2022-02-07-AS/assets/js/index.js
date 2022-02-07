@@ -2,6 +2,8 @@ function rndNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// -----------------------MONETOS--------------------------------------------
+
 // let x = 0;
 // let y = 0;
 // // 0 herbas (x), 1 skaicius (y)
@@ -83,7 +85,9 @@ while (vinKiekis <= 5) {
   let tikimybe = rndNum(0, 1)
   if (tikimybe == 1){
     smugiai++
-    console.log("Nepataike į vinį");
+    console.log("****************");
+    console.log("Nepataikė į vinį");
+    console.log("****************");
       continue
   }
   gylis += didelis;
