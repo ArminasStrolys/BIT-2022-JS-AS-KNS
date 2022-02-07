@@ -31,21 +31,66 @@ function rndNum(min, max) {
 // //     break;
 // //   }
 // }
-// -------------------------------------------------------------------
+
+// -----------------------MAZAIS VINIMIS--------------------------------------------
+
+// let vinys = 85;
+// let gylis = 0;
+// let vinKiekis = 0;
+// let ciklas = 0;
+// let smugiai = 0;
+
+// while (vinKiekis <= 5) {
+//   let mazas = rndNum(5, 20);
+//   gylis += mazas;
+//     smugiai++
+//   if (gylis >= vinys) {
+//     ciklas++;
+//     // console.log(vinKiekis);
+//   }
+//   if (ciklas == 1) {
+//     gylis = 0;
+//     ciklas = 0;
+//     vinKiekis++;
+//   }
+//   if (vinKiekis >= 5) {
+//     console.log("------------------------");
+//     console.log("mazas smugis " + mazas + "mm");
+//     console.log("Vinių jau sukalta = " + vinKiekis);
+//     console.log("gylis " + gylis);
+//     console.log("Smūgių reikėjo = " + smugiai);
+//     break;
+//   }
+//   console.log("------------------------");
+//   console.log("mazas smugis " + mazas + "mm");
+//   console.log("Vinių jau sukalta = " + vinKiekis);
+//   console.log("gylis " + gylis);
+//   console.log("Smūgių reikėjo = " + smugiai);
+// }
+
+
+// -------------------------DIDELIAIS VINIMIS---------------------------------------
 
 let vinys = 85;
 let gylis = 0;
-let didelis = rndNum(20, 30);
 let vinKiekis = 0;
 let ciklas = 0;
+let smugiai = 0;
+
 
 while (vinKiekis <= 5) {
-  let mazas = rndNum(5, 20);
-  gylis += mazas;
-
+  let didelis = rndNum(20, 30);
+  let tikimybe = rndNum(0, 1)
+  if (tikimybe == 1){
+    smugiai++
+    console.log("Nepataike į vinį");
+      continue
+  }
+  gylis += didelis;
+    smugiai++
   if (gylis >= vinys) {
     ciklas++;
-    // console.log(vinKiekis);
+
   }
   if (ciklas == 1) {
     gylis = 0;
@@ -53,13 +98,16 @@ while (vinKiekis <= 5) {
     vinKiekis++;
   }
   if (vinKiekis >= 5) {
-    console.log("mazas smugis " + mazas + "mm");
+    console.log("------------------------");
+    console.log("Didelis smūgis " + didelis + "mm");
     console.log("Vinių jau sukalta = " + vinKiekis);
-    console.log("gylis " + gylis);
+    console.log("Gylis " + gylis);
+    console.log("Smūgių reikėjo = " + smugiai);
     break;
   }
-  console.log("mazas smugis " + mazas + "mm");
+  console.log("------------------------");
+  console.log("Didelis smūgis " + didelis + "mm");
   console.log("Vinių jau sukalta = " + vinKiekis);
-  console.log("gylis " + gylis);
-
+  console.log("Gylis " + gylis);
+  console.log("Smūgių reikėjo = " + smugiai);
 }
