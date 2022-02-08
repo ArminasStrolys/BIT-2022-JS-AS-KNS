@@ -121,16 +121,12 @@ console.log("Main array = " + array + ". Array`s length = " + array.length);
 
 // ---------------------- 7 --------------------------
 
-// 7) Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu
-// jie didesni už 15;
-
-let lastArray = []
-
 array.forEach((element) => {
   if (element % 2 == 0 && element > 15) {
-    lastArray.push(0)
+    array.push(0)
   } else {
-    lastArray.push(element)
+    array.push(element)
   }
 });
-console.log("7. Masyvas = " + lastArray + ". Array`s length = " + lastArray.length);
+   array.splice(0, 30)
+console.log("Modifikuotas masyvas = " + array + ". Array`s length = " + array.length);
