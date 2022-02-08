@@ -306,27 +306,27 @@ du sprendiniai 3.00 1.00 a=1, b=3, c=4, kompiuterio ekrane turi būti
 rodomas rezultatas: nėra sprendinių
 */
 
-let a = 1;
-let b = 2;
-let c = 1;
-let x;
-let x1;
-let x2;
-let d;
+// let a = 1;
+// let b = 2;
+// let c = 1;
+// let x;
+// let x1;
+// let x2;
+// let d;
 
-d = (b ** 2) - (4 * a * c);
+// d = (b ** 2) - (4 * a * c);
 
-if (d < 0) {
-  console.log("sprendinių nėra");
-} else if (d == 0) {
-  x = -b / (2 * a);
-  console.log("X = " + x);
-} else if (d > 0) {
-  x1 = (-b + Math.sqrt(d)) / (2 * a);
-  x2 = (-b - Math.sqrt(d)) / (2 * a);
-  console.log("X1 = " + x1);
-  console.log("X2 = " + x2);
-}
+// if (d < 0) {
+//   console.log("sprendinių nėra");
+// } else if (d == 0) {
+//   x = -b / (2 * a);
+//   console.log("X = " + x);
+// } else if (d > 0) {
+//   x1 = (-b + Math.sqrt(d)) / (2 * a);
+//   x2 = (-b - Math.sqrt(d)) / (2 * a);
+//   console.log("X1 = " + x1);
+//   console.log("X2 = " + x2);
+// }
 
 // ----------------------------- 15 -----------------------------
 /*
@@ -336,10 +336,11 @@ porcijų ledų k nusipirks Saulius ir kiek centų m dar liks. Pasitikrinkite
 Kai c=50, p=20, turi būti : Saulius nusipirks 2 porcijas, liks centų 10
 */
 
-// let c = 50 // Centai
-// let p = 20 // Porcijos kaina
-// let k = 0 // Porcijos
-// let g
+let c = 50 // Centai
+let p = 20 // Porcijos kaina
+let k = 0 // Porcijos
+let g
+
 
 
 // ----------------------------- 16 -----------------------------
