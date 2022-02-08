@@ -34,7 +34,7 @@ let array = [];
 for (let i = 0; i < 30; i++) {
   array.push(rndNum(5, 25));
 }
-console.log(array);
+console.log("Main array = " + array + ". Array`s length = " + array.length);
 
 // ---------------------- 1 --------------------------
 
@@ -76,3 +76,61 @@ console.log(array);
 // });
 // console.log("Lyginių skaičių suma " + sum);
 
+// ---------------------- 4 --------------------------
+
+// let array1 = [];
+// let array2 = [];
+
+// for (let i = 0; i < 30; i++) {
+//   array1.push(rndNum(5, 25));
+// }
+// console.log('Pirmasis masyvas = ' + array1);
+
+// for (let i = 0; i < 30; i++) {
+//   array2.push(array1[i] - i);
+// }
+// console.log('Antras masyvas = ' + array2);
+
+// ---------------------- 5 --------------------------
+
+// let arrayPlus = array
+
+// for (let i = 0; i < 10; i++) {
+//   arrayPlus.push(rndNum(5, 25));
+// }
+// console.log('Side array = ' + arrayPlus + '. Array`s length = ' + arrayPlus.length);
+
+// ---------------------- 6 --------------------------
+
+// let arrayOdd = [];
+// let arrayEven = [];
+
+// array.forEach((element) => {
+//   if (element % 2 == 0) {
+//     arrayEven.push(element);
+//   } else {
+//     arrayOdd.push(element);
+//   }
+// });
+// console.log(
+//   "Lyginis masyvas " + arrayEven + ". Elementų kiekis: " + arrayEven.length
+// );
+// console.log(
+//   "Nelyginis masyvas " + arrayOdd + ". Elementų kiekis: " + arrayOdd.length
+// );
+
+// ---------------------- 7 --------------------------
+
+// 7) Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu
+// jie didesni už 15;
+
+let lastArray = []
+
+array.forEach((element) => {
+  if (element % 2 == 0 && element > 15) {
+    lastArray.push(0)
+  } else {
+    lastArray.push(element)
+  }
+});
+console.log("7. Masyvas = " + lastArray + ". Array`s length = " + lastArray.length);
