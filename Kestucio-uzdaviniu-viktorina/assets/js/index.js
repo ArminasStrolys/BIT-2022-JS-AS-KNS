@@ -336,19 +336,52 @@ porcijų ledų k nusipirks Saulius ir kiek centų m dar liks. Pasitikrinkite
 Kai c=50, p=20, turi būti : Saulius nusipirks 2 porcijas, liks centų 10
 */
 
-let c = 50 // Centai
-let p = 20 // Porcijos kaina
-let k = 0 // Porcijos
-let g
+// let c = 50 // Centai
+// let p = 20 // Porcijos kaina
+// let k = 0 // Porcijos
 
+// while (c >= p) {
+//   c -= p
+//   k++
+// }
 
+// console.log(`Saulius nusipirks ${k} porcijas ledų ir liks ${c} centų`)
 
 // ----------------------------- 16 -----------------------------
 /*
-
+Vairuotojas iš sandėlio į parduotuvę turi pervežti n dėžių prekių. Į mašiną
+telpa m dėžių prekių. Sukurkite programą, kuri apskaičiuotų ir kompiuterio
+ekrane parodytų, kiek kartų k turės nuvažiuoti vairuotojas į sandėlį, kad
+parvežtų visas prekių dėžes į parduotuvę. Pasitikrinkite:
+jei n = 100, m = 14, tai k = 8.
 */
+
+// let n = 100 // prekės
+// let m = 14 // dėžės
+// let k = 1 // kartai nuvažiuoti į parduotuvę
+
+// while (m <= n){
+// k++
+// m += m
+// }
+// console.log('k ' + k)
+// console.log('m ' + m)
+// console.log('n ' + n)
 
 // ----------------------------- 17 -----------------------------
 /*
-
+Duoti du sveikieji skaičiai a ir b. Parašykite programą, kuri didesnį
+skaičių pamažintu vienetu, o mažesnį padidintu vienetu.
 */
+
+// let a = 9
+// let b = 6
+
+// if (a > b) {
+//   a--;
+//   b++;
+// } else {
+//   a++;
+//   b--;
+// }
+// console.log('a = ' + a + ' b = ' + b)
