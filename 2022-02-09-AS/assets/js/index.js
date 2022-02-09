@@ -57,47 +57,67 @@ masyvuose.
 
 // ---------------------- 3 --------------------------
 
-const alpha = "ABCD";
-let array1 = [];
-let array2 = [];
-let array3 = [];
-let arrayCombo = []
-let A = 0;
-let B = 0;
-let C = 0;
-let D = 0;
+// const alpha = "ABCD";
+// let array1 = [];
+// let array2 = [];
+// let array3 = [];
+// let arrayCombo = []
 
-for (let i = 0; i < 200; i++) {
-  array1.push(alpha.charAt(rndNum(0, 3)));
-}
-for (let i = 0; i < 200; i++) {
-  array2.push(alpha.charAt(rndNum(0, 3)));
-}
-for (let i = 0; i < 200; i++) {
-  array3.push(alpha.charAt(rndNum(0, 3)));
-}
-for (let i = 0; i < 200; i++) {
-  arrayCombo.push(array1[i] + array2[i] + array3[i]);
-}
+// for (let i = 0; i < 200; i++) {
+//   array1.push(alpha.charAt(rndNum(0, 3)));
+//   array2.push(alpha.charAt(rndNum(0, 3)));
+//   array3.push(alpha.charAt(rndNum(0, 3)));
+//   arrayCombo.push(array1[i] + array2[i] + array3[i]);
+// }
 
-function unique(value, index, self) {
-  return self.indexOf(value) === index;
-}
+// function unique(value, index, self) {
+//   return self.indexOf(value) === index;
+// }
+// let u = arrayCombo.filter(unique);
 
-let u = arrayCombo.filter(unique);
+// console.log('A1 ' + array1);
+// console.log('A2 ' + array2);
+// console.log('A3 ' + array3);
+// console.log('AX ' + arrayCombo);
+// console.log('Unikalios ' + u);
+// console.log('Unikalios ' + u.length);
 
-
-
-
-console.log('A1 ' + array1);
-console.log('A2 ' + array2);
-console.log('A3 ' + array3);
-console.log('AX ' + arrayCombo);
-console.log('Unikalios ' + u);
 // ---------------------- 4 --------------------------
+
+let arrayA = []
+let arrayUniqueA = []
+let arrayB = []
+let arrayUniqueB = []
+
+for (let i = 0; i < 100; i++) {
+  arrayA.push(rndNum(100, 999));
+  arrayB.push(rndNum(100, 999));
+}
+
+arrayUniqueA = [...new Set(arrayA)]
+arrayUniqueB = [...new Set(arrayB)]
+
+
+console.log('A = ' + arrayA + ' Ilgis: ' + arrayA.length);
+console.log('B = ' + arrayB + ' Ilgis: ' + arrayB.length);
+// console.log('----------------------------------------------');
+// console.log('A-un = ' + arrayUniqueA + ' Ilgis: ' + arrayUniqueA.length);
+// console.log('B-un = ' + arrayUniqueB + ' Ilgis: ' + arrayUniqueB.length);
 
 // ---------------------- 5 --------------------------
 
+//// Reikės atkomentuoti 4 uždavinį, kad šitas veiktų
+// arrayA = arrayA.filter(val => !arrayB.includes(val));
+
+// console.log('Array-A = ' + arrayA);
+// console.log('Array-A = ' + arrayA.length);
+
 // ---------------------- 6 --------------------------
 
-// ---------------------- 7 --------------------------
+// Reikės atkomentuoti 4 uždavinį, kad šitas veiktų
+let duplicates = []
+
+duplicates = arrayA.filter(element => arrayB.includes(element));
+
+console.log('Dup = ' + duplicates);
+console.log('Dup = ' + duplicates.length);
