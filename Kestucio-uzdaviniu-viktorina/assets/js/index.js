@@ -295,6 +295,15 @@ Metai neolimpiniai.
 //   }
 // }
 // console.log(`Žaidynės vyko ${1896 + (n * 4)}`);
+////////////////////////////////////////////////////////
+// let metai = 2004
+
+// if (metai % 4 == 0){
+//   let n = (metai - 1896) / 4 + 1;
+//   console.log('metai olimpiniai. Nr = ' + n);
+// } else {
+//   console.log('metai neolimpiniai');
+// }
 
 // ----------------------------- 14 -----------------------------
 /*
@@ -309,6 +318,7 @@ rodomas rezultatas: nėra sprendinių
 // let a = 1;
 // let b = 2;
 // let c = 1;
+
 // let x;
 // let x1;
 // let x2;
@@ -321,7 +331,7 @@ rodomas rezultatas: nėra sprendinių
 // } else if (d == 0) {
 //   x = -b / (2 * a);
 //   console.log("X = " + x);
-// } else if (d > 0) {
+// } else {
 //   x1 = (-b + Math.sqrt(d)) / (2 * a);
 //   x2 = (-b - Math.sqrt(d)) / (2 * a);
 //   console.log("X1 = " + x1);
@@ -339,6 +349,7 @@ Kai c=50, p=20, turi būti : Saulius nusipirks 2 porcijas, liks centų 10
 // let c = 50 // Centai
 // let p = 20 // Porcijos kaina
 // let k = 0 // Porcijos
+// let likutis = 0
 
 // while (c >= p) {
 //   c -= p
@@ -346,6 +357,10 @@ Kai c=50, p=20, turi būti : Saulius nusipirks 2 porcijas, liks centų 10
 // }
 
 // console.log(`Saulius nusipirks ${k} porcijas ledų ir liks ${c} centų`)
+//////////////////////////////////////////
+// k = Math.floor(c/p)
+// likutis = c - (k * p)
+// console.log(`Lieka centų = ${likutis}. Porcijų gavosi = ${k}`);
 
 // ----------------------------- 16 -----------------------------
 /*
