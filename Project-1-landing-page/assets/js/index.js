@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 
 window.addEventListener("scroll", function () {
-  const offset = 204;
+  const offset = 853;
   let position;
   position = window.scrollY;
   if (position >= offset) {

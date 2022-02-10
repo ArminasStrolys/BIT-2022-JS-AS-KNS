@@ -197,15 +197,15 @@ Dviženklio skaičiaus dešimčių skaitmuo tris kartus didesnis už vienetų sk
 Jei tuos skaitmenis sukeistume vietomis, tai gautume skaičių, 36 vienetais
 mažesnį už duotąjį, raskite tą skaičių.
 */
-//-----------------------------NEJASNAS-----------------------------------------------
-// let z = 0
-// let x1 = z - 36
-// let x2 = z + 30
-// let y
 
-// y = x2 - x1
+let z = 115
+let x1 = z - 36
+let x2 = z + 30
+let y
 
-// console.log('x1 ' + x1 + ' x2 ' + x2);
+y = x2 - x1
+
+console.log(' x2 ' + x2 + ' x1 ' + x1 + ' ' + y);
 
 // ----------------------------- 13 -----------------------------
 /*
@@ -261,36 +261,75 @@ tuomet turi būti rodomi tokie bilietų numeriai: 998 1002
 Duotas natūralus skaičius n. Raskite pirmą skaitmenį
 */
 
-// let n = 46843;
+// let n = 85116;
 // let m = String(n)[0];
 
 // console.log("n = " + m);
+
+// let n = 65116;
+// while (n >= 10){
+// n /= 10;
+// n = Math.floor(n);
+// }
+
+// console.log(n);
 
 // ----------------------------- 17 -----------------------------
 /*
 Duotas natūralusis skaičius n. Raskite skaitmenų sumą.
 */
 
-// let n = 684513;
-// let o
-// let m
+// let n = 60;
+// let i = 0;
+// let sum = 0
 
-// for (let i = 0; i > 10; i++) {
-//   m = String(n)[i];
-//   o = +Number(m);
-//   console.log('O = ' + o);
+// while (n >= i){
+//   sum += i
+//   console.log(sum);
+// i++
 // }
+
+// console.log('Galutinė suma: ' + sum);
 
 // ----------------------------- 18 -----------------------------
 /*
 Duotas natūralusis skaičius n. Raskite atvirkščią skaičių duotajam. Pvz.: n=123, atv =321
 */
 
+// let n = 67418
+// let y1 = 0
+// let y2 = 0
+
+// console.log(`Skaičius: ${n}`);
+
+// while(n){
+//     y1 = n % 10
+//     y2 = (y2 * 10) + y1
+//     n = n / 10 | 0 
+// }
+
+// console.log(`Atbulinis: ${y2}`);
+
 // ----------------------------- 19 -----------------------------
 /*
 Duotas natūralus skaičius n. Sudarykite programą, kuri rastų didžiausią ir mažiausią
 skaitmenį.
 */
+
+// let xl = 0;
+// let xs = 9;
+// let n = 5812;
+// let skc;
+
+// while(n) {
+//     skc = n % 10;
+//     xl = Math.max(skc, xl);
+//     xs = Math.min(skc, xs);
+//     n = parseInt(n / 10);
+// }
+
+// console.log('Max: ' + xl);
+// console.log('Min: ' + xs);
 
 // ----------------------------- 20 -----------------------------
 /*
