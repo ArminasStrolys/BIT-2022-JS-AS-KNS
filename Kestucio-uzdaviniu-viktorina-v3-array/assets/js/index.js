@@ -32,24 +32,25 @@ Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
 ilgis 10, o reikšmės atsitiktiniai skaičiai nuo 1 iki 17.
 */
 
-// let arrayA = []
-// let arrayB = []
-// let arrayC = []
+let arrayA = [];
 
-// for (let i = 0; i < 100; i++) {
-//  arrayA.push(i)
-// }
+for (let i = 0; i < 100; i++) {
+  arrayA.push(i);
+}
 
-// for (let i = 1; i <= 10; i++) {
-//   let x = rndNum(1, 17)
-//  arrayB.push(x)
-// }
+arrayA.forEach((element) => {
+  let arrayB = [];
+  for (let i = 0; i < 10; i++) {
+    let x = rndNum(1, 17);
+    arrayB.push(x);
+  }
+  // console.log(arrayB);
+  arrayA.push(arrayB);
+});
 
-// arrayA.forEach(element => {
-//   arrayC.push(arrayB)
-// });
+arrayA.splice(0, 100);
 
-// console.log(arrayC);
+console.log(arrayA);
 
 // ----------------------------- 3 -----------------------------
 /*
@@ -115,27 +116,34 @@ ilgis atsitiktinis nuo 5 iki 18, o reikšmės – atsitiktiniai skaičiai
 nuo 5 iki 75. Surasti didžiausią skaičių visame didžiajame masyve.
 */
 
-let arrayA = []
-let arrayB = []
-let arrayC = []
-let x = rndNum(5, 18)
+// let arrayA = []
+// let arrayB = []
+// let arrayC = []
+// let x = rndNum(5, 18)
+// let max = 0;
 
-for (let i = 0; i < 100; i++){
-  arrayA.push(i)
-}
-for (let i = 1; i <= x; i++){
-let y = rndNum(5, 30)
-  arrayB.push(y)
-}
+// for (let i = 0; i < 100; i++){
+//   arrayA.push(i)
+// }
+// for (let i = 1; i <= x; i++){
+// let y = rndNum(5, 75)
+//   arrayB.push(y)
+// }
 
-arrayA.forEach(element => {
-  arrayC.push(arrayB)
-});
+// arrayA.forEach(element => {
+//   arrayC.push(arrayB)
+// });
 
-console.log(arrayA);
-console.log(arrayB);
-console.log(arrayC);
-// console.log(Math.max(...arrayC));
+// arrayC.forEach(element => {
+//     if (element > 0){
+//     max = element
+//   }
+// });
+
+// console.log(arrayA);
+// console.log(arrayB);
+// console.log(arrayC);
+// console.log(max);
 
 // ----------------------------- 6 -----------------------------
 /*
@@ -175,4 +183,3 @@ skaičius, pvz 9, tai vidurinė reikšmė bus 5-as elementas, jei elementų
 yra lyginis skaičius, pvz 8, tai vidurinė reikšmė bus 4-os ir 5-os
 reikšmės aritmetinis vidurkis
 */
-
