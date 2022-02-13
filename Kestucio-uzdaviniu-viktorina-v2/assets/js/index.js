@@ -198,14 +198,7 @@ Jei tuos skaitmenis sukeistume vietomis, tai gautume skaičių, 36 vienetais
 mažesnį už duotąjį, raskite tą skaičių.
 */
 
-let z = 115
-let x1 = z - 36
-let x2 = z + 30
-let y
 
-y = x2 - x1
-
-console.log(' x2 ' + x2 + ' x1 ' + x1 + ' ' + y);
 
 // ----------------------------- 13 -----------------------------
 /*
