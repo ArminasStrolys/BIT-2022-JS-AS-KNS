@@ -269,13 +269,79 @@ atsitiktinius skaičius funkcija rand(), kurie yra iš intervalo
 10…20. Ciklą kartokite 5 kartus;
 
 A) Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam,
-kurį sukūrėte už ciklo ribų ir jį atspauzdinkite;
+kurį sukūrėte už ciklo ribų ir jį atspausdinkite;
 */
 
+// let out
 
+// for (let i = 0; i < 5; i++){
+//   out = rndNum(10, 20)
+// console.log(out);
+// }
 
 /*
 B) Skaičiuokite ciklo viduje generuojamų reikšmių sumą, ją priskirdami
-kintamajam, kurį sukūrėte už ciklo ribų. Rezultatą atspauzdinkite
+kintamajam, kurį sukūrėte už ciklo ribų. Rezultatą atspausdinkite
 pasinaudodami console.log už ciklo ribų;
 */
+
+// let out = 0
+
+// for (let i = 0; i < 5; i++){
+//   out += rndNum(10, 20)
+// }
+
+// console.log('OUT: ' + out);
+
+/*
+C) Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį tarp
+skaičių darydami tarpą. Stringo tipo kintamąjį atspasdinkite už
+ciklo ribų jam pasibaigus;
+*/
+
+// let out = 0
+
+// for (let i = 0; i < 5; i++){
+//   out += ' ' + rndNum(10, 20) + ' '
+// }
+
+// console.log('OUT: ' + out);
+
+/*
+D) Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį
+tarp skaičių darydami tarpą. Ciklui pasibaigus prie stringo tipo kintamojo
+pridėkite ciklo viduje generuotų skaičių sumą, paskaičiuotą kaip B dalyje.
+Stringo tipo kintamąjį atspausdinkite pasinaudodami console.log;
+*/
+
+// let out = 0
+// let string = ''
+
+// for (let i = 0; i < 5; i++){
+//   string += rndNum(10, 20) + ' '
+//   out += rndNum(10, 20)
+// }
+
+// console.log('OUT: ' + string + 'Sum: ' + out);
+
+//-------------------- 8 --------------------
+/*
+Deklaruokite kintamąjį (jeigu reikia kelis kintamuosius) už ciklo ribų.
+Ciklo viduje generuokite atsitiktinius skaičius funkcija rand(), kurie yra
+iš intervalo 10…25. Ciklą kartokite tol, kol ciklo viduje bus sugeneruotas
+skaičius mažesnis nei 12;
+
+A) Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam,
+kurį sukūrėte už ciklo ribų ir jį atspausdinkite;
+*/
+
+let a = 0
+let b = 0
+
+while (true){
+  a = rndNum(10, 25)
+  console.log('a: ' + a);
+  if (a < 12){
+    break
+  }
+}
