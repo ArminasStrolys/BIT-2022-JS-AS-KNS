@@ -212,9 +212,9 @@ kurį sugeneruoja funkcija rand(5, 10) ir jį atspausdinkite
 pasinaudojus console.log;
 */
 
-let U = rndNum(5,10)
+// let U = rndNum(5,10)
 
-console.log('Random number: ' + U);
+// console.log('Random number: ' + U);
 
 //-------------------- 3 --------------------
 /*
@@ -231,6 +231,51 @@ ir console.log atspauzdinkite kintamąjį 5 kartus;
 
 //-------------------- 4 --------------------
 /*
-Pasinaudojus ciklu ir ir console.log atspauzdinkite
+Pasinaudojus ciklu ir console.log atspausdinkite
 kintamąjį iš 2 uždavinio 7 kartus;
+*/
+
+// for (let i = 0; i < 7; i++){
+//   console.log('Ats yra: ' + U);
+// }
+
+//-------------------- 5 --------------------
+/*
+Pasinaudojus ciklu ir console.log atspausdinkite kintamąjį
+iš 2 uždavinio tiek kartų, koks skaičius yra sugeneruotas;
+*/
+
+// for (let i = 0; i < U; i++){
+//   console.log('Ats yra (i kartų): ' + U);
+// }
+
+//-------------------- 6 --------------------
+/*
+Pasinaudojus ciklu ir ir console.log atspauzdinkite kintamąjį
+iš 2 uždavinio tiek kartų, koks skaičius yra sugeneruotas,
+bet tik tada jeigu jis didesnis už 7;
+*/
+
+// for (let i = 0; i < U; i++){
+//   if (U > 7){
+//     console.log('Ats yra (i kartų): ' + U);
+//   }
+// }
+
+//-------------------- 7 --------------------
+/*
+Deklaruokite kintamąjį už ciklo ribų. Ciklo viduje generuokite
+atsitiktinius skaičius funkcija rand(), kurie yra iš intervalo
+10…20. Ciklą kartokite 5 kartus;
+
+A) Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam,
+kurį sukūrėte už ciklo ribų ir jį atspauzdinkite;
+*/
+
+
+
+/*
+B) Skaičiuokite ciklo viduje generuojamų reikšmių sumą, ją priskirdami
+kintamajam, kurį sukūrėte už ciklo ribų. Rezultatą atspauzdinkite
+pasinaudodami console.log už ciklo ribų;
 */
