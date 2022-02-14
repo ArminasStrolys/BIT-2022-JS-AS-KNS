@@ -8,17 +8,17 @@ Sugeneruokite 10 skaičių masyvą pagal taisyklę: Du pirmi
 skaičiai- atsitiktiniai nuo 5 iki 25. Trečias, pirmo ir antro suma.
 Ketvirtas- antro ir trečio suma. Penktas trečio ir ketvirto suma ir t.t.
 */
-let array = []
+// let array = []
 
-for (let i = 0; i < 2; i++){
-  array.push(rndNum(5, 25))
-}
+// for (let i = 0; i < 2; i++){
+//   array.push(rndNum(5, 25))
+// }
 
-for (let i = 0; i < 8; i++){
-  array.push(array[i] + array[i+1])
-}
+// for (let i = 0; i < 8; i++){
+//   array.push(array[i] + array[i+1])
+// }
 
-console.log(array);
+// console.log(array);
 
 // ---------------------- 2 --------------------------
 /*
@@ -33,8 +33,21 @@ kitos daugiau nei per 30)
 
 300, 298, 294, 293, 290
 296 297 300 298 295
-
 */
+
+let array2 = []
+
+for (let i = 0; i < 101; i++){
+  array2.push(rndNum(0, 105))
+}
+
+let unique = [...new Set(array2)];
+
+if (unique.length <= array2.length){
+  console.log('abc')
+}
+
+console.log(unique.sort());
 
 // ---------------------- 3 --------------------------
 
