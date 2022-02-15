@@ -551,3 +551,40 @@ C) Padarykite analogiškai kaip B dalyje, bet tik kai
 
 // console.log('Išorinio ciklo iteracijos: ' + b);
 // console.log('Vidinio ciklo iteracijos: ' + c);
+
+//-------------------- 10 --------------------
+/*
+Kazys ir Petras žaidžiai bingo. Petras per vieną partiją surenka taškų kiekį
+nuo 10 iki 20, Kazys - surenka taškų kiekį nuo 5 iki 25. Console.log išvesti
+žaidėjų vardus su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo vardas​”.
+Taškų kiekį generuokite funkcija ​rand()​. Žaidimą laimi tas, kas greičiau
+surenka 222 taškus. Partijas kartokite tol, kol kažkuris žaidėjas pirmas
+surinks 222 arba daugiau taškų.
+*/
+
+// let kazys = 0
+// let kTaskai = 0
+// let petras = 0
+// let pTaskai = 0
+
+// while (true){
+// kazys = rndNum(5, 25)
+// petras = rndNum(10, 20)
+// pTaskai += petras
+// kTaskai += kazys
+
+// console.log('Petro taskai: ' + pTaskai);
+// console.log('Kazio taskai: ' + kTaskai);
+// console.log('-----------------');
+
+// if (pTaskai >= 222){
+//   console.log('Laimejo Petras su rezultatu: ' + pTaskai);
+//   break
+// } else if (kTaskai >= 222) {
+//   console.log('Laimejo Kazys su rezultatu: ' + kTaskai);
+//   break
+// }
+// }
+
+// console.log('Petro taskai FINAL: ' + pTaskai);
+// console.log('Kazio taskai FINAL: ' + kTaskai);
