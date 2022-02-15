@@ -2,346 +2,196 @@ function rndNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// ----------------- SWITCH -----------------
 
+// let siunta = "S";
 
-//-------------------- 1 --------------------
-/*
-Reikia su ciklo pagalba atspausdinti skaičius
-nuo 10 iki 1 t.y. 10 9 .... 2 1 
-*/
-
-// for (let i = 0; i < 10; i++){
-// console.log(10 - i);
-// }
-// console.log('========================');
-// for (let o = 10; o > 0; o--){
-//   console.log(o);
-//   }
-  
-//-------------------- 2 --------------------
-/*
-Žodį animal atspausdinti stulpeliu
-*/
-
-// const animal = 'Begemotas'
-
-// for (let i = 0; i < animal.length; i++){
-// console.log(animal.charAt(i));
+// switch (siunta) {
+//   case "S":
+//     console.log("Siunta telpa: " + "S");
+//   case "M":
+//     console.log("Siunta telpa: " + "M");
+//   case "L":
+//     console.log("Siunta telpa: " + "L");
+//   case "XL":
+//     console.log("Siunta telpa: " + "XL");
+//     break;
+//   default:
+//     console.log("Netelpa");
+//     break;
 // }
 
-//-------------------- 3 --------------------
+// ----------------- 1 -----------------
 /*
-Padaryti vieną stringą, labai ilgą, kuriame
-100 kartų kartotųsi žodis Begemotas
+Ridenam kauliuką (rand 1-6). Jeigu išsiridena 1 arba 5,
+perku ledų, jeigu 2 arba 4 perku čipsų, jeigu 3 arba 6
+perku pieno. Ką perkat
 */
 
-// const animal = 'Begemotas'
-// let abc = ''
+// let dice = rndNum(1, 6)
 
-// for (let i = 0; i < 100; i++){
-// abc += animal + ' '
+// console.log('D: ', dice);
+
+// switch (dice) {
+//   case 1:
+//   case 5:
+//     console.log('Ledai');
+//     break;
+//   case 2:
+//   case 4:
+//     console.log('Alus');
+//     break;
+//   case 3:
+//   case 6:
+//     console.log('Duona');
+//     break;
 // }
 
-// console.log(abc);
-
-//-------------------- 4 --------------------
+// ----------------- 2 -----------------
 /*
-10 kartų meskite kauliuką (rand 1 - 6).
-Suskaičiuokite visų metimų sumą
+do while ciklas. Metom kauliuką tol kol
+iškrenta 5. Suskaičiuojam kiek kartų mėtėm
 */
 
-// sum = 0
+// let c = 0
+// let dice
 
-// for (let i = 0; i < 10; i++){
-//   let rnd = rndNum(1, 6)
-//   sum += rnd
-//   console.log('rnd ' + rnd);
-//   console.log(sum);
-// }
+// do {
+//   dice = rndNum(1, 6)
+//   c++
+// } while (dice != 5);
 
-// console.log('Suma: ' + sum);
+// console.log('D: ', dice);
+// console.log('C: ' + c);
 
-//-------------------- 5 --------------------
+// ----------------- 3 -----------------
 /*
-10 kartų mesti kauliuką, skaičiuoti sumą, bet jeigu suma
-viršina 35 - ciklą reikia nutraukti pirma laiko. Gale atspausdinti
-sumą ir prasisukusių ciklų skaičių 
+do while ciklas. Metom kauliuką tol kol
+iškrenta 5 arba 1. Suskaičiuojam kiek kartų mėtėm
 */
 
+// let c = 0
+// let dice
+
+// do {
+//   dice = rndNum(1, 6)
+//   c++
+// } while (dice != 5 && dice != 1);
+
+// console.log('D: ', dice);
+// console.log('C: ' + c);
+
+// ----------------- 4 -----------------
+/*
+do while ciklas. Metom kauliuką. Sustojam kai išmestų
+kauliukų suma tampa didesnė nei 33. Suskaičiuojam kiek kartų mėtėm
+*/
+
+// let c = 0
 // let sum = 0
-// let cycle = 0
+// let dice
+
+// do {
+//   dice = rndNum(1, 6)
+//   sum += dice
+//   console.log('D: ', sum, dice);
+//   c++
+// } while (sum <= 33);
+
+// console.log('D: ', dice);
+// console.log('C: ' + c);
+
+// ----------------- 5 -----------------
+/*
+do while ciklas. Metom kauliuką. Sustojam kai išmestų
+kauliukų suma tampa didesnė nei 33. Suskaičiuojam kiek kartų mėtėm
+*/
+
+// let litrai = 1000
+// let banda = 0
+// let dienos = 0
+// let karviuBanda = 0
+
+// while (litrai >= banda){
+//   let karviuBanda = rndNum(70, 200)
+//   banda += karviuBanda
+//   dienos++
+//   console.log('Isgere per: ' + dienos + ' dienas isgere ' + banda + ' litru.');
+// }
+
+// console.log('1000 L isgere per: ' + dienos);
+
+//----------------------- 1 --------------------------------TEST SELF
+
+// let sum = 100
 
 // for (let i = 0; i < 10; i++){
-//   let rnd = rndNum(1, 6)
-//   sum += rnd
-//   console.log('rnd ' + rnd);
-//   console.log(sum);
-//   if (sum > 35){
+
+//   sum += 10
+//   console.log('Sum: ' + sum);
+// }
+
+//------------------- 2 ----------------------
+
+// let x = 0;
+// let sum = 0;
+
+// for (let i = 0; i <= 10; i++) {
+//   x = rndNum(5, 15);
+//   console.log("Nums: " + x);
+//   if (x >= 10) {
+//     sum += x;
+//   }
+// }
+// console.log("Sum: " + sum);
+
+//-------------------- 3 ---------------------
+
+// let x = 0;
+// let sum = 0;
+// let avg = 0;
+// let o = 10
+
+// for (let i = 0; i <= o; i++) {
+//   x = rndNum(5, 15);
+//   console.log("Nums: " + x);
+//     sum += x;
+// }
+
+// avg = sum / o
+
+// console.log("Vid:     " + avg);
+
+//--------------------- 4 --------------------
+
+// let random
+// let iter = 0
+
+// do {
+// random = rndNum(10, 50)
+// iter++
+// console.log('Ran num: ' + random);
+// } while (random != 13 && random != 33 && random != 43)
+
+// console.log('i: ' + iter);
+
+//-------------------- 5 ---------------------
+
+// let random
+// let container = 0
+// let iter = 0
+
+// while (true){
+//   iter++
+//   random = rndNum(10, 20)
+//   console.log('R: ' + random);
+//   if (random == 17){
+//     container++
+//   } if (container == 3){
 //     break
 //   }
-//   cycle++
 // }
 
-// console.log('Ciklai: ' + cycle);
-// console.log('Suma: ' + sum);
+// console.log('Sukosi: ' + iter);
 
-//-------------------- 6 --------------------
-/*
-10 kartų mesti kauliuką ir suskaičiuoti kiek kartų
-iškrito skaičius didesnis nei 4
-*/
-
-// let count = 0
-
-// for (let i = 0; i < 10; i++){
-//   let rnd = rndNum(1, 6)
-// if (rnd > 4){
-//   count++
-// }
-// console.log('Dice: ' + rnd);
-// }
-
-// console.log('Kartai: ' + count);
-
-//-------------------- 7 --------------------
-/*
-10 kartų mesti kauliuką ir suskaičiuoti kiek kartų
-iškrito 3 ir kiek kartų iškrito 5
-*/
-
-// let count3 = 0
-// let count5 = 0
-
-// for (let i = 0; i < 10; i++){
-//   let rnd = rndNum(1, 6)
-// if (rnd == 3){
-//   count3++
-// } else if (rnd == 5){
-//   count5++
-// }
-// console.log('Dice: ' + rnd);
-// }
-
-// console.log('Kartai (3): ' + count3);
-// console.log('Kartai (5): ' + count5);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//--------------- NAMŲ DARBAI ---------------
-//-------------------- 1 --------------------
-/*
-Sukurkite tris kintamuosius ir priskirkite jiems
-skirtingus sveikus skaičius iš intervalo 5…25;
-
-A) Paskaičiuokite jų sumą ir priskirkite ją kintamajam.
-Pasinaudokite console.log atspausdinkite sumos kintamąjį;
-*/
-
-// let a = 16
-// let b = 22
-// let c = 7
-
-// let sum = a + b + c
-
-// console.log('Suma: ' + sum);
-
-/*
-B) Sudėkite skaičius į stringo tipo kintamąjį ir jį atspausdinkite
-pasinaudodami console.log;
-*/
-
-// let d = '16'
-// let e = '22'
-// let f = '7'
-
-// let sum = d + e + f
-
-// console.log('Suma string: ' + sum);
-
-/*
-C) Sudėkite skaičius į stringo tipo kintamąją padarant
-tarp skaičių tarpus ir jį atspauszdinkite pasinaudodami console.log;
-*/
-
-// let a = 16
-// let b = 22
-// let c = 7
-
-// let string = ''
-
-// string += a + ' '
-// string += b + ' '
-// string += c + ' '
-
-// console.log('Suma string`e: ' + string);
-
-/*
-D) Sudėkite skaičius į stringo tipo kintamąją padarant tarp skaičių
-tarpus ir gale pridedėkite trijų skaičių sumą, paskaičiuotą A dalyje.
-Atspausdinkite gautą stringo tipo kintąmąjį pasinaudodami console.log;
-*/
-
-// let a = 16
-// let b = 22
-// let c = 7
-
-// let string = ''
-
-// string += a + ' '
-// string += b + ' '
-// string += c + ' '
-
-// console.log('Suma string`e: ' + string +
-// 'Tikra suma: ' + (a+b+c));
-
-//-------------------- 2 --------------------
-/*
-Sukurkite vieną kintamąjį, jam priskirkite skaičių (iš intervalo 5…10),
-kurį sugeneruoja funkcija rand(5, 10) ir jį atspausdinkite
-pasinaudojus console.log;
-*/
-
-// let U = rndNum(5,10)
-
-// console.log('Random number: ' + U);
-
-//-------------------- 3 --------------------
-/*
-Sukurkite kintamąjį ir jam priskirkite stringą “Labas”. Pasinaudodami ciklu
-ir console.log atspauzdinkite kintamąjį 5 kartus;
-*/
-
-// let labas = 'LabaS'
-
-// for (let i = 0; i < 5; i++){
-//   console.log(labas);
-// }
-
-
-//-------------------- 4 --------------------
-/*
-Pasinaudojus ciklu ir console.log atspausdinkite
-kintamąjį iš 2 uždavinio 7 kartus;
-*/
-
-// for (let i = 0; i < 7; i++){
-//   console.log('Ats yra: ' + U);
-// }
-
-//-------------------- 5 --------------------
-/*
-Pasinaudojus ciklu ir console.log atspausdinkite kintamąjį
-iš 2 uždavinio tiek kartų, koks skaičius yra sugeneruotas;
-*/
-
-// for (let i = 0; i < U; i++){
-//   console.log('Ats yra (i kartų): ' + U);
-// }
-
-//-------------------- 6 --------------------
-/*
-Pasinaudojus ciklu ir ir console.log atspauzdinkite kintamąjį
-iš 2 uždavinio tiek kartų, koks skaičius yra sugeneruotas,
-bet tik tada jeigu jis didesnis už 7;
-*/
-
-// for (let i = 0; i < U; i++){
-//   if (U > 7){
-//     console.log('Ats yra (i kartų): ' + U);
-//   }
-// }
-
-//-------------------- 7 --------------------
-/*
-Deklaruokite kintamąjį už ciklo ribų. Ciklo viduje generuokite
-atsitiktinius skaičius funkcija rand(), kurie yra iš intervalo
-10…20. Ciklą kartokite 5 kartus;
-
-A) Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam,
-kurį sukūrėte už ciklo ribų ir jį atspausdinkite;
-*/
-
-// let out
-
-// for (let i = 0; i < 5; i++){
-//   out = rndNum(10, 20)
-// console.log(out);
-// }
-
-/*
-B) Skaičiuokite ciklo viduje generuojamų reikšmių sumą, ją priskirdami
-kintamajam, kurį sukūrėte už ciklo ribų. Rezultatą atspausdinkite
-pasinaudodami console.log už ciklo ribų;
-*/
-
-// let out = 0
-
-// for (let i = 0; i < 5; i++){
-//   out += rndNum(10, 20)
-// }
-
-// console.log('OUT: ' + out);
-
-/*
-C) Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį tarp
-skaičių darydami tarpą. Stringo tipo kintamąjį atspasdinkite už
-ciklo ribų jam pasibaigus;
-*/
-
-// let out = 0
-
-// for (let i = 0; i < 5; i++){
-//   out += ' ' + rndNum(10, 20) + ' '
-// }
-
-// console.log('OUT: ' + out);
-
-/*
-D) Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį
-tarp skaičių darydami tarpą. Ciklui pasibaigus prie stringo tipo kintamojo
-pridėkite ciklo viduje generuotų skaičių sumą, paskaičiuotą kaip B dalyje.
-Stringo tipo kintamąjį atspausdinkite pasinaudodami console.log;
-*/
-
-// let out = 0
-// let string = ''
-
-// for (let i = 0; i < 5; i++){
-//   string += rndNum(10, 20) + ' '
-//   out += rndNum(10, 20)
-// }
-
-// console.log('OUT: ' + string + 'Sum: ' + out);
-
-//-------------------- 8 --------------------
-/*
-Deklaruokite kintamąjį (jeigu reikia kelis kintamuosius) už ciklo ribų.
-Ciklo viduje generuokite atsitiktinius skaičius funkcija rand(), kurie yra
-iš intervalo 10…25. Ciklą kartokite tol, kol ciklo viduje bus sugeneruotas
-skaičius mažesnis nei 12;
-
-A) Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam,
-kurį sukūrėte už ciklo ribų ir jį atspausdinkite;
-*/
-
-let a = 0
-let b = 0
-
-while (true){
-  a = rndNum(10, 25)
-  console.log('a: ' + a);
-  if (a < 12){
-    break
-  }
-}
+// // Testas padarytas per 15 min
