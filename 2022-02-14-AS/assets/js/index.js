@@ -10,7 +10,7 @@ function rndNum(min, max) {
 //   case "S":
 //     console.log("Siunta telpa: " + "S");
 //   case "M":
-//     console.log("Siunta telpa: " + "M");  
+//     console.log("Siunta telpa: " + "M");
 //   case "L":
 //     console.log("Siunta telpa: " + "L");
 //   case "XL":
@@ -120,3 +120,78 @@ kauliukų suma tampa didesnė nei 33. Suskaičiuojam kiek kartų mėtėm
 // }
 
 // console.log('1000 L isgere per: ' + dienos);
+
+//----------------------- 1 --------------------------------TEST SELF
+
+// let sum = 100
+
+// for (let i = 0; i < 10; i++){
+
+//   sum += 10
+//   console.log('Sum: ' + sum);
+// }
+
+//------------------- 2 ----------------------
+
+// let x = 0;
+// let sum = 0;
+
+// for (let i = 0; i <= 10; i++) {
+//   x = rndNum(5, 15);
+//   console.log("Nums: " + x);
+//   if (x >= 10) {
+//     sum += x;
+//   }
+// }
+// console.log("Sum: " + sum);
+
+//-------------------- 3 ---------------------
+
+// let x = 0;
+// let sum = 0;
+// let avg = 0;
+// let o = 10
+
+// for (let i = 0; i <= o; i++) {
+//   x = rndNum(5, 15);
+//   console.log("Nums: " + x);
+//     sum += x;
+// }
+
+// avg = sum / o
+
+// console.log("Vid:     " + avg);
+
+//--------------------- 4 --------------------
+
+// let random
+// let iter = 0
+
+// do {
+// random = rndNum(10, 50)
+// iter++
+// console.log('Ran num: ' + random);
+// } while (random != 13 && random != 33 && random != 43)
+
+// console.log('i: ' + iter);
+
+//-------------------- 5 ---------------------
+
+// let random
+// let container = 0
+// let iter = 0
+
+// while (true){
+//   iter++
+//   random = rndNum(10, 20)
+//   console.log('R: ' + random);
+//   if (random == 17){
+//     container++
+//   } if (container == 3){
+//     break
+//   }
+// }
+
+// console.log('Sukosi: ' + iter);
+
+// // Testas padarytas per 15 min
