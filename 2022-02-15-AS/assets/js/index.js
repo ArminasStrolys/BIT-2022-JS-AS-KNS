@@ -103,8 +103,8 @@ kauliukų suma tampa didesnė nei 33. Suskaičiuojam kiek kartų mėtėm
 
 // ----------------- 5 -----------------
 /*
-do while ciklas. Metom kauliuką. Sustojam kai išmestų
-kauliukų suma tampa didesnė nei 33. Suskaičiuojam kiek kartų mėtėm
+Yra 1000 litrų vandens. Karvių banda per parą išgeria atsitiktinį kiekį nuo
+70 iki 200 litrų. Paskaičiuoti per kiek dienų karvės išgeria vandenį.
 */
 
 // let litrai = 1000
@@ -120,6 +120,16 @@ kauliukų suma tampa didesnė nei 33. Suskaičiuojam kiek kartų mėtėm
 // }
 
 // console.log('1000 L isgere per: ' + dienos);
+
+
+// let h2o = 1000
+// let days = 0
+// while(h2o > 0){
+//   days++
+//   h2o -= rndNum(70, 200)
+// }
+
+// console.log(h2o + ' litrų liko. Diena: ' + days);
 
 //----------------------- 1 --------------------------------TEST SELF
 
