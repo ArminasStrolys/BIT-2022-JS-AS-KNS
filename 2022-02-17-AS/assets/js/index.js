@@ -256,60 +256,220 @@ elementų indeksų (vietų, numerių) reikšmes;
 
 //---------------------- 7 ----------------------
 /*
-
+Į 1 uždavinio masyvą pridėti tiek naujų reikšmių 
+(pinigų, atsitiktinių skaičių nuo 0 iki 10),
+kad masyvo ilgis būtų lygiai 30;
 */
+
+// let pinigine = []
+// let plotis = rndNum(10, 30)
+
+// for (let i = 0; i < plotis; i++) {
+// let x = rndNum(0, 10)
+// pinigine.push(x)
+// }
+
+// let lenPlus = 30 - pinigine.length
+
+// for (let i = 0; i < lenPlus; i++) {
+//   let x = rndNum(0, 10)
+//   pinigine.push(x)
+//   }
+
+// console.log(pinigine);
 
 //---------------------- 8 ----------------------
 /*
-
+Naudojant 1 uždavinio masyvą iš jo reikšmių sukurti dar du
+papildomus masyvus. Į vieną iš 1 uždavinio masyvo pridėti
+reikšmes mažesnes arba lygias 2 (monetas), o į kitą didesnes
+nei 2 (popierinius pinigus);
 */
+
+// let pinigine = []
+// let pinigineMin = []
+// let pinigineMax = []
+// let plotis = rndNum(10, 30)
+
+// for (let i = 0; i < plotis; i++) {
+// let x = rndNum(0, 10)
+// if (x <= 2){
+// pinigineMin.push(x)
+// } else {
+//   pinigineMax.push(x)
+// }
+// pinigine.push(x)
+// }
+
+// console.log(pinigine);
+// console.log(pinigineMin);
+// console.log(pinigineMax);
 
 //---------------------- 9 ----------------------
 /*
-
+Sukurti masyvą (piniginę su dviem skyreliais) iš dviejų elementų,
+kurio pirmas elementas būtų masyvas iš 8 uždavinio su monetom,
+o antras elementas masyvas iš 8 uždavinio su popieriniais pinigais;
 */
+
+let fullPinigine = [];
+let pinigineMin = [];
+let pinigineMax = [];
+let plotis = rndNum(10, 30);
+let popieriniai = 0
+
+for (let i = 0; i < plotis; i++) {
+  let x = rndNum(0, 10);
+  if (x <= 2) {
+    pinigineMin.push(x);
+  } else {
+    pinigineMax.push(x);
+    popieriniai+=x
+  }
+}
+
+fullPinigine.push(pinigineMin, pinigineMax);
+
+console.log(pinigineMin);
+console.log(pinigineMax);
+console.log(fullPinigine);
 
 //---------------------- 10 ----------------------
 /*
-
+Į 9 uždavinio masyvą, piniginę su dviem skyreliais, pridėti trečią
+skyrelį- masyvą su kortelėm: ['KIKA', 'Euro Vaistinė', 'Drogas', 'Ačiū',
+'Lietuvos Geležinkeliai', 'Mano RIMI'];
 */
+
+let kartackos = [
+  "KIKA",
+  "Euro Vaistinė",
+  "Drogas",
+  "Ačiū",
+  "Lietuvos Geležinkeliai",
+  "Mano RIMI",
+];
+
+fullPinigine.push(kartackos);
+
+console.log(fullPinigine);
 
 //---------------------- 11 ----------------------
 /*
-
+Korteles skyrelyje sudėlioti (išrūšiuoti) pagal abėcėlę;
 */
+
+kartackos.sort()
 
 //---------------------- 12 ----------------------
 /*
-
+Į kortelių skyrelį pridėti mokėjimo kortelių 'MasterCard', 'Visa'
+(su rand generuokite atsitiktines reikšmes 'MasterCard' arba 'Visa' ir rašykite į masyvą)
+iš skirtingų bankų tiek, kad skyrelis (masyvo ilgis) pasidarytų lygus 20;
 */
+
+let MasterCard = []
+let Visa = []
+
+for (let i = 0; i < 20; i++){
+  let z = rndNum(1, 2)
+  if (z == 1){
+    MasterCard.push(z)
+  } else {
+    Visa.push(z)
+  }
+}
+
+kartackos.push(MasterCard, Visa);
+
+console.log(kartackos);
 
 //---------------------- 13 ----------------------
 /*
-
+Paskaičiuokite, kokio tipo kortelių ('MasterCard' arba 'Visa') yra daugiau;
 */
+
+if (MasterCard.length > Visa.length){
+  console.log('MasteCard bapkių daugiau: ' +  MasterCard.length + ' Visa: ' + Visa.length);
+}
+else if (MasterCard.length < Visa.length) {
+  console.log('Visa bapkių daugiau: ' +  Visa.length + ' MasterCard: ' + MasterCard.length);
+} else {
+  console.log('Tiek MasterCard, tiek Visa vienodai');
+}
 
 //---------------------- 14 ----------------------
 /*
-
+Sukurkite masyve (piniginėje) ketvirtą elementą (skyrelį) į kurį įdėkite
+10 loterijos bilietų, kurių numerius sugeneruokite atsitiktinai su rand
+funkcija nuo 1000000000 iki 9999999999;
 */
+
+let bilietai = []
+
+fullPinigine.push(bilietai)
+
+for (let i = 0; i < 10; i++){
+  let win = rndNum(1000000000, 9999999999)
+  bilietai.push(win)
+}
+
+console.log(fullPinigine);
 
 //---------------------- 15 ----------------------
 /*
-
+Loterijos bilietų masyvą išrūšiuoti nuo didžiausio numerio iki mažiausio;
 */
+
+bilietai.sort((a, b) => {
+  return a - b
+})
 
 //---------------------- 16 ----------------------
 /*
-
+Į piniginės popierinių pinigų skyrelį įdėti 500 pinigų mažom kupiūrom
+(generuoti atsitiktinius skaičius nuo 3 iki 10 ir dėti kaip naujus elementus,
+  kol įdėta suma bus lygi 500);
 */
+
+let bapkes500 = 0
+
+while (bapkes500 <= 500){
+  let popX = rndNum(3, 10)
+  bapkes500+= popX
+  pinigineMax.push(popX)
+}
+
+console.log('Pop plius iki 500: ' + bapkes500);
 
 //---------------------- 17 ----------------------
 /*
-
+Patikrinti ar ką nors laimėjote. Bilieto numerius dalinkite iš 777 ir jeigu
+numeris išsidalins be liekanos - jūs laimėjote! Suskaičiuokite, kiek buvo laimingų bilietų.
 */
+
+let luck = 0
+
+for (let i = 0; i < bilietai.length; i++){
+  if (bilietai[i] % 777 == 0){
+console.log('Lucky win: ' + bilietai[i]);
+luck++
+  }
+}
 
 //---------------------- 18 ----------------------
 /*
-
+Sukurkite penktą skyrelį ir į jį sudėkite nuotraukas:
+['šuo', 'katė', 'automobilis', 'namas', 'kiemas']
+ir jas išrūšiuokite pagal žodžių ilgį taip, kad pirma eitų trumpiausi žodžiai;
 */
+
+let foto = ['šuo', 'katė', 'automobilis', 'namas', 'kiemas']
+
+fullPinigine.push(foto)
+
+foto.sort((a, b) => {
+  return a.length - b.length
+})
+
+console.log(fullPinigine);
