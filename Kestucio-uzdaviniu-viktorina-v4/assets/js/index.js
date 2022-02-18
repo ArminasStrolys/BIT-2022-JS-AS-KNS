@@ -101,14 +101,19 @@ užrašykite taip, kad būtų galima įvesti tik sveiką skaičių.
 */
 
 // const numbers = (a) => {
-//   if (typeof a != "number") {
-//       return 'Ne skaicius'
-//   } else if () {
-
+//   let count = 0;
+//   if (typeof a !== "number" || Number.isInteger(a) != true) {
+//     return "Ne skaicius";
 //   }
+//   for (let i = 2; i < a; i++) {
+//     if (a % i == 0) {
+//       count++;
+//     }
+//   }
+//   return `${a} dalinasi be liekanos is ${count} skaiciu`;
 // };
 
-// console.log(numbers(20));
+// console.log(numbers(25.8));
 
 // ----------------------------- 7 -----------------------------
 /*
@@ -141,28 +146,28 @@ skaičiais ir minimum 7 elementais. Funkcija turi grąžinti true,
 jei skaičius yra masyve, ir false, jei nėra tokio skaičiaus masyve.
 */
 
-const numbers = (a, b) => {
-  if (
-    (typeof a == "number" && Array.isArray(b) == true && b.length >= 7) ||
-    (typeof b == "number" && Array.isArray(a) == true && a.length >= 7)
-  ) {
-    for (let i = 0; i < a.length; i++) {
-      if (a.includes(b)) {
-        return "Skaicius yra " + b;
-      } else {
-        return "Nera " + b;
-      }
-    }
-    for (let i = 0; i < b.length; i++) {
-      if (b.includes(a)) {
-        return "Skaicius yra " + a;
-      } else {
-        return "Nera " + a;
-      }
-    }
-  } else {
-    return "BLOGAS SKAICIUS ARBA PER TRUMPAS MASYVAS";
-  }
-};
+// const numbers = (a, b) => {
+//   if (
+//     (typeof a == "number" && Array.isArray(b) == true && b.length >= 7) ||
+//     (typeof b == "number" && Array.isArray(a) == true && a.length >= 7)
+//   ) {
+//     for (let i = 0; i < a.length; i++) {
+//       if (a.includes(b)) {
+//         return "Skaicius yra " + b;
+//       } else {
+//         return "Nera " + b;
+//       }
+//     }
+//     for (let i = 0; i < b.length; i++) {
+//       if (b.includes(a)) {
+//         return "Skaicius yra " + a;
+//       } else {
+//         return "Nera " + a;
+//       }
+//     }
+//   } else {
+//     return "BLOGAS SKAICIUS ARBA PER TRUMPAS MASYVAS";
+//   }
+// };
 
-console.log(numbers(2, [6, 1, 1, 0, 9, 8, 7]));
+// console.log(numbers(2, [6, 1, 1, 0, 9, 8, 7]));

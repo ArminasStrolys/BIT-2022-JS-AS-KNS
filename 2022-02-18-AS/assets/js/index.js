@@ -39,16 +39,16 @@ function rndNum(min, max) {
 
 //---------------------------------------------------------------------------------------------------------
 
-let a = [3, 7, 0, 8, 6, 8, 2, 9, 1, 4]
+// let a = [3, 7, 0, 8, 6, 8, 2, 9, 1, 4]
 
-const telefonoNumeris = (a) => {
-  let x = 0
-  if (Array.isArray(a) != true || a.length != 10){
-    x = 'Ne masyvas'
-  } else {
-  x = '('+a[0]+a[1]+a[2]+')'+' '+a[3]+a[4]+a[5]+'-'+a[6]+a[7]+a[8]+a[9]
-}
-  return x
-}
+// const telefonoNumeris = (a) => {
+//   let x = 0
+//   if (Array.isArray(a) != true || a.length != 10){
+//     x = 'Ne masyvas'
+//   } else {
+//   x = '('+a[0]+a[1]+a[2]+')'+' '+a[3]+a[4]+a[5]+'-'+a[6]+a[7]+a[8]+a[9]
+// }
+//   return x
+// }
 
-console.log(telefonoNumeris(a));
+// console.log(telefonoNumeris(a));
