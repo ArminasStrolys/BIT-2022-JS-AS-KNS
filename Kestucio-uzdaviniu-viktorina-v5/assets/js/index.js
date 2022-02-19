@@ -1,318 +1,105 @@
+const $ = document.querySelectorAll.bind(document)
+
 function rndNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 // ----------------------------- 1 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai,kurių
-ilgis 10, o reikšmės skaičiai nuo 1 iki 10 ([1,2,3,4,5,6,7,8,9,10]).
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą
+ar kintamasis yra tekstas. Išvestų tekstą į ekraną „<p>“ tag‘e.
 */
 
-// let arrayA = []
-// let arrayB = []
-// let arrayC = []
+let a = 'Test a string'
 
-// for (let i = 0; i < 100; i++) {
-//  arrayA.push(i)
-// }
+const text = (a) => {
+  if (typeof a == 'string' == true){
+    return $('p')[0].innerHTML = a
+  } else {
+    return 'Not a string'
+  }
+}
 
-// for (let i = 1; i <= 10; i++) {
-//  arrayB.push(i)-1
-// }
-
-// arrayA.forEach(element => {
-//   arrayC.push(arrayB)
-// });
-
-// console.log(arrayC);
+console.log(text(a));
 
 // ----------------------------- 2 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis 10, o reikšmės atsitiktiniai skaičiai nuo 1 iki 17.
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą
+ar kintamasis yra tekstas. Funkcija turi išvesti tekstą į
+ekraną ir dar papildomai parodyti jo ilgį.
 */
 
-// let arrayA = [];
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-//   for (let i = 0; i < 10; i++) {
-//     let x = rndNum(1, 17);
-//     arrayB.push(x);
-//   }
-//   // console.log(arrayB);
-//   arrayA.push(arrayB);
-// });
-
-// arrayA.splice(0, 100);
-
-// console.log(arrayA);
 
 // ----------------------------- 3 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis atsitiktinis nuo 5 iki 18, o reikšmės – skaičiai
-nuo 1 iki masyvo ilgio.
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą
+ar kintamasis yra tekstas. Jei teksto ilgis lyginis – tekstą
+išvestų žalios spalvos, jei nelyginis – mėlynos.
 */
 
-// let arrayA = [];
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-//   let y = rndNum(5, 18);
-//   for (let i = 0; i < y; i++) {
-//     arrayB.push(i);
-//   }
-//   // console.log(arrayB);
-//   arrayA.push(arrayB);
-// });
-
-// arrayA.splice(0, 100);
-
-// console.log(arrayA);
 
 // ----------------------------- 4 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis atsitiktinis nuo 5 iki 18, o reikšmės – atsitiktiniai
-skaičiai nuo 5 iki 30.
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą
+ar kintamasis yra tekstas. Funkcija turi atspausdinti tekstą,
+kur mažosios raidės pakeistos į didžiasias ir atvirkščiai.
 */
 
-// let arrayA = [];
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-//   let y = rndNum(5, 18);
-//   for (let i = 0; i < y; i++) {
-//     let x = rndNum(5, 30);
-//     arrayB.push(x);
-//   }
-//   // console.log(arrayB);
-//   arrayA.push(arrayB);
-// });
-
-// arrayA.splice(0, 100);
-
-// console.log(arrayA);
 
 // ----------------------------- 5 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis atsitiktinis nuo 5 iki 18, o reikšmės – atsitiktiniai skaičiai
-nuo 5 iki 75. Surasti didžiausią skaičių visame didžiajame masyve.
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą
+ar kintamasis yra tekstas. Jei kintamasis yra tekstas, jo ilgis
+turi būti daugiau, kaip 20 simbolių. Suskaičiuoti, kiek tekste
+yra ‚a‘ raidžių.
 */
 
-// let arrayA = [];
-// let max = 0;
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-
-//   let y = rndNum(5, 18);
-//   for (let i = 0; i < y; i++) {
-//     let x = rndNum(5, 75);
-//     arrayB.push(x);
-//   }
-
-// arrayB.forEach(element => {
-//   if (element > max){
-//     max = element
-//   }
-// })
-//   arrayA.push(arrayB);
-// });
-
-// arrayA.splice(0, 100);
-
-// console.log('Max: ' + max);
-// console.log(arrayA);
 
 // ----------------------------- 6 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis atsitiktinis nuo 5 iki 18, o reikšmės – atsitiktiniai skaičiai
-nuo 5 iki 75. Surasti mažiausią skaičių visame didžiajame masyve ir
-kiek kartų jis pasikartojo.
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą
+ar kintamasis yra tekstas. Suskaičiuoti kiek tekste yra mažųjų
+ir kiek didžiųjų raidžių.
 */
 
-// let arrayA = [];
-// let min = 999999;
-// let count = 1;
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-
-//   let y = rndNum(5, 18);
-//   for (let i = 0; i < y; i++) {
-//     let x = rndNum(5, 75);
-//     arrayB.push(x);
-//   }
-
-//   arrayB.forEach((element) => {
-//     if (min == element) {
-//       count++;
-//     }
-//     if (element < min) {
-//       min = element;
-//     }
-//   });
-//   arrayA.push(arrayB);
-// });
-
-// arrayA.splice(0, 100);
-
-// console.log("Min: " + min);
-// console.log("Times: " + count);
-// console.log(arrayA);
 
 // ----------------------------- 7 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis 10, o reikšmės atsitiktiniai skaičiai nuo 1 iki 17.
-Išrykiuoti vidinių masyvų reikšmes didėjančia tvarka.
+Parašyti funkciją, kuri priimtų du kintamuosius. Atliktų testą
+ar kintamieji yra tekstai. Palyginti kuris tekstas yra ilgesnis.
 */
 
-// let arrayA = [];
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-
-//   for (let i = 0; i < 10; i++) {
-//     let x = rndNum(1, 17);
-//     arrayB.push(x);
-//   }
-//   arrayB.sort(e = (a, b) =>{
-//     return a - b;
-//   })
-//   arrayA.push(arrayB);
-// });
-
-// arrayA.splice(0, 100);
-
-// console.log(arrayA);
 
 // ----------------------------- 8 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis 10, o reikšmės atsitiktiniai skaičiai nuo 1 iki 17. Perrikiuoti
-vidinius masyvus pagal vidinių masyvų reikšmių sumas didėjančia tvarka.
+Parašyti funkciją, kuri priimtų du kintamuosius. Atliktų testą
+ar kintamieji yra tekstai. Palyginti kuris tekstas yra turi
+daugiau didžiųjų raidžių.
 */
 
-//NESIGAUNA
+
 
 // ----------------------------- 9 -----------------------------
 /*
-Sugeneruoti masyvą, kurio ilgis 100, o reikšmės – masyvai, kurių
-ilgis 10, o reikšmės atsitiktiniai skaičiai nuo 1 iki 17. Iš dvimačio
-masyvo sukurti vieną vienmatį masyvą – visas dvimačio masyvo masyvų
-reikšmes perkelti į naują masyvą.
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą
+ar kintamasis yra tekstas. Funckija turi grąžinti tekstą, kur
+žodžiai būtų sukeisti vietomis, tai yra pirmas žodis taptų paskutinis,
+antras – priešpaskutinis ir t.t. Pačių žodžių keisti nereikia.
 */
 
-// let arrayA = [];
-// let arrayC = [];
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-//   for (let i = 0; i < 10; i++) {
-//     let x = rndNum(1, 17);
-//     arrayB.push(x);
-//   }
-//   arrayA.push(arrayB);
-//   arrayC.push(...arrayB)
-// });
-
-// arrayA.splice(0, 100);
-
-// console.log(arrayA);
-// console.log(arrayC);
 
 // ----------------------------- 10 -----------------------------
 /*
-Papildyti 29 uždavinį taip, kad surastų skaičių vidurkį ir palygintų
-jį su vidurinia reikšme, kuris didesnis. Jei elementų yra nelyginis
-skaičius, pvz 9, tai vidurinė reikšmė bus 5-as elementas, jei elementų
-yra lyginis skaičius, pvz 8, tai vidurinė reikšmė bus 4-os ir 5-os
-reikšmės aritmetinis vidurkis
+Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą ar
+kintamasis yra tekstas. Kiekvienam simboliui sugeneruoti atsitiktinę
+spalvą ir atvaizduoti pagražintą spalvotą tekstą.
 */
 
-// let arrayA = [];
-// let arrayC = [];
-// let sum = 0;
-// let cycle = 0;
-// let avg = 0;
-// let vidSkc = 0;
-// let bendrasVid = 0;
-// let ats = 0;
 
-// for (let i = 0; i < 100; i++) {
-//   arrayA.push(i);
-// }
-
-// arrayA.forEach((element) => {
-//   let arrayB = [];
-//   let y = rndNum(9, 11);
-//   for (let i = 0; i < y; i++) {
-//     let x = rndNum(1, 17);
-//     arrayB.push(x);
-//   }
-//   arrayC.push(...arrayB);
-// });
-
-// console.log(arrayC);
-
-// arrayC.forEach((element) => {
-//   sum += element;
-//   cycle++;
-// });
-
-// bendrasVid = sum / cycle;
-
-// if (cycle % 2 != 0) {
-//   vidSkc = arrayC[(cycle + 1) / 2];
-// } else {
-//   vidSkc = (arrayC[cycle / 2] + arrayC[cycle / 2 + 1]) / 2;
-// }
-
-// if (bendrasVid > vidSkc) {
-//   ats = "Vidurkis yra didesnis, nei vidurinė reikšmė";
-// } else {
-//   ats = "Vidurinė reikšmė yra didesnė, nei vidurkis";
-// }
-
-// // console.log('Avg: ' + bendrasVid.toFixed(2));
-// // console.log('Sum: ' + sum);
-// // console.log('Cycle: ' + cycle);
-// // console.log('Mid ' + arrayC[cycle/2]);
-// // console.log('Mid ' + arrayC[vidSkc]);
-// // console.log('Mid only ' + vidSkc);
-// console.log(`Bendras vidurkis: ${bendrasVid.toFixed(2)}
-// Vidurinė reikšmė yra: ${vidSkc}
-// ${ats}`);
