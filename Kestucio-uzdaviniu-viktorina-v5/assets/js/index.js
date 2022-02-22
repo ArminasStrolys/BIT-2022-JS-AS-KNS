@@ -127,29 +127,30 @@ ar kintamasis yra tekstas. Suskaičiuoti kiek tekste yra mažųjų
 ir kiek didžiųjų raidžių.
 */
 
-let a = 'teST react ANGULAR'
-let small = 0
-let big = 0
-let whiteSpace = 0
+// let a = 'teST react ANGULAR'
+// let small = 0
+// let big = 0
+// let whiteSpace = 0
 
-const texting = (a) => {
-  if ((typeof a == 'string') == false){
-    return 'Not A strinG'
-  } else {
-    for (let i = 0; i < a.length; i++){
-        if (a.charAt(i) == a.charAt(i).toUpperCase()){
-          big++
-        } else if (a.charAt(i) == a.charAt(i).toLowerCase()) {
-          small++
-        } else if (a.charAt(i) == '') {
-          whiteSpace++
-        }
-    }
-  }
-  return `Didziuju raidziu yra: ${big}, o mazuju yra: ${small}. Tarpu buvo: ${whiteSpace}`
-}
+// const texting = (a) => {
+//   whiteSpace = a.split(' ').length-1
+//   if ((typeof a == 'string') == false){
+//     return 'Not A strinG'
+//   } else {
+//     for (let i = 0; i < a.length; i++){
+//         if (a.charAt(i) == a.charAt(i).toUpperCase()){
+//           big++
+//         } else if (a.charAt(i) == a.charAt(i).toLowerCase()) {
+//           small++
+//         } 
+//     }
+//   }
+//   return `Didziuju raidziu yra: ${big-whiteSpace}, o mazuju yra: ${small}. Tarpu buvo: ${whiteSpace}`
+// }
 
-console.log(texting(a));
+// console.log(texting(a));
+
+// console.log();
 
 // ----------------------------- 7 -----------------------------
 /*
@@ -157,12 +158,71 @@ Parašyti funkciją, kuri priimtų du kintamuosius. Atliktų testą
 ar kintamieji yra tekstai. Palyginti kuris tekstas yra ilgesnis.
 */
 
+// let a = 'testinis stringas1'
+// let b = 'testinis stringas'
+// let whiteSpaceA = 0
+// let whiteSpaceB = 0
+
+// const kurisIlgesnis = (a, b) => {
+
+//   if (typeof a != 'string' || typeof b != 'string'){
+//     return console.log('Nera string');
+//   }
+
+//   whiteSpaceA = a.split(' ').length-1
+//   whiteSpaceB = b.split(' ').length-1
+
+//     if ((a.length - whiteSpaceA) > (b.length - whiteSpaceB)){
+//       return console.log('A string ilgesnis su ' + (a.length - whiteSpaceA) + ' raidem.');
+//     } else if ((a.length - whiteSpaceA) < (b.length - whiteSpaceB)){
+//       return console.log('B string ilgesnis su ' + (b.length - whiteSpaceB) + ' raidem.');
+//     } else {
+//       return console.log('Stringai lygus');
+//     }
+// }
+
+// kurisIlgesnis(a, b)
+
 // ----------------------------- 8 -----------------------------
 /*
 Parašyti funkciją, kuri priimtų du kintamuosius. Atliktų testą
 ar kintamieji yra tekstai. Palyginti kuris tekstas yra turi
 daugiau didžiųjų raidžių.
 */
+
+// let a = 'This is a test STRING ' 
+// let b = 'This is a TEST STRING ' 
+// let whiteSpaceA = 0
+// let whiteSpaceB = 0
+// let bigA = 0
+// let bigB = 0
+
+// const bigLetters = (a, b) => {
+//   if (typeof a != 'string' || typeof b != 'string'){
+//     return console.log('Not a string');
+//   }
+
+//   whiteSpaceA = a.split(' ').length-1
+//   whiteSpaceB = b.split(' ').length-1
+
+//   for (let i = 0; i < a.length; i++){
+//     if (a.charAt(i) == a.charAt(i).toUpperCase()){
+//       bigA++
+//     }
+//   }
+//   for (let i = 0; i < b.length; i++){
+//     if (b.charAt(i) == b.charAt(i).toUpperCase()){
+//       bigB++
+// }
+//   }
+//   if ((bigA-whiteSpaceA) == (bigB-whiteSpaceB)){
+//     return console.log('Lygus skaicius');
+//   }
+
+//   return console.log(`A didziuju yra ${bigA-whiteSpaceA}. B didziuju yra ${bigB-whiteSpaceB}.`);
+// }
+
+// bigLetters(a, b)
 
 // ----------------------------- 9 -----------------------------
 /*
@@ -172,9 +232,39 @@ ar kintamasis yra tekstas. Funckija turi grąžinti tekstą, kur
 antras – priešpaskutinis ir t.t. Pačių žodžių keisti nereikia.
 */
 
+// let a = 'Pirmas Antras Trecias Ketvirtas Penktas'
+
+// const keitykla = (a) => {
+// if (typeof a != 'string'){
+//   return console.log('Ne string');
+// }
+// return console.log(a.split(' ').reverse().join(' '))
+// }
+
+// keitykla(a)
+
 // ----------------------------- 10 -----------------------------
 /*
 Parašyti funkciją, kuri priimtų vieną kintamąjį. Atliktų testą ar
 kintamasis yra tekstas. Kiekvienam simboliui sugeneruoti atsitiktinę
 spalvą ir atvaizduoti pagražintą spalvotą tekstą.
 */
+
+// let a = 'RAINBOW-TEXT-TEST'
+
+// const rainbow = (a) => {
+//   if (typeof a != 'string'){
+//     return console.log('Ne string');
+//   }
+// for (let i = 0; i < a.length; i++){
+//    $('span')[i].innerHTML = a.charAt(i)
+// }
+// for (let i = 0; i < a.length; i++){
+//   let r = rndNum(0, 255)
+//   let g = rndNum(0, 255)
+//   let b = rndNum(0, 255)
+//   $('span')[i].style.color = `rgb(${r}, ${g}, ${b})`
+// }
+// }
+
+// rainbow(a)
