@@ -1,3 +1,94 @@
-body {
-  background-color: rgb(69, 99, 0);
+.fa-rocket {
+  font-size: 40px;
+  color: black;
+}
+
+.container-fluid {
+  background-color: rgb(37, 37, 37);
+}
+.navBox {
+  display: grid;
+  height: 70px;
+}
+.navBox1 {
+  grid-column-start: 3;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  align-self: center;
+}
+.navBox2 {
+  grid-column-start: 6;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  align-self: center;
+  justify-self: center;
+  font-size: 15px;
+}
+.navBox2 span {
+  margin: 0 20px;
+}
+
+.container-fluid {
+  display: grid;
+  height: 600px;
+  background-color: rgb(141, 141, 141);
+  color: white;
+}
+p {
+  padding-top: 40px;
+}
+.mainBox span {
+  font-size: 80px;
+}
+
+.mainBox {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  text-align: center;
+  justify-self: center;
+}
+.btn.btn-outline-secondary {
+  margin-top: 30px;
+  background-color: rgb(129, 129, 129);
+  border-radius: 50px;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+}
+.card {
+  text-align: center;
+}
+.card-img.card-img-bottom.card-img-top {
+  width: 0;
+  height: 50px;
+}
+.cardBoxRow {
+  display: grid;
+  column-gap: 100px;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  top: -150px;
+}
+#card1 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 12;
+}
+#card2 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 5;
+  grid-column-end: 12;
+}
+#card3 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 8;
+  grid-column-end: 12;
 }

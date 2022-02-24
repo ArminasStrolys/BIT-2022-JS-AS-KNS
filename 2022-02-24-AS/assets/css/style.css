@@ -1,3 +1,29 @@
 body {
-  background-color: rgb(69, 99, 0);
+  background-color: rgb(255, 255, 255);
+}
+.container{
+  position: relative;
+  top: -100px;
+}
+.container-fluid.grayColor{
+background-color: rgb(158, 158, 158);
+color: white;
+text-align: center;
+display: grid;
+}
+.fa-rocket{
+  font-size: 40px;
+  color: black;
+}
+#navBar{
+  height: 80px;
+}
+#navBarItems{
+  gap: 200px;
+}
+#mainBar{
+  height: 600px;
+}
+#mainBar h1{
+  font-size: 90px;
 }
