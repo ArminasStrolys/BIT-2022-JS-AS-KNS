@@ -59,8 +59,9 @@ body {
 .cards{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: -180px;
+  margin-top: -380px;
   grid-column-gap: 40px;
+  min-height: 800px;
 }
 .cards h2{
   margin-top: 50px;
