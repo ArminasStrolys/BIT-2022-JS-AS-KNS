@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(108, 174, 179);
+}
+.iclass{
+font-size: 30px;
+color: white;
+}
+.main{
+  color: rgb(100, 255, 133);
+}
+.first{
+  color: bisque;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.price-tag{
+  color: brown;
+}
+.new{
+  color: rgb(255, 255, 129);
+}
