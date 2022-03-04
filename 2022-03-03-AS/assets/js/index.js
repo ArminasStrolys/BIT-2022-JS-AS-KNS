@@ -106,7 +106,7 @@ $2('i').addEventListener('click', () => {
     $2('i').style.fontWeight = '700'
 })
 
-// $2('.prices').addEventListener('click', () => {
+// $2('.prices').addEventListener('click', () => { //Neveikiantis
 //     let col = $2('.prices').style.backgroundColor = 'gray'
 //     // col = 'red'
 // console.log(col);
@@ -117,6 +117,15 @@ $2('i').addEventListener('click', () => {
     //     $2('.prices').style.backgroundColor = 'white'
     // }
 // })
+
+document.querySelectorAll('.prices')[0].addEventListener('click', () => {
+    let elem =document.querySelectorAll('.prices')[0].style.backgroundColor;
+    if(elem == 'white' || elem == undefined || elem == '' || elem == null){
+        document.querySelectorAll('.prices')[0].style.backgroundColor = 'grey'
+}else {
+    document.querySelectorAll('.prices')[0].style.backgroundColor = 'white'
+}
+});
 
 
 $2('#contacts').addEventListener('click', () => {
@@ -163,15 +172,32 @@ $('.new').forEach(e => {
     })
 })
 
+// function paintRed() {    //Antras variantas
+//     document.querySelectorAll('li.new').forEach(e=>e.style.color ='red')
+// }
+// document.querySelectorAll('li.new').forEach(e=>e.addEventListener('dblclick', paintRed))
+
+
 $('ul').forEach(e => {
     e.addEventListener('click', () => {
         $2('li:hover:not(.like-button)').style.fontSize = '130%'
     })
 })
 
+// function changeFont() {  //Antras variantas
+//     document.querySelectorAll('li:not(.like-button').forEach(e=>e.style.fontSize = '130%')
+// }
+// document.querySelectorAll('li:not(.like-button)').forEach(e=>e.addEventListener('click', changeFont))
+
 $('.like-button').forEach(e => {
     e.addEventListener('click', () => $2('.like-button:hover').closest('ul').classList.add('like'))
 })
+
+// document.querySelectorAll('.animals > ul').forEach(e=>{      //Antras variantas
+//     e.querySelector('.like-button').addEventListener('click', () =>{
+//         e.classList.add('like')
+//     })
+// })
 
 // ------------------------- 5 -------------------------
 /*
@@ -191,3 +217,54 @@ document.body.insertBefore(n, prices)
 
 $2('.prices::before').innerHTML = document.createElement('h2').textContent = 'Senjorai tik: 1.99 eur'
 $2('.prices').innerHTML = m
+
+//5 uzdavinys
+//a Dinamiškai su JS pridėti naują kainą “Senjorai tik: 1.99 eur”;
+
+let senjorai = document.createElement('h2');
+
+senjorai.innerText = 'Senjorai tik 1.99eur';
+
+document.querySelector('.prices').appendChild(senjorai);
+
+//b Dinamiškai su JS Pridėti naują kainą “Senjorų grupė iki 10: tik 5.99 eur” Padaryti, kad pridėtas elementas turėtų klasę new ir ant jo paklikinus jis pasidarytų žalias;
+
+let akcija =document.createElement('h2')
+akcija.innerText = "Senjorų grupė iki 10:tik 5.99 eur"
+akcija.classList.add('new');
+akcija.addEventListener('click', () =>{
+akcija.style.backgroundColor = 'green'})
+document.querySelector('.prices').appendChild(akcija);
+
+//c Dinamiškai su JS kiekvienoje gyvūnų kategorijoje po “PATINKA” pridėkite dar vieną li elementą “NEPATINKA”, kurį paspaudus atitinkamoje sekcijoje būtų nuimta klasė like
+
+const allUlDom = document.querySelectorAll('.animals > ul');
+    allUlDom.forEach(e => {
+        const likeBtnDom = e.querySelector('.like-button');
+        const li = document.createElement('li');
+        const txt = document.createTextNode('NEPATINKA');
+        li.appendChild(txt);
+        li.addEventListener('click', () =>  e.classList.remove('like'));
+        likeBtnDom.after(li);
+    });
+
+//d Dinamiškai su JS sukurkite naują mygtukų grupę HEADER 3 naudojant analogišką html tagų struktūrą kaip ir HEADER 1 ir HEADER 2.
+//Pirmas mygtukas vadintųsi, “Pabraukti H1 tagą”, o antras “Nepabraukti H1 tagą”. Mygtukai turi daryti tai kas ant jų parašyta
+
+const fieldset = document.createElement('fieldset');
+const legend = document.createElement('legend');
+const btn1 = document.createElement('button');
+const btn2 = document.createElement('button');
+const btnText1 = document.createTextNode('Pabraukti H1 tagą');
+const btnText2 = document.createTextNode('Nepabraukti H1 tagą');
+const legendText = document.createTextNode('HEADER 3');
+legend.appendChild(legendText);
+fieldset.appendChild(btn1);
+fieldset.appendChild(btn2);
+btn1.appendChild(btnText1);
+btn2.appendChild(btnText2);
+fieldset.appendChild(legend);
+document.getElementById('contacts').before(fieldset);
+
+btn1.addEventListener('click', () => document.querySelector('h1').style.textDecoration = 'underline');
+btn2.addEventListener('click', () => document.querySelector('h1').style.textDecoration = 'none');
