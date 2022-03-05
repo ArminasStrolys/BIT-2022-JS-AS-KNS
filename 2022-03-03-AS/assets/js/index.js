@@ -209,32 +209,36 @@ c) Dinamiškai su JS kiekvienoje gyvūnų kategorijoje po “PATINKA” pridėki
 d) Dinamiškai su JS sukurkite naują mygtukų grupę HEADER 3 naudojant analogišką html tagų struktūrą kaip ir HEADER 1 ir HEADER 2. Pirmas mygtukas vadintųsi, “Pabraukti H1 tagą”, o antras “Nepabraukti H1 tagą”. Mygtukai turi daryti tai kas ant jų parašyta
 */
 
-document.body.onload = m;
-let m = document.createElement('h2')
-let n = document.createTextNode('Senjorai tik: 1.99 eur');
-m.appendChild(n)
-document.body.insertBefore(n, prices)
+let sen = document.createElement('h2')
+sen.innerHTML = 'Senjorai tik: 1.99 eur'
+$2('.prices').appendChild(sen)
 
-$2('.prices::before').innerHTML = document.createElement('h2').textContent = 'Senjorai tik: 1.99 eur'
-$2('.prices').innerHTML = m
+let sGroup = document.createElement('h2')
+sGroup.innerHTML = 'Senjorų grupė iki 10: tik 5.99 eur'
+sGroup.classList.add('new')
+$2('.prices').appendChild(sGroup)
+$2('.prices').addEventListener('click', ()=>{
+    $2('.prices:last-child').style.color = 'white'
+})
+
+// $2('.prices::before').innerHTML = document.createElement('h2').textContent = 'Senjorai tik: 1.99 eur'
+// $2('.prices').innerHTML = m
 
 //5 uzdavinys
 //a Dinamiškai su JS pridėti naują kainą “Senjorai tik: 1.99 eur”;
 
-let senjorai = document.createElement('h2');
-
-senjorai.innerText = 'Senjorai tik 1.99eur';
-
-document.querySelector('.prices').appendChild(senjorai);
+// let senjorai = document.createElement('h2');
+// senjorai.innerText = 'Senjorai tik 1.99eur';
+// document.querySelector('.prices').appendChild(senjorai);
 
 //b Dinamiškai su JS Pridėti naują kainą “Senjorų grupė iki 10: tik 5.99 eur” Padaryti, kad pridėtas elementas turėtų klasę new ir ant jo paklikinus jis pasidarytų žalias;
 
-let akcija =document.createElement('h2')
-akcija.innerText = "Senjorų grupė iki 10:tik 5.99 eur"
-akcija.classList.add('new');
-akcija.addEventListener('click', () =>{
-akcija.style.backgroundColor = 'green'})
-document.querySelector('.prices').appendChild(akcija);
+// let akcija = document.createElement('h2')
+// akcija.innerText = "Senjorų grupė iki 10:tik 5.99 eur"
+// akcija.classList.add('new');
+// akcija.addEventListener('click', () =>{
+// akcija.style.backgroundColor = 'green'})
+// document.querySelector('.prices').appendChild(akcija);
 
 //c Dinamiškai su JS kiekvienoje gyvūnų kategorijoje po “PATINKA” pridėkite dar vieną li elementą “NEPATINKA”, kurį paspaudus atitinkamoje sekcijoje būtų nuimta klasė like
 
