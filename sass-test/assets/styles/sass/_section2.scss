@@ -1,0 +1,19 @@
+section:nth-child(2) {
+    div {
+      @include borderStyle(red, dashed);
+      @include space();
+      h1 {
+        color: $textColorDarkGray;
+        p {
+          color: $textColorBlack;
+        }
+        a {
+          color: $textColorWhite;
+          @include trans();
+          &:hover {
+            color: $textColorDarkRed;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+@mixin borderStyle($color, $style){
+    border: 5px $color $style;
+}
+@mixin space(){
+    padding: 20px;
+    margin: 20px;
+}
+@mixin trans(){
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
