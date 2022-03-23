@@ -31,8 +31,6 @@ function rndNum(min, max) {
 // Raktažodis 'viso' yra paskaičiuojamas kainaSuNuolaida * vnt. Turite panaudoti object destructuring ir objekto default reikšmė nuolaidos
 // raktažodžiui. Default reikšmė turi būti 0.0.
 
-const newSales = []
-
 const pardavimai = [
   { preke: "PS4 Pro", vnt: 3, originaliKaina: 399.99 },
   { preke: "Xbox One X", vnt: 1, originaliKaina: 499.99, nuolaida: 0.2 },
@@ -41,22 +39,24 @@ const pardavimai = [
   { preke: "Nintendo 64", vnt: 2, originaliKaina: 199.99, nuolaida: 0.65 },
 ];
 
+const newSales = [];
+
 const paskaiciuotiPardavimus = () => {
-
   for (i = 0; i < pardavimai.length; i++) {
+    const { nuolaida = 0 } = pardavimai[i];
+    let kainaSuNuolaida = pardavimai[i].originaliKaina - pardavimai[i].originaliKaina * nuolaida;
+    let viso = kainaSuNuolaida * pardavimai[i].vnt;
 
-    const { nuolaida = 0 } = pardavimai
-
-    let kainaSuNuolaida =pardavimai[i].originaliKaina -pardavimai[i].originaliKaina * pardavimai[i].nuolaida;
-    let viso =pardavimai[i].originaliKaina * pardavimai[i].nuolaida * pardavimai[i].vnt;
-    // console.log(pardavimai[i]);
-    newSales.push(pardavimai[i].preke)
-// console.log(kainaSuNuolaida);
-// console.log(viso);
+    newSales.push({
+      "preke: ": pardavimai[i].preke,
+      "originali kaina: ": pardavimai[i].originaliKaina,
+      "kaina su nuolaida: ": kainaSuNuolaida,
+      "vnt: ": pardavimai[i].vnt,
+      "viso: ": viso
+    });
   }
 };
 
 paskaiciuotiPardavimus(pardavimai);
 
-
-console.log('S: ' + newSales);
+console.log(newSales);
