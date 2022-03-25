@@ -77,13 +77,15 @@ task3Btn.addEventListener('click', () => {
 const sec = document.querySelector("section");
 const max = document.querySelector("main ul");
 const divsas = document.querySelectorAll("div")[1];
+let arry = []
 
-const zanr = (z) => {
   fetch('https://in3.dev/knygos/types/')
   .then(response => response.json())
-  .then(data => console.log(data[z].title))
-}
-console.log(zanr(4));
+  .then(data => arry = data.map(e=>{
+    return e.title
+  }))
+  .then(() => console.log(arry))
+
 
   fetch('https://in3.dev/knygos/')
   .then(response => response.json())
@@ -91,7 +93,7 @@ console.log(zanr(4));
 
     max.innerHTML += `<li>${knyg.title}</li>`
     max.innerHTML += `<span style="display: block;"><b>Autorius:</b> ${knyg.author}</span>`
-    max.innerHTML += `<span style="display: block;"><b>Žanras:</b> ${knyg.id}</span>`
+    max.innerHTML += `<span style="display: block;"><b>Žanras:</b> ${arry[knyg.type-1]}</span>`
     max.innerHTML += `<img style="position: relative; left: 0;" src="${knyg.img}">`
   })
   )
