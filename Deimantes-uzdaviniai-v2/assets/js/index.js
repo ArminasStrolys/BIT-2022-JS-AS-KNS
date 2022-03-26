@@ -84,16 +84,14 @@ let arry = []
   .then(data => arry = data.map(e=>{
     return e.title
   }))
-  .then(() => console.log(arry))
-
 
   fetch('https://in3.dev/knygos/')
   .then(response => response.json())
   .then(data => data.map( (knyg) => {
 
-    max.innerHTML += `<li>${knyg.title}</li>`
+    max.innerHTML += `<li>"${knyg.title}"</li>`
     max.innerHTML += `<span style="display: block;"><b>Autorius:</b> ${knyg.author}</span>`
     max.innerHTML += `<span style="display: block;"><b>Žanras:</b> ${arry[knyg.type-1]}</span>`
-    max.innerHTML += `<img style="position: relative; left: 0;" src="${knyg.img}">`
+    max.innerHTML += `<img src="${knyg.img}">`
   })
   )
