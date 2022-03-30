@@ -22,7 +22,12 @@ const Book = () => {
 
   return (
     <>
-{!book.length && <div style={{marginTop: '150px', padding: '100px'}} class="ui massive active centered inline loader"></div>}
+      {!book.length && (
+        <div
+          style={{ marginTop: "150px", padding: "100px" }}
+          class="ui massive active centered inline loader"
+        ></div>
+      )}
       {book.map((e) => (
         <Books
           key={e.id}
@@ -30,15 +35,9 @@ const Book = () => {
           title={e.title}
           author={e.author}
           price={e.price}
-
-          type={genre.length > 0 && genre.find((c) => e.type === c.id).title
-          
-      }
+          type={genre.length > 0 && genre.find((c) => e.type === c.id).title}
         />
       ))}
-
-      
-
     </>
   );
 };
