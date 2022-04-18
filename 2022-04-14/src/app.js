@@ -26,12 +26,15 @@ function CreateUser(name, email, active){ //constructor starts with CAPITAL lett
         this.active = false
 };
 
-
-
-let userOne = new CreateUser('Mantelis', 'manTEL999@gmail.com')
-
-printInfo();{
-    console.log(`Hi, my name is ${this.name}. My e-mail is ${this.email}`)
+CreateUser.prototype.showName = function(){
+    alert(`My name is ${this.name}`)
 }
+
+// let userOne = new CreateUser('Mantelis', 'manTEL999@gmail.com')
+// userOne.showName()
+
+// printInfo();{
+//     console.log(`Hi, my name is ${this.name}. My e-mail is ${this.email}`)
+// }
 
 console.log(userOne)
