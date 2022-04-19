@@ -1,5 +1,7 @@
-import User from './modules/user.js'
-console.log('testing')
+import User from './src/modules/user.js'
+import Student from './src/modules/student.js'
+import Transport from './src/modules/transport.js'
+// console.log('testing')
 
 // let user = {
 //     name:['Vardenis', 'Pavardenis'],
@@ -43,7 +45,26 @@ console.log('testing')
 
 // CLASSES (NEW) ------------------------------------------------------------------
 
-let userTwo = new User('Ben','fakemail@email.com','Tesla')
+// let userTwo = new User('Ben','fakemail@email.com','Tesla')
+// let newStudent = new Student('John', 'FakeMAIL', 'Vydunas vid.', 'Mathematics')
 
-userTwo.print()
-console.log('asd')
+// userTwo.nameChange('Henry')
+// userTwo.print()
+
+// // console.log(Transport)
+
+// console.log(newStudent.getInfo())
+
+// newStudent.print()
+
+// Exercise ----------------------------------------------------------------------
+
+let newCar = new Transport('A6', 'audi')
+
+newCar.setPrice('2000$')
+
+console.log(`Manufacturer: ${newCar.manufacturer}, model: ${newCar.model}. Price: ${newCar.price}`)
+
+
+
+// console.log(newCar.transportInfo())
