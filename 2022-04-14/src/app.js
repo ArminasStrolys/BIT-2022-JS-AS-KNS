@@ -1,4 +1,4 @@
-import User from './modules/User'
+import {User} from './modules/User'
 console.log('testing')
 
 // let user = {
@@ -41,20 +41,20 @@ console.log('testing')
 // console.log(userOne)
 
 
-CLASSES (NEW) //------------------------------------------------------------------
+// CLASSES (NEW) ------------------------------------------------------------------
 
-class User{
-    constructor(name, email, work){
-        this.name = name;
-        this.email = email;
-        this.work = work;
-    }
-    print(){
-        console.log(`Me - ${this.name}. I work ${this.work}. Contacts - ${this.work}`)
-    }
-}
+// class User{
+//     constructor(name, email, work){
+//         this.name = name;
+//         this.email = email;
+//         this.work = work;
+//     }
+//     print(){
+//         console.log(`Me - ${this.name}. I work ${this.work}. Contacts - ${this.work}`)
+//     }
+// }
 
-let userTwo = new User('Ben','fakemail@email.com','Tesla')
+// let userTwo = new User('Ben','fakemail@email.com','Tesla')
 
-userTwo.print()
+// userTwo.print()
 console.log('asd')
