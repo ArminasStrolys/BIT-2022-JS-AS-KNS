@@ -1,6 +1,7 @@
 import User from './src/modules/user.js'
 import Student from './src/modules/student.js'
 import Transport from './src/modules/transport.js'
+import Car from "./src/modules/car.js"
 // console.log('testing')
 
 // let user = {
@@ -61,10 +62,18 @@ import Transport from './src/modules/transport.js'
 
 let newCar = new Transport('A6', 'audi')
 
+let brandNewCar = new Car('C220', 'MB')
+
+// setter
+brandNewCar.changeModel = 'E330'
+
 newCar.setPrice('2000$')
+newCar.newWeight = '2,2'
 
-console.log(`Manufacturer: ${newCar.manufacturer}, model: ${newCar.model}. Price: ${newCar.price}`)
+//weight, isMotor, isMotorKw, maxSpeed, desc, passangerCount
 
-
+console.log(`Manufacturer: ${newCar.manufacturer}, model: ${newCar.model}. Price: ${newCar.price}. Transport weights around: ${newCar.weight}. This transport = ${newCar.isMotor}`)
+// getter
+console.log(brandNewCar.getCar)
 
 // console.log(newCar.transportInfo())

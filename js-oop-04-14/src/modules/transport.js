@@ -1,6 +1,5 @@
 class Transport {
-  constructor( model, manufacturer, price, weight, isMotor, isMotorKw, maxSpeed, desc, passangerCount
-  ) {
+  constructor( model, manufacturer, price, weight, isMotor, isMotorKw, maxSpeed, desc, passangerCount ) {
     this.model = model, 
     this.manufacturer = manufacturer,
     this.price = price
@@ -23,10 +22,15 @@ class Transport {
       //    desc: this.desc,
       //    passangerCount: this.passangerCount,
     }
+
   }
   setPrice(price){
     this.price = price
 }
+set newWeight(tons){
+    this.weight = tons + ' tons'
+}
+
 }
 
 export default Transport;
