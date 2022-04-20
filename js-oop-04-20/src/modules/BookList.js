@@ -11,21 +11,6 @@ class BookList {
     this.list = [...Array(length).keys()].map(() => new Book());
   }
 
-// markRead(){
-//     (this.current += 1)
-//     this.list.length - 1 > this.current ?  
-//     (this.list[this.current].bookRead()) : 
-//     console.log('All read')
-// }
-
-// markRead(){
-//     (this.list.length - 1) > this.current ?  
-//     (let book = this.book[this.current - 1]
-//     book.bookRead()
-//     return console.log('asd')) : 
-//     console.log('All read')
-// }
-
 markRead(){
 this.current += 1
 if ((this.list.length + 1) > this.current){
