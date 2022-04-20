@@ -13,7 +13,7 @@ newCat.pet()
 
 console.log('After petting ', newCat)
 
-newCat.sleep(-13)
+newCat.sleep(2)
 
 console.log('After sleeping ', newCat)
 
