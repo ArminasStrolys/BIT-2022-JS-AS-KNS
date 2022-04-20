@@ -1,5 +1,5 @@
 import Bucket1 from "./src/modules/Bucket.js";
-import Vallet from "./src/modules/Vallet.js"
+import Vallet from "./src/modules/Vallet.js";
 import Tbus from "./src/modules/Tbus.js";
 
 //------------------------------------------------------------
@@ -29,26 +29,21 @@ import Tbus from "./src/modules/Tbus.js";
 
 //------------------------------------------------------------
 
-const Trolley1 = new Tbus()
-const Trolley2 = new Tbus()
-const Trolley3 = new Tbus()
+const Trolley1 = new Tbus();
+const Trolley2 = new Tbus();
+const Trolley3 = new Tbus();
 
-Trolley1.in(45)
-Trolley1.out(5)
+Trolley1.in(45);
+Trolley1.out(5);
 
-Trolley2.in(80)
-Trolley2.out(25)
+Trolley2.in(80);
+Trolley2.out(25);
 
-Trolley3.in(20)
-Trolley2.out(10)
+Trolley3.in(20);
+Trolley2.out(10);
 
-Trolley1.ride()
-Trolley2.ride()
-Trolley3.ride()
+Trolley1.ride();
+Trolley2.ride();
+Trolley3.ride();
 
-// Trolley3.passangersInAllTbusses()
-// Tbus.totalMax()
-console.log(Tbus.totalMax(1))
-// Tbus.totalMax()
-// console.log('Total people: ',Tbus.totalPassangers)
-
+Trolley1.passangersInAllTbusses();
