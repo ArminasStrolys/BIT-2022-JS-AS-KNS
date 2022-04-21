@@ -3,33 +3,42 @@ import Vallet from "./src/modules/Vallet.js";
 import Tbus from "./src/modules/Tbus.js";
 import ShopBasket from "./src/modules/ShopBasket.js";
 
-// 1 ------------------------------------------------------------
+// 1, 7 ------------------------------------------------------------
 
-// const bucket = new Bucket1();
+const bucket1 = new Bucket1();
+const bucket2 = new Bucket1();
+const bucket3 = new Bucket1();
 
-// bucket.stoneCount();
+bucket1.addStone();
+bucket1.addStone();
+bucket1.addMore(5);
+bucket1.stoneCount();
 
-// bucket.addStone();
-// bucket.stoneCount();
-// bucket.addStone();
-// bucket.stoneCount();
-// bucket.addMore(5);
-// bucket.stoneCount();
+bucket2.addMore(3);
+bucket2.addStone();
+bucket2.addStone();
+bucket2.stoneCount();
+
+bucket3.addMore(8);
+bucket3.addStone();
+bucket3.stoneCount();
+
+Bucket1.everySingleStone()
 
 // 2, 6 ---------------------------------------------------------
 
-const vallet = new Vallet()
-vallet.add(1)
-vallet.add(2)
-vallet.add(2)
-vallet.add(6)
-vallet.add(8)
-vallet.add(2)
-vallet.add(7)
-vallet.count()
+// const vallet = new Vallet()
+// vallet.add(1)
+// vallet.add(2)
+// vallet.add(2)
+// vallet.add(6)
+// vallet.add(8)
+// vallet.add(2)
+// vallet.add(7)
+// vallet.count()
 
-vallet.coinCounter()
-vallet.cashCounter()
+// vallet.coinCounter()
+// vallet.cashCounter()
 
 // 3, 4 ---------------------------------------------------------
 
