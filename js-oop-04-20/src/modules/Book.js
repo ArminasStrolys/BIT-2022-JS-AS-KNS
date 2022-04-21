@@ -16,17 +16,17 @@ import Helper from "../../utils/Helper.js";
 
 // export default Book
 
-//--
+//--------------------------------- DESTYTOJO KODAS
 
 class Book {
   static kiekis = 0
   static perskaitytos_knygos = new Map()
   
   constructor() {
-      this.id = Helper.random(0, 9999999)
-      this.pavadinimas = Helper.string( Helper.random(40, 60) )
-      this.aprasymas = Helper.string( Helper.random(40, 150) )
-      this.puslapiai = Helper.random(10, 200)
+      this.id = Helper.rndNum(0, 9999999)
+      this.pavadinimas = Helper.string( Helper.rndNum(40, 60) )
+      this.aprasymas = Helper.string( Helper.rndNum(40, 150) )
+      this.puslapiai = Helper.rndNum(10, 200)
       this.perskaityta = false
 
       Book.kiekis += this.puslapiai
