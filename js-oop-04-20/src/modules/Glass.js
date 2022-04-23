@@ -1,5 +1,0 @@
-class Glass{
-    constructor(){
-        
-    }
-}

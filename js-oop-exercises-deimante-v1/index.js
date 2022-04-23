@@ -2,6 +2,7 @@ import Bucket1 from "./src/modules/Bucket.js";
 import Vallet from "./src/modules/Vallet.js";
 import Tbus from "./src/modules/Tbus.js";
 import ShopBasket from "./src/modules/ShopBasket.js";
+import Glass from "./src/modules/Glass.js";
 
 // 1, 7 ------------------------------------------------------------
 
@@ -78,3 +79,17 @@ import ShopBasket from "./src/modules/ShopBasket.js";
 
 // 8 ------------------------------------------------------------
 
+const cupL = new Glass(200)
+const cupM = new Glass(150)
+const cupS = new Glass(100)
+
+cupL.fill(220)
+
+cupM.fill(cupL.amount)
+cupL.pourOut()
+cupS.fill(cupM.amount)
+cupM.pourOut()
+
+console.log('L ',cupL)
+console.log('M ',cupM)
+console.log('S ',cupS)
