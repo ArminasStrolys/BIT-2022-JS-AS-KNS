@@ -5,25 +5,25 @@ import ShopBasket from "./src/modules/ShopBasket.js";
 
 // 1, 7 ------------------------------------------------------------
 
-const bucket1 = new Bucket1();
-const bucket2 = new Bucket1();
-const bucket3 = new Bucket1();
+// const bucket1 = new Bucket1();
+// const bucket2 = new Bucket1();
+// const bucket3 = new Bucket1();
 
-bucket1.addStone();
-bucket1.addStone();
-bucket1.addMore(5);
-bucket1.stoneCount();
+// bucket1.addStone();
+// bucket1.addStone();
+// bucket1.addMore(5);
+// bucket1.stoneCount();
 
-bucket2.addMore(3);
-bucket2.addStone();
-bucket2.addStone();
-bucket2.stoneCount();
+// bucket2.addMore(3);
+// bucket2.addStone();
+// bucket2.addStone();
+// bucket2.stoneCount();
 
-bucket3.addMore(8);
-bucket3.addStone();
-bucket3.stoneCount();
+// bucket3.addMore(8);
+// bucket3.addStone();
+// bucket3.stoneCount();
 
-Bucket1.everySingleStone()
+// Bucket1.everySingleStone()
 
 // 2, 6 ---------------------------------------------------------
 
@@ -75,3 +75,6 @@ Bucket1.everySingleStone()
 // console.log('-------------')
 
 // cart.basketContent()
+
+// 8 ------------------------------------------------------------
+
