@@ -16,7 +16,7 @@ class Glass {
     this.amount = 0;
   }
   glassIs() {
-    console.log("kiekis stiklineje ", this.amount);
+    console.log("kiekis stiklineje: ", this.amount + ' ml');
   }
 }
 

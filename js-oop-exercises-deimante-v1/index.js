@@ -79,17 +79,18 @@ import Glass from "./src/modules/Glass.js";
 
 // 8 ------------------------------------------------------------
 
-const cupL = new Glass(200)
-const cupM = new Glass(150)
-const cupS = new Glass(100)
+const cupL = new Glass(200);
+const cupM = new Glass(150);
+const cupS = new Glass(100);
 
-cupL.fill(220)
+cupL.fill(220);
 
-cupM.fill(cupL.amount)
-cupL.pourOut()
-cupS.fill(cupM.amount)
-cupM.pourOut()
+cupM.fill(cupL.amount);
+cupL.pourOut();
+cupL.glassIs();
+cupS.fill(cupM.amount);
+cupM.pourOut();
 
-console.log('L ',cupL)
-console.log('M ',cupM)
-console.log('S ',cupS)
+console.log("L ", cupL);
+console.log("M ", cupM);
+console.log("S ", cupS);
