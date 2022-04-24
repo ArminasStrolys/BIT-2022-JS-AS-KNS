@@ -3,6 +3,8 @@ import Vallet from "./src/modules/Vallet.js";
 import Tbus from "./src/modules/Tbus.js";
 import ShopBasket from "./src/modules/ShopBasket.js";
 import Glass from "./src/modules/Glass.js";
+import Shroom from "./src/modules/Shroom.js";
+import Basket from "./src/modules/Basket.js";
 
 // 1, 7 ------------------------------------------------------------
 
@@ -79,18 +81,32 @@ import Glass from "./src/modules/Glass.js";
 
 // 8 ------------------------------------------------------------
 
-const cupL = new Glass(200);
-const cupM = new Glass(150);
-const cupS = new Glass(100);
+// const cupL = new Glass(200);
+// const cupM = new Glass(150);
+// const cupS = new Glass(100);
 
-cupL.fill(220);
+// cupL.fill(220);
 
-cupM.fill(cupL.amount);
-cupL.pourOut();
-cupL.glassIs();
-cupS.fill(cupM.amount);
-cupM.pourOut();
+// cupM.fill(cupL.amount);
+// cupL.pourOut();
+// cupL.glassIs();
+// cupS.fill(cupM.amount);
+// cupM.pourOut();
 
-console.log("L ", cupL);
-console.log("M ", cupM);
-console.log("S ", cupS);
+// console.log("L ", cupL);
+// console.log("M ", cupM);
+// console.log("S ", cupS);
+
+// 9 ------------------------------------------------------------
+
+const container = new Basket
+
+let mushroom = new Shroom()
+// console.log(mushroom.edible)
+// container.add(mushroom.weight)
+// console.log(mushroom.weight)
+mushroom.edible && mushroom.rotten === true ? container.add(mushroom.weight) : mushroom = new Shroom()
+
+console.log(mushroom)
+console.log(container)
+
