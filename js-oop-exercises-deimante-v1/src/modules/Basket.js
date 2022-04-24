@@ -1,10 +1,10 @@
-class Basket{
-    constructor(){
-        this.size = 500
-        this.filled = 0
-    }
-    add(shroomWeight){
-        this.filled + shroomWeight < 500 ? this.filled += shroomWeight : console.log('Netelpa')
-    }
+class Basket {
+  constructor() {
+    this.size = 500;
+    this.filled = 0;
+  }
+  add(shroomWeight) {
+    this.filled += shroomWeight;
+  }
 }
-export default Basket
+export default Basket;

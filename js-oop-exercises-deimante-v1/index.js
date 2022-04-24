@@ -99,14 +99,13 @@ import Basket from "./src/modules/Basket.js";
 
 // 9 ------------------------------------------------------------
 
-const container = new Basket
+const container = new Basket();
 
-let mushroom = new Shroom()
-// console.log(mushroom.edible)
-// container.add(mushroom.weight)
-// console.log(mushroom.weight)
-mushroom.edible && mushroom.rotten === true ? container.add(mushroom.weight) : mushroom = new Shroom()
-
-console.log(mushroom)
-console.log(container)
-
+while (container.filled < container.size) {
+  const mushroom = new Shroom();
+  mushroom.edible === true && mushroom.rotten === false
+    ? container.add(mushroom.weight)
+    : console.log("-----------Bad gryb");
+  console.log(mushroom);
+  console.log(container);
+}
