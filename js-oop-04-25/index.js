@@ -1,5 +1,6 @@
 import readline from "readline";
 import process from "process";
+import chalk from "chalk";
 
 // duomenu priemimo ir grazinimo konsoleje interface konfiguracija
 const rl = readline.createInterface({
@@ -34,12 +35,12 @@ const rl = readline.createInterface({
 
 rl.question("Enter num 1 (from): ", (a) => {
   rl.question("Enter num 2 (to): ", (b) => {
-    console.log("kg. \t pound \t stone");
+    console.log(chalk.bgRed.bold("kg. \t pound \t stone"));
     for (a; a <= b; a++) {
       console.log(
-        `${parseInt(a)} \t ${parseFloat(a * 2.20462).toFixed(2)} \t ${parseFloat(
-          a * 0.157473
-        ).toFixed(2)} stone`
+        `${chalk.red(a)} \t ${chalk.green((a * 2.20462).toFixed(2))} \t ${chalk.blue((a * 0.157473).toFixed(
+          2
+        ))}`
       );
     }
     rl.close();
