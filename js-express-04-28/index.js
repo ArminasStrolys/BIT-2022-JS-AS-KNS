@@ -1,41 +1,58 @@
-//node
-// console.log('hi')
-import express from 'express'
+import express from "express";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
 
-// import http from 'http'
+const app = express();
+const __dirname = dirname(fileURLToPath(import.meta.url));
+// console.log(import.meta)
+const credentials = {
+    login: 'user1',
+    password: '123456'
+}
+const credentials2 = {
+    name: 'user1',
+    surname: 'user',
+    address: 'hall ave 9',
+    tel: '+37061620554',
+    email: 'one@two.com',
+}
 
-// const hostname = '127.0.0.1'
-// const port = 3000
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+app.get("/query-submition", (req, res) => {
+  //   res.status(404)
+  //   res.send("<form><input /></form>")
+  res.sendFile(__dirname + "/templates/form.html");
+});
+app.get("/personal", (req, res) => {
+  //   res.status(404)
+  //   res.send("<form><input /></form>")
+  res.sendFile(__dirname + "/templates/form2.html");
+});
+app.get("/home", (req, res) => {
+  res.json("Based in Kaunas");
+});
+app.get("/login-submit", (req, res) => {
+  if (parseInt(Object.keys(req.query).length) > 0) {
+    if (
+      req.query.login != "" &&
+      req.query.password != "" &&
+      req.query.login === credentials.login &&
+      req.query.password != credentials.password
+    ) {
+      res.send("Login failed");
+    } else {
+      res.send("Wrong data");
+    }
+  } else {
+    res.send("Not filled");
+  }
+});
 
-// const server = http.createServer((req, res) =>{
-//     res.statusCode = 200
-//     res.setHeader('content-Type', 'text/plain')
-//     res.end('Hello World, server side MFs!')
-// })
+app.get("/work/:getThis", (req, res) => {
+  res.send("Working in UTENA");
+  console.log(req.params.getThis);
+});
 
-// server.listen(port, hostname, () => {
-//     console.log(`Server running at https://${hostname}`)
-// })
-
-
-// const express = require('express')
-const app = express()
-
-// Router
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
-app.get('/home', function (req, res) {
-  res.json('Based in Kaunas')
-})
-app.get('/work/:params', function (req, res) {
-  res.send('Working in UTENA')
-  console.log(req.params)
-})
-
-// get()
-// post()
-// delete()
-// put()
-
-app.listen(3000)
+app.listen(3000);
