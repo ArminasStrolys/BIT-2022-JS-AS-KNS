@@ -18,21 +18,22 @@ const credentials2 = {
 }
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  // res.send("Hello World");
+  res.sendFile(__dirname + '/templates/form.html')
 });
 app.get("/query-submition", (req, res) => {
   //   res.status(404)
   //   res.send("<form><input /></form>")
   res.sendFile(__dirname + "/templates/form.html");
 });
-app.get("/personal", (req, res) => {
-  //   res.status(404)
-  //   res.send("<form><input /></form>")
-  res.sendFile(__dirname + "/templates/form2.html");
-});
-app.get("/home", (req, res) => {
-  res.json("Based in Kaunas");
-});
+// app.get("/personal", (req, res) => {
+//   //   res.status(404)
+//   //   res.send("<form><input /></form>")
+//   res.sendFile(__dirname + "/templates/form2.html");
+// });
+// app.get("/login-submit", (req, res) => {
+//   res.json("Based in Kaunas");
+// });
 app.get("/login-submit", (req, res) => {
   if (parseInt(Object.keys(req.query).length) > 0) {
     if (
@@ -40,15 +41,32 @@ app.get("/login-submit", (req, res) => {
       req.query.password != "" &&
       req.query.login === credentials.login &&
       req.query.password != credentials.password
-    ) {
-      res.send("Login failed");
-    } else {
-      res.send("Wrong data");
-    }
+      ) {
+        res.redirect('http://localhost:3000/clients')
+      } else {
+        res.send('Neteisingi prisijungimo duomenys')
+      }
   } else {
-    res.send("Not filled");
+    res.redirect('http://localhost:3000/') //Peradresavimas
   }
-});
+})
+
+app.get('/clients', (req, res) => {
+  //let database 
+
+  // let html = '<table>'
+  //   database.forEach(value => {
+  //     html += '<tr>'
+  //     html += '<td></td>'
+  //     html += '<td></td>'
+  //     html += '<td></td>'
+  //     html += '<td></td>'
+  //     html += '<td></td>'
+  //     html += '</tr>'
+  //   })
+  // html += '</table>'
+  res.send('Klientai') 
+})
 
 app.get("/work/:getThis", (req, res) => {
   res.send("Working in UTENA");
