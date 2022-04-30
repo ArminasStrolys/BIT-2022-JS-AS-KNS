@@ -66,7 +66,7 @@ import Basket from "./src/modules/Basket.js";
 
 // 5 ------------------------------------------------------------
 
-// const cart = new ShopBasket()
+const cart = new ShopBasket()
 
 // cart.addSausages(3)
 // cart.addSausages(2)
@@ -78,6 +78,14 @@ import Basket from "./src/modules/Basket.js";
 // console.log('-------------')
 
 // cart.basketContent()
+
+cart.addBiscuit(5)
+cart.addDoughnut(8)
+cart.addCandy(6)
+
+
+cart.basketContent()
+
 
 // 8 ------------------------------------------------------------
 
@@ -99,13 +107,13 @@ import Basket from "./src/modules/Basket.js";
 
 // 9 ------------------------------------------------------------
 
-const container = new Basket();
+// const container = new Basket();
 
-while (container.filled < container.size) {
-  const mushroom = new Shroom();
-  mushroom.edible === true && mushroom.rotten === false
-    ? container.add(mushroom.weight)
-    : console.log("-----------Bad gryb");
-  console.log(mushroom);
-  console.log(container);
-}
+// while (container.filled < container.size) {
+//   const mushroom = new Shroom();
+//   mushroom.edible === true && mushroom.rotten === false
+//     ? container.add(mushroom.weight)
+//     : console.log("-----------Bad gryb");
+//   console.log(mushroom);
+//   console.log(container);
+// }
