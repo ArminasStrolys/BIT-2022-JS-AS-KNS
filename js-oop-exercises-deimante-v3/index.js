@@ -1,11 +1,20 @@
 function rndNum(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
-const food = ['bandelė', 'bulkutė', 'duona', 'batonas', 'pyragas',
-'baronka', 'riestainis', 'javainis', 'paplotėlis'];
+const food = [
+  "bandelė",
+  "bulkutė",
+  "duona",
+  "batonas",
+  "pyragas",
+  "baronka",
+  "riestainis",
+  "javainis",
+  "paplotėlis",
+];
 
-const shop = new Map()
+const shop = new Map();
 
 // 1 ------------------------------------------------------------
 
@@ -15,8 +24,7 @@ const shop = new Map()
 
 // console.log(shop)
 
-
-const market = new Map()
+const market = new Map();
 
 // food.map(e=>{
 
@@ -24,12 +32,8 @@ const market = new Map()
 
 // })
 
-
 // console.log(market)
 // console.log(market.entries())
-
-
-
 
 // setObj.add(rndNum(5,35))
 
@@ -49,9 +53,20 @@ const market = new Map()
 // } else {
 //     setObj.add(x)
 // }
-    
+
 // }
 
+// 4 ------------------------------------------------------------
+
+const setObj = new Set();
+
+food.map((e) => {
+  setObj.add(e, rndNum(10, 20));
+});
+
+setObj.forEach((e) => e.charAt(1) === "a" && setObj.delete(e));
+
+console.log(setObj);
 // 5 ------------------------------------------------------------
 
 // const setObj = new Set()
