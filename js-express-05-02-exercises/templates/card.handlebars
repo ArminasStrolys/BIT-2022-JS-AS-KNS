@@ -1,0 +1,49 @@
+<h1>Worker</h1>
+{{!-- <form method="GET" action="/client-submit">
+    <label>Vardas:</label>
+    <input type="text" name="vardas" placeholder="{{test}}"> <br />
+    <label>Pavarde:</label>
+    <input type="text" name="pavarde"> <br />
+    <label>Adresas:</label>
+    <input type="text" name="adresas"> <br />
+    <label>Telefonas:</label>
+    <input type="phone" name="telefonas"> <br />
+    <label>El. pašto adresas:</label>
+    <input type="email" name="elpastas" /> <br />
+    <button type="submit">Siųsti</button>
+</form> --}}
+<style>
+    body{
+        font-size: 18px;
+    }
+    .card {
+        background-color: bisque;
+        width: 500px;
+        height: 130px;
+        position: relative;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .float {
+        position: absolute;
+        left: 180px;
+        top: 20px;
+    }
+</style>
+
+<div class="card">
+    <img src="{{photo}}" alt="Employee photo not found">
+    <div class="float">
+        <b>Employee name:</b> {{name}}
+        <br>
+        <b>Home address:</b> {{address}}
+        <br>
+        <b>Work car:</b> {{car}}
+        <br>
+        <b>Emergency contact:</b> {{phone}}
+        <br>
+        <b>Working at:</b> {{workPlace}}
+    </div>
+</div>
+
