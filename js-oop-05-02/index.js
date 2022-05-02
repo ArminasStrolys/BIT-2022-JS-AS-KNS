@@ -9,13 +9,33 @@ import express from 'express'
 import {dirname} from 'path'
 import { fileURLToPath } from 'url'
 import fs from 'fs/promises'
+import { create } from 'express-handlebars';
 
 //Express objekto inicijavimas
 const app = express()
+const hbs = create({ /* config */ });
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+app.set('views', './templates');
+
+app.get('/loop', (req, res) => {
+    let variables = {
+        vardas: 'Man',
+        pavarde: 'Humanoid',
+        skaiciai: [1,2,3,4,5],
+        yra: 'tekts',
+        nera: false,
+        objektas: {vienas: 'VIENAS', du: 'DUUU', trys: 'TRYS'}
+    }
+    res.render('loop', variables)
+})
+
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/form.html')
+    let test = "It's a test"
+    // res.sendFile(__dirname + '/templates/form.html')
+    res.render('form')
 })
 
 app.get('/client-submit', async (req, res) => {

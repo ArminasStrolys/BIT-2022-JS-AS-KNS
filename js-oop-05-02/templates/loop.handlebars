@@ -1,0 +1,27 @@
+{{vardas}}
+{{pavarde}}
+{{skaiciai}}
+
+{{!-- if kondicija handlebars sablone --}}
+
+<br>
+{{#if vardas}}
+    Vardas yra perduotas
+{{/if}}
+{{!-- ELSE --}}
+{{#if yra}}
+    neatvaizduojamas tekstas
+{{else}}
+    atvaizduojamas else tekstas
+{{/if}}
+{{!-- CIKLAI --}}
+
+{{#each skaiciai}}
+<li>{{this}}</li>
+{{/each}}
+
+{{#each objektas}}
+<li>{{this}}</li>
+{{/each}}
+
+{{objektas.vienas}}
