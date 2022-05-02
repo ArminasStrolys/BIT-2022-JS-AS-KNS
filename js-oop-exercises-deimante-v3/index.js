@@ -24,6 +24,8 @@ const shop = new Map();
 
 // console.log(shop)
 
+// 2 ------------------------------------------------------------
+
 const market = new Map();
 
 // food.map(e=>{
@@ -32,7 +34,30 @@ const market = new Map();
 
 // })
 
-// console.log(market)
+food.map(e=>{
+    market.set(e,rndNum(5,25))
+})
+
+console.log(market)
+
+// while(market.size !== food.length){
+
+//     let x = rndNum(10,20)
+//     market.set(x)
+// for (let i = 0; i < food.length; i++){
+//   console.log(food[i])
+// }
+// }
+
+market.forEach((e,i) => {
+// e = i
+// i = 'asd'
+  console.log(e,i)
+})
+
+
+console.log(market)
+
 // console.log(market.entries())
 
 // setObj.add(rndNum(5,35))
@@ -58,15 +83,16 @@ const market = new Map();
 
 // 4 ------------------------------------------------------------
 
-const setObj = new Set();
+// const setObj = new Set();
 
-food.map((e) => {
-  setObj.add(e, rndNum(10, 20));
-});
+// food.map((e) => {
+//   setObj.add(e, rndNum(10, 20));
+// });
 
-setObj.forEach((e) => e.charAt(1) === "a" && setObj.delete(e));
+// setObj.forEach((e) => e.charAt(1) === "a" && setObj.delete(e));
 
-console.log(setObj);
+// console.log(setObj);
+
 // 5 ------------------------------------------------------------
 
 // const setObj = new Set()
