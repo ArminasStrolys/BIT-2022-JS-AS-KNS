@@ -1,2 +1,56 @@
-{{!-- {{longitude}} --}}
-{{lat.greeting}}
+<style>
+    .main{
+
+    }
+    .card{
+        background-color: rgb(236, 255, 199);
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        margin: 2%;
+        padding: 20px;
+        border: 2px black solid;
+        float: left;
+    }
+    .on{
+        background-color: green;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .off{
+        background-color: red;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+</style>
+
+
+{{#each json}}
+<div class="main">
+
+
+<div class="card">
+<h2>{{name}}</h2>
+{{#if isActive}}
+   <span class="on"> </span><span> Online</span>
+{{else}}
+   <span class="off"> </span><span> Offline</span>
+{{/if}}
+<p>Works at: <b>{{company}}</b></p>
+<p>Total swiss bank account balance: <b>{{balance}}</b></p>
+<p>Top 3 friends:</p>
+<ol>
+{{#each friends}}
+<li>{{name}}</li>
+{{/each}}
+</ol>
+
+</div>
+</div>
+{{/each}}

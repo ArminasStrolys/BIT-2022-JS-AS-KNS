@@ -32,26 +32,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/second", async (req, res) => {
-  //   let json = []
-
-  //       const data = fs.readFile('./data.json', 'utf8')
-
-  //       let parsedJson = JSON.parse(data)
-  // console.log(parsedJson)
-  //       parsedJson.push(req.query)
-
-  //       json = parsedJson
-
-  // console.log('hello')
-
-  //Informacijos issaugojimas faile
-  const data = await fs.readFile("./data.json", "utf8");
-let lat = [{}]
-
-  let parsedJson = JSON.parse(data);
-  parsedJson.map((e) => lat = e);
-  res.render("second", {lat});
-  console.log(lat)
+let json = []
+try{
+    const data = await fs.readFile("./data.json", "utf8");
+    let parsedJson = JSON.parse(data);
+    json = parsedJson
+} catch {
+    console.log('No data')
+}
+  res.render("second", {json});
 });
 
 app.listen(3000);
