@@ -80,8 +80,11 @@ const cart = new ShopBasket()
 // cart.basketContent()
 
 cart.addBiscuit(5)
+cart.addBiscuit(3)
+cart.addDoughnut(2)
 cart.addDoughnut(8)
 cart.addCandy(6)
+cart.addCandy(7)
 
 
 cart.basketContent()

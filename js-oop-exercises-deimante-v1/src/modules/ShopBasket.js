@@ -29,26 +29,31 @@
 
 // export default ShopBasket;
 
-
 class ShopBasket {
+  static biscuits = 0;
+  static doughnuts = 0;
+  static candy = 0;
   constructor() {
-    this.products = new Map()
+    this.products = new Map();
   }
-  contain(){
-let a = 20
-console.log(a)
+  contain() {
+    let a = 20;
+    console.log(a);
   }
   addBiscuit(pcs = 1) {
-this.products.set('Biscuits', pcs)
+    ShopBasket.biscuits += pcs;
+    this.products.set("Biscuits", ShopBasket.biscuits);
   }
   addDoughnut(pcs = 1) {
-    this.products.set('Doughnuts', pcs)
+    ShopBasket.doughnuts += pcs;
+    this.products.set("Doughnuts", ShopBasket.doughnuts);
   }
   addCandy(pcs = 1) {
-    this.products.set('Candy', pcs)
+    ShopBasket.candy += pcs;
+    this.products.set("Candy", ShopBasket.candy);
   }
   basketContent() {
-console.log(this.products)
+    console.log(this.products);
   }
 }
 
