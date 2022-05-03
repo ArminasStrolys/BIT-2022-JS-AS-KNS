@@ -9,15 +9,8 @@ class Cup {
   static fill(cup1, cup2) {
     cup1.filled === true ? cup1.filled = false : cup1.filled = true
     cup2.filled === true ? cup2.filled = false : cup2.filled = true 
-    // cup1.filled === true ? cup1.filled = false : cup2.filled === true ? cup2.filled = false :
-    // cup1.filled = true
-
       console.log(cup1, cup2);
   }
-  // static fill(cup) {
-  //   cup.filled === true ? (cup.filled = false) : (cup.filled = true);
-  //   console.log(cup);
-  // }
 
   static spillAll(cup1, cup2) {
     cup1.filled === true
