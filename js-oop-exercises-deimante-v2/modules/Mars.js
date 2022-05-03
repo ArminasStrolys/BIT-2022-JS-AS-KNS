@@ -3,29 +3,27 @@ function rndNum(min, max) {
 }
 
 class Mars {
+  static counter = 0;
+  static setID = [];
   static addSat() {
-    const mars = new Mars()
+    this.counter += 1;
 
+if (Mars.counter <= 2){
+  const mars = new Mars();
+    mars.id = rndNum(1, 999);
+    Mars.setID.push(mars.id);
+    Mars.counter >= 2 ? (mars.name = "Phobes") : (mars.name = "Deimos");
     console.log(mars)
-    
-  }
-//   static addSat() {
-//     Mars.size > 0 ? console.log("E") : console.log("F");
-//     const planets = new Object();
-//     planets.pav = ["Deimos", "Phobes"];
-//     planets.id = rndNum(10, 999);
-//     console.log(planets);
-//     return planets;
-//   }
-  // static addSat(){
-  // const planet = Object.create(Mars)
-  // planet.id = rndNum(5,999)
-  // planet.name = ['Deimos', 'Phobes']
-  // }
 
-  constructor() {
-    this.id = rndNum(1,999)
-    this.name = ["Deimos", "Phobes"]
+} else {
+  const mars = new Mars();
+  const x = rndNum(0,1)
+  mars.id = Mars.setID[x]
+  x === 1 ? (mars.name = "Phobes") : (mars.name = "Deimos");
+  console.log(mars)
+}
   }
+
+  constructor() {}
 }
 export default Mars;
