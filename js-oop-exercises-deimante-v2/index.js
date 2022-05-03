@@ -8,3 +8,6 @@ import Cup from './modules/Cup.js'
 
 // // console.log(planet)
 
+Mars.addSat()
+Mars.addSat()
+console.log(Mars.addSat.length)

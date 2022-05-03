@@ -29,5 +29,5 @@ class Cup {
 
 export default Cup;
 
-Cup.createCup();
-Cup.refill();
+// Cup.createCup();
+// Cup.refill();
