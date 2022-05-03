@@ -1,33 +1,38 @@
 class Cup {
-  static createCup() {
-    // const cup1 = { color: 'red', filled: true }
-    // const cup2 = { color: 'yellow', filled: false }
-    const cups = [
-      { color: "red", filled: true },
-      { color: "yellow", filled: false },
-    ];
-    // const cups = Object.create(cup1)
-    // console.log(cups)
-    // console.log(cup1)
-    // console.log(cup2)
-    console.log(cups);
+  static createCup(color, filled) {
+    const cup = new Cup();
+    cup.color = color;
+    cup.filled = filled;
+    console.log(cup);
+    return cup;
+  }
+  static fill(cup1, cup2) {
+    cup1.filled === true ? cup1.filled = false : cup1.filled = true
+    cup2.filled === true ? cup2.filled = false : cup2.filled = true 
+    // cup1.filled === true ? cup1.filled = false : cup2.filled === true ? cup2.filled = false :
+    // cup1.filled = true
+
+      console.log(cup1, cup2);
+  }
+  // static fill(cup) {
+  //   cup.filled === true ? (cup.filled = false) : (cup.filled = true);
+  //   console.log(cup);
+  // }
+
+  static spillAll(cup1, cup2) {
+    cup1.filled === true
+      ? ((cup1.filled = false), (cup2.filled = false))
+      : (cup2.filled = false);
+    console.log(cup1, cup2);
+  }
+  static fillAll(cup1, cup2) {
+    cup1.filled === false
+      ? ((cup1.filled = true), (cup2.filled = true))
+      : (cup2.filled = true);
+    console.log(cup1, cup2);
   }
 
-  static refill() {
-      console.log(this.createCup())
-  }
-
-  static spillAll() {}
-
-  static fillBoth() {}
-
-  constructor() {
-    this.color = color;
-    this.filled = filled;
-  }
+  constructor() {}
 }
 
 export default Cup;
-
-// Cup.createCup();
-// Cup.refill();
