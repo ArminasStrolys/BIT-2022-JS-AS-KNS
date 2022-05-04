@@ -29,62 +29,27 @@ import Points from "./modules/Points.js";
 
 // #3 -----------------------------------------------------------------
 
-// Point.po()
-// console.log(Point.pnt)
-// console.log(Points.pointsArray())
-// console.log(Points.pointsArray())
-// Points.pointsArry
-// console.log(Points.pointsArray())
-// console.log(Points.pointsArray())
-// console.log(Points.pointsArry)
-// console.log(Points.pointsArry)
-
 const allPoints = []
 
 for (let i = 0; i < Points.pointsArray().length; i++){
     allPoints.push(Points.pointsArray())
-    // let bc = Points.pointsArray().reduce((a,b) => a + b)
-    // console.log('total ',bc)
-    // console.log(Points.pointsArray())
-    // console.log(allPoints)
+
 }
-
-
-
-// allPoints.reduce((a,b)=>console.log(b+a))
-// allPoints.sort((a,b)=>console.log('a: ',a, 'b: ', b))
-
-// allPoints.map(e=>
-//     {
-//         for (let i=0; i < Points.pointsArray().length; i++)
-//         console.log(e[i])
-//     })
-
-// allPoints.forEach((a,b)=>
-// {
-//     console.log(b)
-// }
-// )
 
 let a = []
 
 for (let i = 0; i < 10; i++){
 
-    allPoints.sort((a,b)=>b-a)
-
-
-    
-    // console.log(allPoints[i].reduce((a,b) => a + b))
-
+    // allPoints.sort((a,b)=>b-a)
+    a.push(allPoints[i].reduce((a,b) => a + b))
+    a.sort((a,b)=>b-a)
     // console.log(allPoints[i].reduce((a,b) => a + b))
 
 }
 
 
-
-// console.log(allPoints[0].reduce((a,b) => a + b))
-// console.log(allPoints[0])
-// console.log(allPoints[1])
-// console.log(allPoints.sort((a,b)=>a + b))
-console.log(allPoints)
+console.log(a)
 // console.log(allPoints)
+
+
+// #4 -----------------------------------------------------------------
