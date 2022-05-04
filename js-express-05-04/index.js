@@ -37,8 +37,8 @@ const hbs = create({ /* config */ });
 const __dirname = dirname(fileURLToPath(import.meta.url))
 //Hardkodinti prisijungimo duomenys
 const credentials = {
-  login: 'asd',
-  password: '222'
+  login: '1@1.com',
+  password: 'aaa'
 }
 //Bazinio adreso konstravimas
 const port = 3000
@@ -166,6 +166,36 @@ app.post('/client-submit', async (req, res) => {
   } else {
     res.send('Negauti duomenys')
   }
+})
+
+//Kliento istrynimas delete metodu
+
+app.delete('/delete-client/:id', async (req, res) => {
+  const id = req.params.id 
+
+  if(!id) {
+    res.json({status: 'failed', message: 'Neperduotas joks id'})
+    return 
+  }
+
+  try {
+
+    const data = await fs.readFile('./database.json', 'utf8')
+
+    let parsedJson = JSON.parse(data)
+
+    parsedJson.splice(id, 1)
+
+    //Informacijos issaugojimas faile
+
+    await fs.writeFile('./database.json', JSON.stringify(parsedJson))
+
+    res.json({status: 'ok', message: 'Įrašas sėkmingai ištrintas'})
+
+  } catch {
+      res.json({status: 'failed', message: 'Nepavyko perskaityti duomenu bazes failo'})
+  }
+
 })
 
 //Sukuria serveri priskiriant jam routerius

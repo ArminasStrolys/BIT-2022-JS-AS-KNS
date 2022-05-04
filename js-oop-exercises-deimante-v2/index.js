@@ -70,8 +70,9 @@ let a = []
 
 for (let i = 0; i < 10; i++){
 
-    a.push(allPoints[i].reduce((a,b) => a + b))
-    a.sort((a,b)=>b-a)
+    allPoints.sort((a,b)=>b-a)
+
+
     
     // console.log(allPoints[i].reduce((a,b) => a + b))
 
@@ -85,5 +86,5 @@ for (let i = 0; i < 10; i++){
 // console.log(allPoints[0])
 // console.log(allPoints[1])
 // console.log(allPoints.sort((a,b)=>a + b))
-console.log(a)
+console.log(allPoints)
 // console.log(allPoints)
