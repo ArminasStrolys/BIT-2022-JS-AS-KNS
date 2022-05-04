@@ -3,10 +3,9 @@ function rndNum(min, max) {
   }
 
 class Point{
-    constructor(){
+    static po(){
         const point = rndNum(100,999)
-        // this.point = rndNum(100,999)
-        console.log(point)
+        return point
     }
 }
 

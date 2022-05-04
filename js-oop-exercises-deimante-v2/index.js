@@ -29,5 +29,37 @@ import Points from "./modules/Points.js";
 
 // #3 -----------------------------------------------------------------
 
-console.log(Point)
-console.log(Points)
+// Point.po()
+// console.log(Point.pnt)
+// console.log(Points.pointsArray())
+// console.log(Points.pointsArray())
+// Points.pointsArry
+// console.log(Points.pointsArray())
+// console.log(Points.pointsArray())
+// console.log(Points.pointsArry)
+// console.log(Points.pointsArry)
+
+const allPoints = []
+
+for (let i = 0; i < Points.pointsArray().length; i++){
+    allPoints.push(Points.pointsArray())
+    // let bc = Points.pointsArray().reduce((a,b) => a + b)
+    // console.log('total ',bc)
+}
+
+
+
+// allPoints.reduce((a,b)=>console.log(b+a))
+// allPoints.sort((a,b)=>console.log('a: ',a, 'b: ', b))
+
+// allPoints.map(e=>
+//     {
+//         for (let i=0; i < Points.pointsArray().length; i++)
+//         console.log(e[i])
+//     })
+
+allPoints.map((a,b)=> a+b)
+
+console.log(allPoints.length)
+
+console.log(allPoints)
