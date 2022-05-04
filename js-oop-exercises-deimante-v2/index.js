@@ -1,7 +1,8 @@
-import Mars from "./modules/Mars.js";
-import Cup from "./modules/Cup.js";
-import Point from "./modules/Point.js";
-import Points from "./modules/Points.js";
+// import Mars from "./modules/Mars.js";
+// import Cup from "./modules/Cup.js";
+// import Point from "./modules/Point.js";
+// import Points from "./modules/Points.js";
+// import Div from "./modules/Div.js";
 
 // #1 -----------------------------------------------------------------
 
@@ -29,27 +30,46 @@ import Points from "./modules/Points.js";
 
 // #3 -----------------------------------------------------------------
 
-const allPoints = []
+// const allPoints = []
 
-for (let i = 0; i < Points.pointsArray().length; i++){
-    allPoints.push(Points.pointsArray())
+// for (let i = 0; i < Points.pointsArray().length; i++){
+//     allPoints.push(Points.pointsArray())
 
-}
+// }
 
-let a = []
+// let a = []
 
-for (let i = 0; i < 10; i++){
+// for (let i = 0; i < 10; i++){
 
-    // allPoints.sort((a,b)=>b-a)
-    a.push(allPoints[i].reduce((a,b) => a + b))
-    a.sort((a,b)=>b-a)
-    // console.log(allPoints[i].reduce((a,b) => a + b))
+//     // allPoints.sort((a,b)=>b-a)
+//     a.push(allPoints[i].reduce((a,b) => a + b))
+//     a.sort((a,b)=>b-a)
+//     // console.log(allPoints[i].reduce((a,b) => a + b))
 
-}
+// }
 
-
-console.log(a)
-// console.log(allPoints)
-
+// console.log(a)
+// // console.log(allPoints)
 
 // #4 -----------------------------------------------------------------
+
+
+
+function rndNum(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+class Div{
+    constructor(){
+
+    }
+    static test(){
+        console.log('testssss')
+        alert('Test')
+    }
+}
+
+
+
+console.log('Test')
+Div.test()
