@@ -10,7 +10,7 @@ class Points{
 
     static pointsArray(){
         const arry = new Array
-        for (let i = 0; i < 4; i++){
+        for (let i = 0; i < 10; i++){
             arry.push(Point.po())
 
             // Points.pointsArry.push(Point.po())

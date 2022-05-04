@@ -45,6 +45,8 @@ for (let i = 0; i < Points.pointsArray().length; i++){
     allPoints.push(Points.pointsArray())
     // let bc = Points.pointsArray().reduce((a,b) => a + b)
     // console.log('total ',bc)
+    // console.log(Points.pointsArray())
+    // console.log(allPoints)
 }
 
 
@@ -58,8 +60,30 @@ for (let i = 0; i < Points.pointsArray().length; i++){
 //         console.log(e[i])
 //     })
 
-allPoints.map((a,b)=> a+b)
+// allPoints.forEach((a,b)=>
+// {
+//     console.log(b)
+// }
+// )
 
-console.log(allPoints.length)
+let a = []
 
-console.log(allPoints)
+for (let i = 0; i < 10; i++){
+
+    a.push(allPoints[i].reduce((a,b) => a + b))
+    a.sort((a,b)=>b-a)
+    
+    // console.log(allPoints[i].reduce((a,b) => a + b))
+
+    // console.log(allPoints[i].reduce((a,b) => a + b))
+
+}
+
+
+
+// console.log(allPoints[0].reduce((a,b) => a + b))
+// console.log(allPoints[0])
+// console.log(allPoints[1])
+// console.log(allPoints.sort((a,b)=>a + b))
+console.log(a)
+// console.log(allPoints)
