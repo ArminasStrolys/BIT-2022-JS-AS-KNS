@@ -53,23 +53,16 @@
 
 // #4 -----------------------------------------------------------------
 
-
-
 function rndNum(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
 class Div{
     constructor(){
-
-    }
-    static test(){
-        console.log('testssss')
-        alert('Test')
+        this.number = rndNum(1,999)
     }
 }
 
-
-
-console.log('Test')
-Div.test()
+const divas = new Div
+divas
+console.log(Div)
