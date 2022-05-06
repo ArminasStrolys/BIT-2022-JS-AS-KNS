@@ -61,8 +61,27 @@ class Div{
     constructor(){
         this.number = rndNum(1,999)
     }
+    creator(){
+        // document.body.onload = addElement;
+
+        function addElement () {
+
+          const newDiv = document.createElement("div");
+
+          const newContent = document.createTextNode('TTTTTEST');
+
+          newDiv.appendChild(newContent);
+        
+
+          const currentDiv = document.getElementById("insert");
+          document.body.insertAfter(newDiv, currentDiv);
+        }
+        addElement()
+    }
 }
 
 const divas = new Div
 divas
+divas.creator()
+console.log('ttt')
 console.log(Div)
