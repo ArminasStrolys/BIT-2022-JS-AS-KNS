@@ -64,17 +64,17 @@ class Div{
     creator(){
         // document.body.onload = addElement;
 
-        function addElement () {
+        // function addElement () {
 
-          const newDiv = document.createElement("div");
+        //   const newDiv = document.createElement("div");
 
-          const newContent = document.createTextNode('TTTTTEST');
+        //   const newContent = document.createTextNode('TTTTTEST');
 
-          newDiv.appendChild(newContent);
+        //   newDiv.appendChild(newContent);
         
 
-          const currentDiv = document.getElementById("insert");
-          document.body.insertAfter(newDiv, currentDiv);
+        //   const currentDiv = document.getElementById("insert");
+        //   document.body.insertAfter(newDiv, currentDiv);
         }
         addElement()
     }
