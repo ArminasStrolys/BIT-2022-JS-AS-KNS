@@ -71,8 +71,7 @@ class Div{
         //   const newContent = document.createTextNode('TTTTTEST');
 
         //   newDiv.appendChild(newContent);
-        
-
+      
         //   const currentDiv = document.getElementById("insert");
         //   document.body.insertAfter(newDiv, currentDiv);
         }
