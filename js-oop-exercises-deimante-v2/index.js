@@ -63,15 +63,10 @@ class Div{
     }
     creator(){
         // document.body.onload = addElement;
-
         // function addElement () {
-
         //   const newDiv = document.createElement("div");
-
         //   const newContent = document.createTextNode('TTTTTEST');
-
         //   newDiv.appendChild(newContent);
-      
         //   const currentDiv = document.getElementById("insert");
         //   document.body.insertAfter(newDiv, currentDiv);
         }
