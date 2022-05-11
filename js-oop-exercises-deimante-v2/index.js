@@ -54,28 +54,35 @@
 // #4 -----------------------------------------------------------------
 
 function rndNum(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
-
-class Div{
-    constructor(){
-        this.number = rndNum(1,999)
-    }
-    creator(){
-        // document.body.onload = addElement;
-        // function addElement () {
-        //   const newDiv = document.createElement("div");
-        //   const newContent = document.createTextNode('TTTTTEST');
-        //   newDiv.appendChild(newContent);
-        //   const currentDiv = document.getElementById("insert");
-        //   document.body.insertAfter(newDiv, currentDiv);
-        }
-        addElement()
-    }
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-const divas = new Div
-divas
-divas.creator()
-console.log('ttt')
-console.log(Div)
+
+
+class Div {
+  constructor(element) {
+      this.listElement = element
+      this.textList = [
+          'T1',
+          'T2'
+      ]
+    // this.number = rndNum(1, 999);
+  }
+  
+  creator() {
+    // document.body.onload = addElement;
+    function addElement() {
+      const newDiv = document.createElement("div");
+      const newContent = document.createTextNode("TTTTTEST");
+      newDiv.appendChild(newContent);
+      const currentDiv = document.getElementById("insert");
+      document.body.insertBefore(newDiv, currentDiv);
+    }
+  }
+}
+
+const divas = new Div();
+divas;
+divas.creator();
+console.log("ttt");
+console.log(Div);
